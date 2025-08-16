@@ -74,7 +74,7 @@ git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
  ```
 
 ```bash
-cd Bolsa-Futuro-Digital-Turma-04-PB.git
+cd Bolsa-Futuro-Digital-Turma-04-PB
 ```
 
 # 5️⃣ Como enviar (upload) seus arquivos trabalhados em aula para o repositório
@@ -89,8 +89,16 @@ Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifiqu
 ```bash
 git checkout nome-sobrenome
 ```
-## 2 - Execute os comandos:
-
+## 2 - Entre na pasta do modulo corrente
+```bash
+cd Bolsa-Futuro-Digital-Turma-04-PB/modulo1
+```
+## 3 - Crie caso nao exista uma pasta para a aula atual e entre na mesma
+```bash
+mkdir aula4
+cd aula4
+```
+## 4 - git add, commit e push
 ```bash
 git add .
 git commit -m "mensagem explicativa"
