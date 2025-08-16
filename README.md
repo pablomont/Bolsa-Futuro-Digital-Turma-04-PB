@@ -89,6 +89,13 @@ Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifiqu
 ```bash
 git checkout nome-sobrenome
 ```
+## 2 - Execute os comandos:
+
+```bash
+git add .
+git commit -m "mensagem explicativa"
+git push
+```
 
 ## 🔒 Encerrando a aula
 Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
