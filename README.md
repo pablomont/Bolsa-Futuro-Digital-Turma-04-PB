@@ -84,4 +84,3 @@ Como os computadores do laboratório são usados por várias pessoas, nunca deix
    ```bash
    git credential-cache exit
    git config --global --unset credential.helper
- ```
