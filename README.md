@@ -77,10 +77,23 @@ git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
 cd Bolsa-Futuro-Digital-Turma-04-PB.git
 ```
 
+# 📤 Como enviar (upload) seus arquivos trabalhados em aula para o repositório
+
+Sempre que terminar um exercício e quiser enviar seus arquivos para o GitHub, siga os passos abaixo:
+
+---
+
+## 1️⃣ Troque para a sua branch
+Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifique-se de estar nela:
+
+```bash
+git checkout nome-sobrenome
+```
+
 ## 🔒 Encerrando a aula
 Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
 
-1. **No Git Bash**, rode:
+**No Git Bash**, rode:
    ```bash
    git credential-cache exit
    git config --global --unset credential.helper
