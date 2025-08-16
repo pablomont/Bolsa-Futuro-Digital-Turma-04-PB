@@ -28,7 +28,56 @@ Fique atento(a) às novas pastas e arquivos!
 
 ## 💡 Como usar este repositório
 
+# 🚀 Instruções para começar a usar o Git e GitHub
+
+## 1️⃣ Criar uma conta no GitHub
+1. Acesse: [https://github.com](https://github.com)
+2. Clique em **Sign up** (canto superior direito).
+3. Preencha:
+   - E-mail
+   - Nome de usuário (username)
+   - Senha
+4. Confirme o e-mail (o GitHub vai mandar um link para ativação).
+
+---
+
+## 2️⃣ Instalar o Git e Git Bash no Windows
+1. Acesse: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+2. Baixe a versão para **Windows**.
+3. Execute o instalador:
+   - Clique em **Next** até chegar em **Select Components** (deixe as opções padrão).
+   - Marque a opção **Git Bash Here**.
+   - Conclua a instalação.
+4. Para verificar se deu certo:
+   - Abra o **Git Bash**.
+   - Digite:
+     ```bash
+     git --version
+     ```
+   - Deve aparecer algo como `git version 2.x.x`.
+
+---
+
+## 3️⃣ Configurar o Git no seu computador
+No **Git Bash**, digite (substitua pelas suas informações do GitHub):
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu-email@example.com"
+
+
 ### 📥 Clonar o repositório
 Para baixar os arquivos no seu computador:
 ```bash
 git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
+
+```bash
+cd Bolsa-Futuro-Digital-Turma-04-PB.git
+
+## 🔒 Encerrando a aula (muito importante!)
+Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
+
+1. **No Git Bash**, rode:
+   ```bash
+   git credential-cache exit
+   git config --global --unset credential.helper
