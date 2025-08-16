@@ -64,20 +64,23 @@ No **Git Bash**, digite (substitua pelas suas informações do GitHub):
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@example.com"
+ ```
 
 
 ### 📥 Clonar o repositório
 Para baixar os arquivos no seu computador:
 ```bash
 git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
+ ```
 
 ```bash
 cd Bolsa-Futuro-Digital-Turma-04-PB.git
 
-## 🔒 Encerrando a aula (muito importante!)
+## 🔒 Encerrando a aula
 Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
 
 1. **No Git Bash**, rode:
    ```bash
    git credential-cache exit
    git config --global --unset credential.helper
+ ```
