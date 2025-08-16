@@ -75,6 +75,7 @@ git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
 
 ```bash
 cd Bolsa-Futuro-Digital-Turma-04-PB.git
+```
 
 ## 🔒 Encerrando a aula
 Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
