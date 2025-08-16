@@ -67,7 +67,7 @@ git config --global user.email "seu-email@example.com"
  ```
 
 
-### 📥 Clonar o repositório
+### 4️⃣ Clonar o repositório
 Para baixar os arquivos no seu computador:
 ```bash
 git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
@@ -77,13 +77,13 @@ git clone https://github.com/SEU-USUARIO/Bolsa-Futuro-Digital-Turma-04-PB.git
 cd Bolsa-Futuro-Digital-Turma-04-PB.git
 ```
 
-# 📤 Como enviar (upload) seus arquivos trabalhados em aula para o repositório
+# 5️⃣ Como enviar (upload) seus arquivos trabalhados em aula para o repositório
 
 Sempre que terminar um exercício e quiser enviar seus arquivos para o GitHub, siga os passos abaixo:
 
 ---
 
-## 1️⃣ Troque para a sua branch
+## 1 - Troque para a sua branch
 Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifique-se de estar nela:
 
 ```bash
