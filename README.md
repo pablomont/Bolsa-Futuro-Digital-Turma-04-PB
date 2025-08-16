@@ -18,12 +18,8 @@ Este **NÃO** é o canal Oficial de conteúdo do programa, apenas um repositóri
 
 - 📁 `Módulo 1 ou 2 ou 3/`
   - 📁 `Aulas/`
-    - 📄 `Aula_01 ou Aula_02 ou Aula_03.pdf`
-
-  - 📁 `Pasta com Códigos/`
-    - 📄 `index.html`
-    - 📄 `style.css`
-    - 📄 `script.js`
+    - 📁 `Aula_01 ou Aula_02 ou Aula_03.pdf`
+         - 📄 `Aula_01 ou Aula_02 ou Aula_03.pdf`
 
 ## Atenção
 
