@@ -93,7 +93,7 @@ git checkout nome-sobrenome
 ```bash
 cd Bolsa-Futuro-Digital-Turma-04-PB/modulo1
 ```
-## 3 - Caso nao exista, crie uma pasta para a aula atual e entre na mesma
+## 3 - Caso não exista, crie uma pasta para a aula atual e entre na mesma
 ```bash
 mkdir aula4
 cd aula4
