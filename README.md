@@ -63,7 +63,10 @@ No **Git Bash**, digite (substitua pelas suas informações do GitHub):
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@example.com"
  ```
-
+opcional: 
+```bash
+git config --global core.editor "nano"
+ ```
 
 ### 4️⃣ Clonar o repositório
 Para baixar os arquivos no seu computador:
