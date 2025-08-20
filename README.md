@@ -87,7 +87,11 @@ Sempre que terminar um exercício e quiser enviar seus arquivos para o GitHub, s
 Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifique-se de estar nela:
 
 ```bash
-git switch nome-sobrenome
+git switch nome-sobrenome 
+```
+ou 
+```bash
+git checkout nome-sobrenome 
 ```
 ## 2 - Entre na pasta do modulo corrente
 ```bash
