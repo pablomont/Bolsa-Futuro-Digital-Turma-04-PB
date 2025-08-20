@@ -1,50 +1,76 @@
-Exemplos de Comandos - Aula 4
-Neste arquivo estão os principais comandos mostrados em sala de aula.
+# Exemplos de Comandos - Aula 4
 
-1. Listar arquivos e pastas (ls)
-Bash
+Este arquivo contém os principais comandos apresentados em sala de aula.
 
+---
+
+### Comandos Principais
+
+
+# 1. Listar arquivos e pastas (ls)
+```bash
 ls
-2. Acessar diretórios (cd)
-Bash
+```
 
+# 2. Acessar diretórios (cd)
+## 2.1 Acessa o diretório 'aula4'
+```bash
 cd aula4
-cd ..  # Navega para o diretório pai
-3. Criar diretórios (mkdir)
-Bash
-
+```
+## 2.1 Acessa o diretório pai
+```bash
+cd ..     
+```
+# 3. Criar diretórios (mkdir)
+```bash
 mkdir aula4
-4. Copiar arquivos (cp)
-Bash
+```
 
+# 4. Copiar arquivos (cp)
+```bash
 cp index.html aula4/
-5. Remover arquivos e pastas (rm)
-Bash
+```
 
+# 5. Remover arquivos e pastas
+
+## 5.1 Remover arquivos 
+```bash
 rm index.html
-rm -r aula4  # Apaga a pasta e todo o seu conteúdo
-Atenção: rm -r apaga a pasta inteira com todo o conteúdo. Use com cuidado!
+```
 
-6. Mover ou renomear arquivos (mv)
-Bash
+## 5.2 Remover pastas com todo o seu conteúdo
+```bash
+rm -r aula4
+```
 
-mv index.html aula4/
-mv aula4/index.html aula4/home.html
-Resumo dos Comandos
-ls: lista arquivos e pastas
+# 6. Mover ou renomear arquivos (mv)
 
-cd: navega entre diretórios
+# 6.1 Mover arquivos (mv)
+```bash
+mv index.html aula4
+```
 
-mkdir: cria pastas
+# 6.2 Renomear arquivos
+```bash
+mv index.html home.html
+```
 
-cp: copia arquivos
+# Resumo dos Comandos
 
-rm: remove arquivos/pastas
+## ls -> lista arquivos e pastas
 
-mv: move ou renomeia arquivos/pastas
+## cd -> navega entre diretórios
 
-.: atalho para o diretório atual
+## mkdir -> cria pastas
 
-..: atalho para o diretório pai
+## cp -> copia arquivos
 
-cd: o comando cd sem argumentos direciona para o diretório home (~)
+## rm -> remove arquivos/pastas
+
+## mv -> move ou renomeia arquivos/pastas
+
+## . -> atalho para o diretório atual
+
+## .. -> atalho para o diretório pai
+
+## cd -> o comando cd sem argumentos direciona para o diretório home (~)
