@@ -104,11 +104,3 @@ git add .
 git commit -m "mensagem explicativa"
 git push
 ```
-
-## 🔒 Encerrando a aula
-Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
-
-**No Git Bash**, rode:
-   ```bash
-   git credential-cache exit
-   git config --global --unset credential.helper
