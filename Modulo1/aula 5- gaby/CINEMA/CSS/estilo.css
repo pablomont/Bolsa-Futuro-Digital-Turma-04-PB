@@ -1,0 +1,48 @@
+/* Fonte padrão e alinhamento */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+h2 a {
+    color: rgb(89, 46, 139);
+}
+
+/* Filmes */
+.hoje {
+    color: darkred;
+}
+.amanha {
+    color: darkblue;
+}
+
+/* Parágrafos */
+p {
+    font-size: 20;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.dark h1,
+body.dark a {
+    color: white;
+}
+
+body.dark .hoje {
+    color: lightsalmon;
+}
+body.dark .amanha {
+    color: lightskyblue;
+}
+body.dark h2 a {
+    color: lightseagreen;}
