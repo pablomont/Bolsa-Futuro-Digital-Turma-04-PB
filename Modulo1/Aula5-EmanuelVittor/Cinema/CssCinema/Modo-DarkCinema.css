@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+a, h1, p {
+    color: white;
+}
+a:hover {
+    color: rgb(0, 255, 255);
+}
