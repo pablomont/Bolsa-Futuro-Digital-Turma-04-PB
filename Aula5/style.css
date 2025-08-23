@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    background-color: black;
+    border-radius: 4px;
+    margin: 4%;
+    padding: 2%;
+}
+
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+span{
+    color:#febe01;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p{
+    color: #b2b2b2;
+}
+
+button{
+    background-color: #f1a100;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ffc550;
+}
