@@ -37,8 +37,12 @@ p {
   background-color: #febe01;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
   margin: 1%;
   padding-top: 1%;
   padding-bottom: 1%
+}
+
+.Botao:hover {
+  cursor: pointer;
+  background-color: bisque;
 }
