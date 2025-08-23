@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Titulo {
+  text-align: center;
+}
+.Carro {
+  background-color: black;
+  padding: 2%;
+  margin: 3%;
+}
+.Bicicleta {
+  background-color: black;
+  margin: 3%;
+  padding: 2%;
+}
+
+h2 {
+  color: white;
+  margin: 1%;
+}
+span {
+  color: #febe01;
+}
+
+p {
+  margin: 1%;
+  color: #b2b2b2;
+}
+
+button {
+  color: #332200;
+  background-color: #febe01;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
