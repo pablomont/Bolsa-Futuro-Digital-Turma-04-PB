@@ -1,0 +1,34 @@
+body {
+  background-color: black;
+}
+
+h1, a {
+  color: white;
+}
+
+.hoje {
+  color: lightsalmon;
+}
+
+.amanha {
+  color: lightskyblue;
+}
+
+h2 a {
+  color: lightseagreen;
+}
+
+/* Regras gerais */ 
+
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
