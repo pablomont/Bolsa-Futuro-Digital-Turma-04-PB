@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+.home {
+    text-align: center;
+}
+.today {
+    text-align: center;
+    color: lightsalmon;
+}
+
+.tomorrow {
+    text-align: center;
+    color: lightskyblue;
+}
