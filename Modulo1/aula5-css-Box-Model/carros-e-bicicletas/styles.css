@@ -1,14 +1,17 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffff;
 }
 
 #Titulo {
   text-align: center;
+  color: #000;
 }
 .Carro {
   background-color: black;
-  padding: 2%;
   margin: 3%;
+  padding: 2%;
+  
 }
 .Bicicleta {
   background-color: black;
@@ -29,7 +32,7 @@ p {
   color: #b2b2b2;
 }
 
-button {
+.Botao {
   color: #332200;
   background-color: #febe01;
   border-radius: 4px;
