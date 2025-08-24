@@ -1,0 +1,24 @@
+.hoje {
+  color: darkred;
+}
+
+.amanha {
+  color: darkblue
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 a {
+  color: seagreen;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
