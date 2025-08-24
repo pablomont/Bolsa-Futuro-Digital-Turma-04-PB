@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO list</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <h1 class="Title">TODO list</h1>
     <div class="Tasks-container">
-        <input id="Tasks-input" type="text" placeholder="Digite sua tarefa">
-        <button id="button-input" aria-label="Adicionar tarefa">✔</button>
+        <input id="Tasks-input" type="text" placeholder="Adicionar tarefa">
+        <button id="button-input" aria-label="Adicionar tarefa" disabled><span class="material-icons">check</span></button>
+    </div>
+    <div class="List-container">
+        <h2>Tarefas Pendentes</h2>
+        <ul>
+            <li><span class="text-tasks"><b>Comprar pão</b></span><button class="task-confirm" disabled><span class="material-icons">check</span></button><button
+                    class="task-remove" disabled><span class="material-icons">close</span></button></li>
+            <li><span class="text-tasks"><b>Jogar Megazord tripazoide</b></span><button
+                    class="task-confirm" disabled><span class="material-icons">check</span></button><button class="task-remove" disabled><span class="material-icons">close</span></button></li>
+            <li><span class="text-tasks"><b>Estudar conteúdos do BFD</b></span><button
+                    class="task-confirm" disabled><span class="material-icons">check</span></button><button class="task-remove" disabled><span class="material-icons">close</span></button></li>
+        </ul>
     </div>
 </body>
+
 </html>
