@@ -1,36 +1,57 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: black;
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
 }
 
 h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: black;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
-a{
-    text-align: center;
-    color: lightseagreen;
-    text-decoration: none;
+a {
+  text-align: center;
+  color: seagreen;
+  text-decoration: none;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .home {
-    text-align: center;
+  text-align: center;
 }
 .today {
-    text-align: center;
-    color: lightsalmon;
+  text-align: center;
+  color: darkred;
 }
 
 .tomorrow {
-    text-align: center;
-    color: lightskyblue;
+  text-align: center;
+  color: darkblue;
+}
+
+.filmes-container {
+  /* background-color: #b2b2b2;  fiquei na dúvida se era pra ter uma cor de fundo*/
+  text-align: center;
+  text-align: center;
+  border: 1px solid #b2b2b2;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.estados-container {
+  /* background-color: #b2b2b2;  fiquei na dúvida se era pra ter uma cor de fundo*/
+  text-align: center;
+  border: 1px solid #b2b2b2;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
 }
