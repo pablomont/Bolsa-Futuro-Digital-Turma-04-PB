@@ -1,0 +1,30 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 246, 232);
+}
+.Title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Tasks-container {
+    background-color: rgb(247, 239, 227);
+    padding: 2%;    
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+#Tasks-input {
+
+}
+
+#button-input {
+    background-color: rgb(199, 243, 154);
+    color: #fff;
+    margin-left: 1%;
+    border-radius: 15%;
+}
