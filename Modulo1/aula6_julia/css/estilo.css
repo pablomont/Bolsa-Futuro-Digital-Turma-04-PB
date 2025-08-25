@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    background-color: black;
+}
+.destaUnico{
+     color: lightsalmon;
+ }
+ .destaDois{
+    color: lightskyblue;
+    
+ }
+a, h2{
+     color: lightseagreen;
+     text-decoration: none;  
+    
+ }
+.filmes-container{
+    border: 1px solid;
+    color: #b2b2b2;
+    border-radius: 8px;
+    padding: 20px;
+    width: 0.8;
+    margin: 0 auto;
+}
+h1{
+    color: white;
+
+ }
+p{
+    font-size: Arial, 20px;
+    color: white;
+}
