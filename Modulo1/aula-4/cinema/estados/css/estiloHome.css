@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color:rgb(237, 237, 237);
+    color:black;
+}
+.home-container{
+    background-color: white;
+    border-color:#b2b2b2;
+    border:1px;
+    border-style:solid;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;  
+
+
+}
+h1{
+    font-size:20px;
+    font-family:Arial, sans-serif;
+}
