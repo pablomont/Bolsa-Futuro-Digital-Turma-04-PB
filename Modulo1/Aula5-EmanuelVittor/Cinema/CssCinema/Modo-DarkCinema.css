@@ -1,11 +1,36 @@
 body {
+    font-family: Arial, sans-serif;
     text-align: center;
     background-color: black;
 }
 
 a, h1, p {
+    text-decoration: none;
     color: white;
 }
 a:hover {
     color: rgb(0, 255, 255);
+}
+p {
+    font-size: 20px;
+}
+
+.hoje {
+    color: darkred;
+}
+
+.amanhã {
+    color: darkblue
+}
+
+div {
+    border-radius: 8px;
+    border-color:aliceblue;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.filmes-container {
+    border: 2.5px solid aliceblue
 }
