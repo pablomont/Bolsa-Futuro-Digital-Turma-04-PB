@@ -1,0 +1,33 @@
+body{
+    background-color: #f5f5f5;
+    font: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    text-align:center;
+    align-items: center;
+}
+
+h1{
+    color: #333;
+}
+
+.login-box{
+    color: white;
+    border-radius: 8px;
+    border-color: #ddd;
+    width: 300px;
+}
+
+input{
+    border-color: #ccc;
+    border-radius: 8px;
+}
+
+button{
+    color: #174584;
+}
+
+button:hover{
+    color: #08023e;
+}
