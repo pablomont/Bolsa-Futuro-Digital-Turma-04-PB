@@ -1,0 +1,39 @@
+body{
+      display: flex;
+    align-items: center; 
+    flex-direction: column;
+    background: linear-gradient( #e9e8e9, #f7ff83);;;
+    height: 100vh;
+    color: white;
+    gap: 10px;
+    text-align: center;
+}
+h1{
+    color: black;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+button{
+    background-color:#febe01 ;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    ;
+    text-align: center;
+    
+}
+.container{
+    background-color: #111;
+    border-radius: 4px;
+    width: 70% ;
+    
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+
+span{
+    color: #febe01;
+}
+
+
