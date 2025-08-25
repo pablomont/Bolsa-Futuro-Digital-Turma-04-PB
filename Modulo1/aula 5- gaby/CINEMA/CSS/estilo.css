@@ -1,20 +1,16 @@
-/* Fonte padrão e alinhamento */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: white;
-    color: black;
 }
 
-/* Links */
-a {
-    text-decoration: none;
+.filmes-container {
+  border: 1px solid #b2b2b2;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
 }
-h2 a {
-    color: rgb(89, 46, 139);
-}
-
-/* Filmes */
 .hoje {
     color: darkred;
 }
@@ -22,27 +18,10 @@ h2 a {
     color: darkblue;
 }
 
-/* Parágrafos */
-p {
-    font-size: 20;
+a{
+    text-decoration: none;
 }
 
-/* Dark mode */
-body.dark {
-    background-color: black;
-    color: white;
+h2 a{
+    color: seagreen
 }
-
-body.dark h1,
-body.dark a {
-    color: white;
-}
-
-body.dark .hoje {
-    color: lightsalmon;
-}
-body.dark .amanha {
-    color: lightskyblue;
-}
-body.dark h2 a {
-    color: lightseagreen;}

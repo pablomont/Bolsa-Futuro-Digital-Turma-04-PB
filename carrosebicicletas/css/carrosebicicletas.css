@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.produto {
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.produto h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.preco {
+  color: #febe01;
+  font-weight: bold;
+}
+
+.destaque {
+  color: #febe01;
+}
+
+.produto p {
+  color: #b2b2b2;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #febe01;
+  color: #332200;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
