@@ -1,0 +1,41 @@
+/* 1.CENTRALIZA O CONTEÚDO PRINCIPAL NA TELA */
+body {
+    font-family: Arial,
+    background-color: #fff; 
+    text-align: center;
+}
+.container {
+    margin-top: 80px;
+}
+
+h1 {
+    color: #333;
+}
+
+.login-box input{
+    background-color: #ffffff;
+    padding: 10px
+    border: 5px; 
+    box-shadow: 0 2px;
+    display: block;
+    min-width: 20px;
+}
+.login-box p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+/* inputes de email e senha */
+.login-box input {
+    display:  block;
+    width: 100%;
+    padding: 10px
+
+}
+
+/* Estilo para a Descrição */
+.descricao {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
