@@ -1,5 +1,3 @@
-
-
 ## Bolsa Futuro Digital
 
 
@@ -65,7 +63,10 @@ No **Git Bash**, digite (substitua pelas suas informações do GitHub):
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@example.com"
  ```
-
+opcional: 
+```bash
+git config --global core.editor "nano"
+ ```
 
 ### 4️⃣ Clonar o repositório
 Para baixar os arquivos no seu computador:
@@ -87,7 +88,11 @@ Sempre que terminar um exercício e quiser enviar seus arquivos para o GitHub, s
 Cada aluno terá uma branch com seu nome. Antes de enviar os arquivos, certifique-se de estar nela:
 
 ```bash
-git checkout nome-sobrenome
+git switch nome-sobrenome 
+```
+ou 
+```bash
+git checkout nome-sobrenome 
 ```
 ## 2 - Entre na pasta do modulo corrente
 ```bash
@@ -104,11 +109,3 @@ git add .
 git commit -m "mensagem explicativa"
 git push
 ```
-
-## 🔒 Encerrando a aula
-Como os computadores do laboratório são usados por várias pessoas, nunca deixe suas credenciais salvas.
-
-**No Git Bash**, rode:
-   ```bash
-   git credential-cache exit
-   git config --global --unset credential.helper
