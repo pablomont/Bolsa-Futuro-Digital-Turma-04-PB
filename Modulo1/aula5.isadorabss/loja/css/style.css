@@ -1,10 +1,15 @@
 body{
     font: arial;
-    text-align:center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    text-align:center;
+    align-items: center;
+    background-color: #313950;
 }
 
 h1{
-    color:black;
+    color:white;
 }
 
 h2{
@@ -15,17 +20,19 @@ h2{
 
 p{
     color: #b2b2b2;
-    margin-top:2%;
-    margin-bottom:2%;
+    margin-top:1%;
+    margin-bottom:1%;
 }
 
 .sessao{
+    
     background-color: #111;
     text-align: left;
-    padding: 3%;
-    margin:20px;
+    padding: 2%;
+    margin:1%;
     border-radius: 4px;
     border:none;
+    width: 80%;
 }
 
 span{
