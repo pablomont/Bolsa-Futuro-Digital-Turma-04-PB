@@ -1,0 +1,59 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: none;
+}
+
+.usuario {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+
+}
+
+img {
+
+}
+
+button {
+
+}
+
+.topo {
+    color: #fff;
+    background-color: #072348;
+    padding: 15px;
+    text-align: center;
+}
+
+.post {
+    background-color: #fffd;
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.conteudo {
+    margin: 10px 0px;
+}
+
+.imagem {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #fff;
+    color: #555;
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+}
