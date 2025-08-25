@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Hoje {
+    color: darkred;
+}
+
+.Amanhã {
+    color: darkblue;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: green;
+}
+
+h2,
+a {
+    text-decoration: none;
+}
+
+h1 {
+    border: 0cap;
+}
+
+.filmes-container {
+    border: 1px solid black;
+
+}
+
+div {
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+}
