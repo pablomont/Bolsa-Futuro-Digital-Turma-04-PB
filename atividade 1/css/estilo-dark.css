@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+p {
+    font-size: 20px;
+}
+
+h1,
+a {
+    color: white
+}
+
+.hoje {
+    color: lightsalmon
+}
+
+.amanha {
+    color: lightskyblue
+}
+
+h2 a {
+    color: white;
+}
+
+.filme {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+}
