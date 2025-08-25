@@ -1,12 +1,9 @@
-/* Dark Mode */
 body {
-    background-color: black;
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
 h1, a {
-    color: white;
+    color: black;
 }
 
 a {
@@ -14,7 +11,7 @@ a {
 }
 
 h2 a {
-    color: lightseagreen;
+    color: seagreen;
 }
 
 p {
@@ -22,11 +19,11 @@ p {
 }
 
 .hoje {
-    color: lightsalmon;
+    color: darkred;
 }
 
 .amanha {
-    color: lightskyblue;
+    color: darkblue;
 }
 
 .filmes-container {

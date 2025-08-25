@@ -1,0 +1,43 @@
+body{
+    background-color: f5f5f5;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1{
+    color: #333;
+}
+
+.login-box{
+    color: white;
+    border: 1px #ddd;
+    width: 300px;
+    margin: 20px; /*dúvida aqui*/
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.login-box input{
+    width: 90%;
+    padding: 8px;
+    border: 1px #ccc;
+    border-radius: 4px;
+}
+
+.login-box button{
+    background-color: #174584;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.login-box input:hover{
+    color: #08023e;
+}
+
+.container{
+    margin-top: 80px;
+}
