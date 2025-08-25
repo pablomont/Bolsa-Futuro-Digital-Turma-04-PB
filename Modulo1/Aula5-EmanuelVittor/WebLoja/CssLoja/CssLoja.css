@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+button{
+    color: #332200;
+}
+
+.CorDoBotão {
+    color: #febe01;
+}
+
+div {
+    background-color: #111;
+    margin-bottom: 2%;
+}
