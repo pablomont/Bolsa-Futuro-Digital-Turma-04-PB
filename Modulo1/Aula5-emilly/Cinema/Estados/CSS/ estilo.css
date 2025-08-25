@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.filmes-container {
+  border: 1px solid #b2b2b2;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+}
+.hoje {
+    color: darkred;
+}
+.amanhã {
+    color: darkblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 a{
+    color: seagreen
+}
+
