@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.hoje {
+    color: lightsalmon; /* vermelho visível no escuro */
+}
+
+.amanha {
+    color: lightskyblue; /* azul visível no escuro */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 a {
+    color: lightseagreen;
+}
+
+p {
+    font-size: 20px;
+}
