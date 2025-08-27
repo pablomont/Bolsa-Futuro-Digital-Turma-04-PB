@@ -1,41 +1,28 @@
-/* 1.CENTRALIZA O CONTEÚDO PRINCIPAL NA TELA */
 body {
-    font-family: Arial,
-    background-color: #fff; 
-    text-align: center;
+  background-color: #f5f5f5
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
 }
+
 .container {
-    margin-top: 80px;
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input {
+  padding: 8px;
+  width: 90%
 }
 
-h1 {
-    color: #333;
-}
-
-.login-box input{
-    background-color: #ffffff;
-    padding: 10px
-    border: 5px; 
-    box-shadow: 0 2px;
-    display: block;
-    min-width: 20px;
-}
-.login-box p {
-    font-size: 15px;
-    color: #333;
-    margin-bottom: 15px; 
-}
-
-/* inputes de email e senha */
-.login-box input {
-    display:  block;
-    width: 100%;
-    padding: 10px
-
-}
-
-/* Estilo para a Descrição */
-.descricao {
-    font-size: 1.1em;
-    margin-bottom: 30px;
+.button {
+  border-radius: 4px;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #08023e;
 }
