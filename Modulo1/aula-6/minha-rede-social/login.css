@@ -16,6 +16,9 @@ body{
     cursor: pointer;
     border: none;
     margin:8px;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
     padding: 8px, 16px;
 }
 .login-box{

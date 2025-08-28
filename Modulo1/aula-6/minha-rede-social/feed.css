@@ -1,0 +1,62 @@
+body{
+    margin: none;
+    background-color: #f0f2f5;
+}
+
+.topo{
+    padding:10px;
+    text-align: center;
+    margin:20px auto;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #072348;
+}
+.acoes{
+    color: #555;
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor:pointer;
+    margin-right: 15px;
+    background-color: white;
+    border:none;
+
+}
+
+.post{
+    background-color: white;
+    margin: 20px auto;
+    text-align: left;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-color: #ccc;
+}
+
+.usuario{
+    margin-top: 5px;
+    margin-bottom:5px;
+    font-weight: bold;
+}
+
+.conteudo{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.imagem{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.likes{
+    color: #555;
+    font-size: 14px;
+    margin-left: 7px;
+    margin-bottom: 1px;
+}
