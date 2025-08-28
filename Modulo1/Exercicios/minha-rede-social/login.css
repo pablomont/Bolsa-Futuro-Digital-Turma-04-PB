@@ -1,0 +1,53 @@
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+h1{
+    color: #333;
+}
+
+.container{
+    /* width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 4px; */
+    margin: 80px;
+}
+
+.login-box{
+    background-color: white;
+    border-radius: 4px;
+    border-color: #ddd;
+    width: 300px;  /* largura */
+    margin-top: 20px; /* distancia externa do topo */
+    margin-inline: auto;
+    padding: 20px; /* distancia interna */
+    border-width: 1px; 
+    box-shadow: 0 0 7px #c8c8c8;
+}
+
+input{
+    width: 90%;
+    padding: 8px;
+    margin: 6px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+button{
+    background-color:  #174584;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    padding-inline: 16px;
+}
+
+button:hover{
+    background-color: #08023e;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+.topo{
+    background-color: #072348;
+    text-align: center;
+    padding: 15px;
+}
+
+h1{
+    color: white;
+}
+
+img{
+    width: 97%;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+p{
+    margin: 10px;
+}
+
+.post{
+    background-color: white;
+    border-color: #ccc;
+    width: 400px;
+    margin: 20px auto;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    margin-top: 20px;
+}
+
+.acoes{
+    margin-top: 7px;
+    background-color: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+button{
+    background-color: transparent;
+    border: none;
+
+}
+
+.usuario{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
