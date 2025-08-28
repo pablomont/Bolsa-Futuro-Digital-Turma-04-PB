@@ -1,43 +1,56 @@
-body{
+body {
     background-color: #f5f5f5;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
-}
-
-h1{
     color: #333;
 }
 
-.login-box{
-    color: white;
-    border: 1px #ddd;
-    width: 300px;
-    margin: 20px; /*dúvida aqui*/
-    padding: 20px;
+h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 350px;
+    margin: 20px auto;
+    padding: 30px;
     border-radius: 8px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-box input{
-    width: 90%;
-    padding: 8px;
-    border: 1px #ccc;
+.login-box p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
 }
 
-.login-box button{
+.login-box button {
     background-color: #174584;
-    padding: 8px 16px;
+    padding: 10px 20px;
     color: white;
     border: none;
     cursor: pointer;
-
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.login-box input:hover{
-    color: #08023e;
+.login-box button:hover { /*adicionado*/
+    background-color: #2565c2;
 }
 
-.container{
+.container {
     margin-top: 80px;
 }
