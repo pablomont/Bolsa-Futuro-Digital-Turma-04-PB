@@ -7,15 +7,18 @@ body {
 
 h1 {
     font-weight: bold;
-    margin-bottom: 30px;
+}
+
+.container {
+    margin-top: 80px;
 }
 
 .login-box {
     background-color: white;
     border: 1px solid #ddd;
-    width: 350px;
+    width: 300px;
     margin: 20px auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -23,34 +26,31 @@ h1 {
 .login-box p {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 16px;
-}
-
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    box-sizing: border-box; 
-}
-
-.login-box button {
-    background-color: #174584;
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 16px;
     font-weight: bold;
 }
 
-.login-box button:hover { /*adicionado*/
-    background-color: #2565c2;
+.login-box input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
 }
 
-.container {
-    margin-top: 80px;
+.login-box .btn-login {
+    display: block;
+    text-decoration: none;
+    background-color: #174584;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.login-box .btn-login:hover {
+    background-color: #08023e;
 }
