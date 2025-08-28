@@ -1,0 +1,16 @@
+body {
+    background-color: lightgoldenrodyellow
+}
+
+h1 {
+    color: maroon; background-color: goldenrod;
+    text-decoration: underline
+}
+
+h2 {
+    color: darkred
+}
+
+a {
+    text-align: right
+}

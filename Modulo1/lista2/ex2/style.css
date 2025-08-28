@@ -1,0 +1,50 @@
+/* Fundo da página */
+body {
+    background-color: #f0f8ff;
+}
+
+/* Container principal */
+.base {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 16px;
+    border: 2px solid #add8e6;
+}
+
+/* Cartão branco atrás do título e da tabela */
+.quadro {
+    background: #fff;
+    border: 2px solid #add8e6;
+    padding: 16px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+}
+
+/* Tabela ocupando 100% */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+/* Bordas das células */
+table,
+th,
+td {
+    border: 1px solid #cccccc;
+}
+
+/* Cabeçalho */
+th {
+    background-color: #e0eaff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Células */
+td {
+    padding: 10px;
+}
