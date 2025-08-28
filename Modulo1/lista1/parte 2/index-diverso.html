@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teste de Backgrounds</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Teste de Propriedades de Background</h1>
+    <p class="note">
+      Dica: quando a instrução pedir “fundo da <strong>página</strong>”, você pode aplicar a classe no próprio
+      <code>&lt;body class="nome-da-classe"&gt;</code> para ver o efeito em tela cheia. Aqui usamos “caixas de demonstração”.
+    </p>
+
+    <h2>a) Fundo da página azul claro</h2>
+    <div class="demo bg-page-azul-claro">
+      <p>Prévia do fundo azul claro (aplicado nesta caixa). Para ver na página inteira, use no &lt;body&gt;.</p>
+    </div>
+
+    <h2>b) Parágrafo com fundo verde claro</h2>
+    <p class="bg-paragrafo-verde-claro">
+      Este parágrafo tem <strong>fundo verde claro</strong>. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Quisquam, tempore!
+    </p>
+
+    <h2>c) Imagem de fundo que se repete (repeat) e não acompanha a rolagem (fixed)</h2>
+    <div class="demo bg-img-repeat-fixed">
+      <p>Background com <em>repeat</em> + <em>fixed</em> (não rola com a página).</p>
+    </div>
+
+    <h2>d) Imagem de fundo que se repete somente na vertical (repeat-y)</h2>
+    <div class="demo bg-img-repeat-y">
+      <p>Background com <em>repeat-y</em> (repete só na vertical).</p>
+    </div>
+
+    <h2>e) Imagem de fundo sem repetição (no-repeat)</h2>
+    <div class="demo bg-img-no-repeat">
+      <p>Background <em>no-repeat</em>. Ajuste <code>background-position</code> se precisar.</p>
+    </div>
+
+    <h2>f) Imagem de fundo sem repetição e centralizada (no-repeat, center)</h2>
+    <div class="demo bg-img-no-repeat-center">
+      <p>Background <em>no-repeat</em> centralizado.</p>
+    </div>
+
+    <h2>g) Página amarela + imagem sem repetição, centralizada, que acompanha a rolagem (scroll)</h2>
+    <div class="demo bg-page-amarela-img-no-repeat-center-scroll">
+      <p>Prévia: fundo amarelo + imagem centralizada com <em>scroll</em>.</p>
+    </div>
+
+    <hr>
+
+    <h2>Como aplicar no &lt;body&gt; (exemplo)</h2>
+    <p class="note">
+      Para ver o efeito em toda a página, edite a tag <code>&lt;body&gt;</code> assim:
+    </p>
+    <pre><code>&lt;body class="bg-page-azul-claro"&gt;
+...
+&lt;/body&gt;</code></pre>
+  </div>
+</body>
+</html>

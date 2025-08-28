@@ -1,0 +1,61 @@
+.demo {
+  min-height: 180px;
+  margin: 16px 0;
+  border: 1px solid #ddd;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* a) Cor de fundo de uma página azul claro */
+.bg-page-azul-claro {
+  /* DICA: para aplicar na página inteira, use no <body class="bg-page-azul-claro"> */
+  background-color: #add8e6; /* lightblue */
+}
+
+/* b) Cor de fundo de um parágrafo em verde claro */
+.bg-paragrafo-verde-claro {
+  background-color: #90ee90; /* lightgreen */
+}
+
+/* c) Imagem de fundo que se repete (repeat) e NÃO acompanha rolagem (fixed) */
+.bg-img-repeat-fixed {
+  /* Substitua o caminho da imagem conforme seu projeto */
+  background-image: url('img/pattern.png');
+  background-repeat: repeat;
+  background-attachment: fixed; /* não rola com a página */
+}
+
+/* d) Imagem de fundo que se repete apenas na vertical (repeat-y) */
+.bg-img-repeat-y {
+  background-image: url('img/pattern-vertical.png');
+  background-repeat: repeat-y;
+  /* opcional: defina um tamanho para perceber melhor o repeat-y */
+  background-size: auto;
+}
+
+/* e) Imagem de fundo que não se repete (no-repeat) */
+.bg-img-no-repeat {
+  background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  /* opcional: posicione para visualizar melhor */
+  background-position: left top;
+}
+
+/* f) Imagem de fundo que não se repete e é centralizada (no-repeat, center) */
+.bg-img-no-repeat-center {
+  background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* g) Página com fundo amarelo + imagem de fundo, sem repetição, centralizada e que ACOMPANHA a rolagem (scroll) */
+.bg-page-amarela-img-no-repeat-center-scroll {
+  background-color: #ffeb3b; /* amarelo */
+  background-image: url('img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; /* acompanha a rolagem */
+  background-size: cover;
+}
