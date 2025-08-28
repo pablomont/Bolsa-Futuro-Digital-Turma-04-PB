@@ -1,0 +1,21 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
