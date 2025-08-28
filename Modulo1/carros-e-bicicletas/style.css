@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+div{
+    margin: 10px auto;
+    width: 80%;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #111;
+    border-radius: 4px;
+}
+
+.texto-amarelo{
+    color:#febe01;
+}
+
+p{
+    color: #b2b2b2;
+}
+
+button{
+    color: #332200;
+    background-color: #febe01;
+    padding: 7px 5px;
+    border: none;  
+    border-radius: 4px;
+    cursor: pointer;  
+}
+
+button:hover {
+  background-color: #ae850b; 
+}
