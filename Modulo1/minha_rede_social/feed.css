@@ -1,7 +1,7 @@
 body{
 
     background-color: #f0f2f5;
-    font: Arial;
+    font-family: Arial, sans-serif;
     border: none;
 
 }
@@ -45,6 +45,7 @@ body{
 
     margin-top: 10px;
     color: #555;
+
 }
 
 .acoes span{
@@ -53,6 +54,6 @@ body{
     cursor: pointer;
 }
 
-.acoes span :hover{
+.acoes :hover{
     text-decoration: underline;
 }
