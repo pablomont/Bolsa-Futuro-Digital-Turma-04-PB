@@ -3,8 +3,19 @@ body {
     text-align: center;
 }
 
+h2 {
+    color: white;
+}
+
+p {
+    color: #b2b2b2;
+}
+
 button{
     color: #332200;
+    background-color: #febe01;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .CorDoBotão {
@@ -12,6 +23,12 @@ button{
 }
 
 div {
+    text-align: left;
     background-color: #111;
     margin-bottom: 2%;
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
