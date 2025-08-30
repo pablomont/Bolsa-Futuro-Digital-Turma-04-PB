@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 01 - CSS</title>
+    <!-- Método interno -->
+    <style>
+        .interno {
+            color: yellow;
+            font-weight: 900;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+            background-color: green;
+        }
+    </style>
+    <!-- Método externo -->
+    <link rel="stylesheet" href="questão1.css">
+</head>
+<body>
+    <h1>Questão 01 - CSS</h1>
+
+    <!-- Inline -->
+    <p style="color: yellow; font-weight: 900; font-style: italic; font-family: Arial; background: green;">
+        I need a hero
+I'm holding out for a hero 'til the end of the night
+He's gotta be strong, and he's gotta be fast
+And he's gotta be fresh from the fight
+    </p>
+
+    <!-- Interno -->
+    <p class="interno">
+        I need a hero
+I'm holding out for a hero 'til the end of the night
+He's gotta be strong, and he's gotta be fast
+And he's gotta be fresh from the fight
+    </p>
+
+    <!-- Externo -->
+    <p class="externo">
+        I need a hero
+I'm holding out for a hero 'til the end of the night
+He's gotta be strong, and he's gotta be fast
+And he's gotta be fresh from the fight
+    </p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    background-color: #e6e6fa;
+    border: 1px solid #6a5acd;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #4b0082;
+}
+
+ul, ol {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}

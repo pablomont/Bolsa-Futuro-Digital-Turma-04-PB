@@ -1,0 +1,27 @@
+/* Cor de fundo da página */
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título h1 */
+h1 {
+    color:maroon;
+    background-color: orange;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+/* Estilo para o título h2 */
+h2 {
+    color: darkred;
+}
+
+/* Estilo para os links */
+a {
+    text-align: right;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}

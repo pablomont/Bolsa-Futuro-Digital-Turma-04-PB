@@ -1,0 +1,37 @@
+.a {
+    background-color: lightblue;
+}
+
+.b {
+    background-color: lightgreen;
+}
+
+.c {
+    background-image: url("https://ogimg.infoglobo.com.br/rioshow/24884446-8f3-e73/FT1086A/deadpool-primeiro-filme.jpeg.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.d {
+    background-image: url("https://ogimg.infoglobo.com.br/rioshow/24884446-8f3-e73/FT1086A/deadpool-primeiro-filme.jpeg.jpg");
+    background-repeat: repeat-y;
+}
+
+.e {
+    background-image: url("https://ogimg.infoglobo.com.br/rioshow/24884446-8f3-e73/FT1086A/deadpool-primeiro-filme.jpeg.jpg");
+    background-repeat: no-repeat;
+}
+
+.f {
+    background-image: url("https://ogimg.infoglobo.com.br/rioshow/24884446-8f3-e73/FT1086A/deadpool-primeiro-filme.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.g {
+    background-color: yellow;
+    background-image: url("https://ogimg.infoglobo.com.br/rioshow/24884446-8f3-e73/FT1086A/deadpool-primeiro-filme.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
