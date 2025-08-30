@@ -1,0 +1,19 @@
+body {
+    background-color: #e6e6fa;
+    border-color: #6a5acd;
+}
+h1, h2 {
+    color: #4b0082;
+    margin: 20px;
+}
+div {
+    margin: 30px 10px 30px 400px;
+    width: 600px;
+    background-color: white;
+    border: #6a5acd solid;
+    border-width: 2px;
+}
+img {
+    width: 200px;
+    margin: 5px 20px 5px 20px;
+}

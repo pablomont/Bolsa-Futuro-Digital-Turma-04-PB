@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Testando Propriedades de Background</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    /* Ajustes para visualização */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      padding: 30px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .full-height {
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="bg-azul-claro full-height">
+    <h2>a. Fundo da página azul claro</h2>
+  </section>
+
+  <section>
+    <h2>b. Parágrafo com fundo verde claro</h2>
+    <p class="bg-verde-claro">Este parágrafo tem um fundo verde claro.</p>
+  </section>
+
+  <section class="bg-imagem-repeat-fixed full-height">
+    <h2>c. Imagem de fundo com repeat em qualquer direção e fixo</h2>
+    <p>Role a página para ver que a imagem de fundo não se move.</p>
+  </section>
+
+  <section class="bg-imagem-repeat-y full-height">
+    <h2>d. Imagem de fundo com repeat somente vertical</h2>
+    <p>A imagem se repete apenas de cima para baixo.</p>
+  </section>
+
+  <section class="bg-imagem-no-repeat full-height">
+    <h2>e. Imagem de fundo sem repetição</h2>
+    <p>A imagem aparece uma única vez.</p>
+  </section>
+
+  <section class="bg-imagem-centralizada full-height">
+    <h2>f. Imagem centralizada e sem repetição</h2>
+    <p>A imagem está posicionada no centro.</p>
+  </section>
+
+  <section class="bg-amarelo-img-scroll full-height">
+    <h2>g. Fundo amarelo com imagem centralizada, sem repetição, com scroll</h2>
+    <p>Role a página para ver que a imagem acompanha a rolagem.</p>
+  </section>
+
+</body>
+</html>

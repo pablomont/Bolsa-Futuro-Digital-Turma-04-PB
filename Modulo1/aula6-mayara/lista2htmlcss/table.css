@@ -1,0 +1,31 @@
+body {
+  background-color: #f0f8ff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #add8e6;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #add8e6;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0eaff;
+}

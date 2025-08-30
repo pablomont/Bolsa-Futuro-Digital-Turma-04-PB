@@ -1,0 +1,45 @@
+/* a. Cor de fundo de uma página azul claro */
+.bg-azul-claro {
+  background-color: lightblue;
+}
+
+/* b. Cor de fundo de um parágrafo em verde claro */
+.bg-verde-claro {
+  background-color: lightgreen;
+}
+
+/* c. Imagem de fundo que se repete em qualquer direção e é fixa */
+.bg-imagem-repeat-fixed {
+  background-image: url('https://www.sabornamesa.com.br/media/k2/items/cache/7a0c9d8bd9eadf879f0011817e8c2396_XL.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* d. Imagem de fundo que se repete apenas na vertical */
+.bg-imagem-repeat-y {
+  background-image: url('https://bakeandcakegourmet.com.br/uploads/site/receitas/bolo-de-chocolate-facil-e-barato-rspxk8nc.jpg');
+  background-repeat: repeat-y;
+}
+
+/* e. Imagem de fundo que não se repete */
+.bg-imagem-no-repeat {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQyxxVLnwOPkFdQ_-fpcgITNkSTb6vBY1l77RaVuNby6kxlUmQe-JrKxHOMU3ovpXHFm8HNrxkAl3rJX7sp6hiDjsgLjICl4Xo0TWsHAve7xGqd0Uzpb8raz7fLws1c4iGZuYK9G_no5vHAVgM2SE9hE0CDcvi6WPoAG9-ckRygzFDosEqatjYh-SL/w640-h426/receita-de-bolo-simples-fofinho-1.jpg');
+  background-repeat: no-repeat;
+}
+
+/* f. Imagem de fundo centralizada que não se repete */
+.bg-imagem-centralizada {
+  background-image: url('https://guiadacozinha.com.br/wp-content/uploads/2019/10/bolo-decorado-56141.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+/* g. Fundo amarelo com imagem centralizada, sem repetição, com scroll */
+.bg-amarelo-img-scroll {
+  background-color: yellow;
+  background-image: url('https://www.minhareceita.com.br/app/uploads/2025/03/R0325-DR-bolo-de-cafe-1.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}

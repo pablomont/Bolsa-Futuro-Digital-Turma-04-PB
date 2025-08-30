@@ -1,0 +1,22 @@
+#a, #a1 {
+    font-family: Arial;
+    color: red;
+}
+#b, #b1 {
+    font-family: 'Times New Roman';
+    font-size: 22px;
+    color: green;
+}
+#c, #c1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
+#d, #d1 {
+    color: yellow;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
+}

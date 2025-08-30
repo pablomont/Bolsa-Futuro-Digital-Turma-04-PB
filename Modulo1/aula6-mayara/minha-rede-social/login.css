@@ -37,5 +37,5 @@ button {
     color: white;
 }
 button:hover {
-    color: #08023e;
+    background-color: #08023e;
 }

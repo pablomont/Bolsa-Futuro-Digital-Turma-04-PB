@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.hoje {
+    color: lightsalmon;
+}
+.amanha {
+    color: lightskyblue;
+}
+.cor {
+    color: darkred;
+}
+.color {
+    color: darkblue;
+}
+a {
+    text-decoration: none;
+}
+h2 a {
+    color: lightseagreen;
+}
+p {
+    font-size: 20px;
+}
+h1, a{
+    color: white;
+}
+.filmes-container {
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
