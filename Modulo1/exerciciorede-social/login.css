@@ -1,0 +1,38 @@
+h1{
+    color:#333;
+}
+
+.loginbox{
+    background-color: white;
+    border-color: #ddd;
+    width: 300px;
+    margin: 20px auto;
+    border: 1px;
+    border-radius: 8px;
+
+}
+
+.input{
+    border-color: #ccc;
+    width: 900px;
+    padding: 8px;
+    margin: 6px;
+    border: 1px;
+    border-radius: 4px;
+}
+
+button{
+    color: #174584;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    color: #08082e;
+}
+.container{
+    margin-top: 80px;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
