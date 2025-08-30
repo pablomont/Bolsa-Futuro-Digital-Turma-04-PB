@@ -1,0 +1,49 @@
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.topo {
+  background-color: #072348;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.post {
+  background: white;
+  width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.usuario {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.conteudo {
+  margin: 10px 0;
+}
+
+.imagem {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.acoes {
+  margin-top: 10px;
+  color: #555;
+}
+
+.acoes span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.acoes span:hover {
+  text-decoration: underline;
+}

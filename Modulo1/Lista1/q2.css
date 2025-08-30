@@ -1,0 +1,9 @@
+.bg-a { background-color: lightblue; }                     
+.bg-b { background-color: lightgreen; }        
+
+.bg-c { background: url('https://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeghttps://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeg') repeat fixed; }  
+
+.bg-d { background: url('https://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeg') repeat-y; }     
+.bg-e { background: url('https://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeg') no-repeat; }     
+.bg-f { background: url('https://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeg') no-repeat center; } 
+.bg-g { background: yellow url('https://static.vecteezy.com/ti/fotos-gratis/t2/38811271-ai-gerado-lindo-fundo-para-jardim-primavera-festa-publicidade-gratis-foto.jpeg') no-repeat center scroll; }

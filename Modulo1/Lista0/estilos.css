@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 24px; line-height: 1.5; }
+header { margin-bottom: 16px; }
+nav a { text-decoration: none; margin-right: 8px; }
+main { max-width: 900px; }
+img { display: block; margin: 8px 0; max-width: 100%; height: auto; }
+ul { padding-left: 20px; }
+footer { margin-top: 24px; border-top: 1px solid #ccc; padding-top: 12px; }
