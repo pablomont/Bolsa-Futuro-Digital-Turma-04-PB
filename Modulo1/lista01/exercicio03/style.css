@@ -1,0 +1,22 @@
+.geral{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+.b{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: green;
+}
+.c{
+    color:blue;
+    font-family: Comic sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.d{
+    color:yellow;
+    font-style: bold;
+    font-size: 14px;
+    border-width: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
