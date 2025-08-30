@@ -13,13 +13,16 @@ body{
 }
 .acoes{
     color: #555;
-    text-decoration: underline;
     margin-top: 10px;
     cursor:pointer;
     margin-right: 15px;
     background-color: white;
     border:none;
 
+}
+
+.acoes:hover{
+    text-decoration: underline;
 }
 
 .post{
