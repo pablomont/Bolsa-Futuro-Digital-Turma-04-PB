@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+}
+p{
+    background-color: greenyellow;
+}
+.imagemfixa{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWRYQaNMWZoM7Nnfj0rbpDSbpdcNxJj2LFIgcpb9UR1w&s&ec=73068120');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.imagemrepetenavertical{
+    background-image: url('https://www.sobraci.com.br/img/raca/pomsky-299.jpg');
+    background-repeat: repeat-y;
+}
+.imagemquenaoserepete{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY6bcYZPvpa8IYNqBEDxj1iwubUWk5dJWW3Q&s');
+    background-repeat: no-repeat;
+}
+.imagemquenaoserepetecentralizada{
+    background-image: url('https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZjBMkSR63oeZNC_oW_3yec6nQPTD2N1XfI1KKk-vEgPsxy8126T9D-1nTXV-sUJ2g8czYIL4l4_tSiWX9s6CtNpBJf6W8rHutpo.jpg?r=fc0');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagemscroll{
+    background-image: url('https://observatoriodocinema.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=904&height=508&format=.jpg&quality=91&imagick=uploads-observatoriodocinema.seox.com.br/2025/05/Parte-do-elenco-de-Game-of-Thrones-1024x596.jpg');
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
