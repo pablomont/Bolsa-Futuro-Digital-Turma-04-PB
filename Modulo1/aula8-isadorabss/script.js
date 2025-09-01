@@ -7,11 +7,11 @@ let altura = prompt("Digite sua altura (m): ");
 let alturaNum = parseFloat(altura);
 
 let imc = (pesoNum/(alturaNum*alturaNum));
-console.log(imc);
+console.log("Seu IMC é:",imc);
 
 if(imc > 25){
-    console.log("Imc acima do normal.");
+    console.log("\nImc acima do normal.");
 } else {
-    console.log("Imc normal.");
+    console.log("\nImc normal.");
 }
 process.exit();
