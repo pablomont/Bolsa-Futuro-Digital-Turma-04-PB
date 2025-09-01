@@ -1,0 +1,18 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+h1{
+    color: maroon;
+    background-color: goldenrod;
+    text-decoration: underline;
+}
+h2{
+    color:darkred;
+}
+button{
+    color: purple;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: lightgoldenrodyellow;
+}
