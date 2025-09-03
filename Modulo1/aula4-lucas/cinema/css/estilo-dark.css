@@ -6,20 +6,20 @@ body {
 }
 
 .hoje {
-    color: lightsalmon; /* vermelho visível no escuro */
+    color: rgb(248, 70, 0); /* vermelho visível no escuro */
 }
 
 .amanha {
-    color: lightskyblue; /* azul visível no escuro */
+    color: rgb(240, 0, 0); /* azul visível no escuro */
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 158, 250);
 }
 
 h2 a {
-    color: lightseagreen;
+    color: rgb(71, 0, 112);
 }
 
 p {

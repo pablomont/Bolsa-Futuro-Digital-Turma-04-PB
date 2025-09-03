@@ -6,11 +6,11 @@ body {
 }
 
 .hoje {
-    color: lightsalmon; /* vermelho visível no escuro */
+    color: rgb(26, 3, 231); /* vermelho visível no escuro */
 }
 
 .amanha {
-    color: lightskyblue; /* azul visível no escuro */
+    color: rgb(238, 234, 2); /* azul visível no escuro */
 }
 
 a {
