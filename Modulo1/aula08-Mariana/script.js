@@ -2,15 +2,15 @@ const prompt = require('prompt-sync')
 
 let idade = prompt("digie sua idade")
 
-function calculadora (operando1, operandor2, operando3) {
-    let resultado
+function calculadora (operando1, operando2, operando3) {
+    let resultado;
 
-if ( operador ==="+" ) {
-    resultado = operando1 + operandor2 ;
-} else if (operador === *-*) {
-    resultado = operando1 + operandor2 ;
-} else if ( operador === "*")
-    resultado = operando1 + operandor2 ;
+if (operador ==="+" ) {
+    resultado = operando1 + operando2;
+} else if ( operador === "-" ) {
+    resultado = operando1 - operando2;
+} else if ( operador === "*") {
+    resultado = operando1 * operando2;
 } else if ( operador === "/" ) {
     if ( operandor2 !== 0) {
         resultado = operando1 / operando2;
@@ -22,3 +22,9 @@ if ( operador ==="+" ) {
 }
 
 return resultado;
+}
+console.log(calculadora(10, 5, "+"));
+console.log(calculadora(10, 5, "-"));
+console.log(calculadora(10, 5, "*"));
+console.log(calculadora(10, 5, "/"));
+console.log(calculadora(10, 0, "/"));
