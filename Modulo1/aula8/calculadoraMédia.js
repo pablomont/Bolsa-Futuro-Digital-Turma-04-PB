@@ -1,17 +1,20 @@
-const prompt = require('prompt-sync')();
-console.log("Calculadora de Média Escolar");
+const prompt = require('prompt-sync')(); // sempre retorna uma string 
+console.log("Cálculo de Média Escolar");
 
-const massaString = prompt("Digite o seu peso em massa em kg (exemplo:100):");
-const massa = parseFloat(massaString);
+let nota1String = prompt("Informe a primeira nota: ");
+let nota1 = parseFloat(nota1String.replace(",", "."));
 
-const alturaString = prompt("Informe a sua altura:");
-const altura = parseFloat(alturaString);
+let nota2String = prompt("Informe a segunda nota: ");
+let nota2 = parseFloat(nota2String.replace(",", "."));
 
-const imc = massa/(altura*altura);
+let media = (nota1 + nota2) / 2;
 
-if (imc > 25){
-    prompt("IMC ACIMA DO NORMAL")
+console.log("A média do aluno é: " + media.toFixed(2));
 
+if (media >= 7) {
+    console.log("Situação: Aprovado");
+} else if (media >= 5) {
+    console.log("Situação: Recuperação");
 } else {
-    prompt("IMC NORMAL")
+    console.log("Situação: Reprovado");
 }
