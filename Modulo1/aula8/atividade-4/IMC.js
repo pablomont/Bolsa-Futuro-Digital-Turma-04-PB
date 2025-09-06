@@ -9,7 +9,7 @@ if (isNaN(peso) || isNaN(altura) || altura <= 0) {
 }
 
 let imc = peso / (altura * altura);
-console.log(`Seu IMC é: ${imc.toFixed(2)}`);
+console.log(`Seu IMC é:`);
 
 if (imc < 18.5) {
     console.log("Classificação: Abaixo do peso");
