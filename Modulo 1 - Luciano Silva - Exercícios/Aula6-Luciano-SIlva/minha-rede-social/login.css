@@ -1,0 +1,47 @@
+/* Estilo global */
+body {
+    background-color:rgb(192, 192, 192);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Destaque */
+
+.container {
+    color: rgb(27, 76, 100);
+    background-color:rgb(187, 187, 187);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-box {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    margin: 0,1%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button {
+    color: rgb(253, 254, 255);
+    text-decoration: none;
+    background-color: rgb(37, 78, 192);
+}   
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Títulos */
+h1 {
+    color: #333
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+}

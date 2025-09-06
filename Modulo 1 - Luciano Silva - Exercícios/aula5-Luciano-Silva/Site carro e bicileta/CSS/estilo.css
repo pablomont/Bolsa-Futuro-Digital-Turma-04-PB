@@ -1,0 +1,54 @@
+/* Estilo global */
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+/* Destaque */
+.destaque {
+    color: rgb(114, 116, 117);
+    background-color: rgb(0, 0, 0);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+}
+.destaque2 {
+    color: rgb(114, 116, 117);
+    background-color: rgb(228, 231, 15);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+}
+span {
+            color: yellow;
+        }
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+h2 a {
+    color: rgb(216, 203, 20);
+}
+
+/* Estilo dos filmes */
+p {
+    font-size: 20px;
+}
+
+.hoje {
+    color: lightsalmon;
+}
+
+.amanha {
+    color: rgb(12, 26, 148);
+}
+
+/* Títulos */
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+ body {
+     background-color: black;
+ }
+
+ a, h1 {
+    color: white;
+ }
+
+ a:hover{
+    color: yellow;
+ }
+ 

@@ -1,0 +1,35 @@
+/* Estilo global */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 a {
+    color: lightseagreen;
+}
+
+/* Estilo dos filmes */
+p {
+    font-size: 20px;
+}
+
+.hoje {
+    color: lightsalmon;
+}
+
+.amanha {
+    color: lightskyblue;
+}
+
+/* Títulos */
+h1 {
+    color: white;
+}

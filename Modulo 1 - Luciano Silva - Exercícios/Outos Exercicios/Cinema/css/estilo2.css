@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(0, 0, 0)
+}
+
+a, h2 {s
+    text-align: center;
+}
+
+a, h1 {
+    color: white
+}
+
+ a:hover {
+    color: red
+ }
