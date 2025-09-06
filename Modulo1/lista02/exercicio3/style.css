@@ -1,0 +1,29 @@
+body {
+    background-color: #f0f8ff;
+}
+
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #add8e6; 
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,tr, td {
+    border: 1px solid #cccccc; 
+}
+
+td {
+    padding: 10px; 
+}
+th{
+    background-color: #e0eaff;
+    text-align: left;
+    padding: 5px;
+}
