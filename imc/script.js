@@ -1,12 +1,13 @@
 const prompt = require('prompt-sync')();
 
-let peso = prompt("Digite o seu peso:  ")
-let altura = prompt("Digite a sua altura: ")
-let imc = peso/(altura*altura)
-console.log("O resultado do seu imc foi: ", imc)
+let peso = prompt("Informe seu peso: ");
+let altura = prompt("Informe sua altura: ");
+let imc = peso / (altura * altura);
+console.log("O resultado do seu IMC é: ", imc);
 
-if(imc>25){
-    console.log("Imc acima do normal")
-}else{
-    console.log("Imc normal")
+if(imc>25)
+{
+    console.log("IMC acima do normal");
+} else {
+    console.log("IMC normal");
 }

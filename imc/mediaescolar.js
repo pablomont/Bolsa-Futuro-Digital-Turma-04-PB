@@ -1,13 +1,14 @@
 const prompt = require('prompt-sync')();
 
-let nota1=prompt("Informe a primeira nota: ")
-let nota2=prompt("Informe a segunda nota: ")
-let media=(nota1+nota2)/2
+let nota1 = parseFloat(prompt("Informe a nota 1: "));
+let nota2 = parseFloat(prompt("Informe a nota 2: "));
+let media = (nota1 + nota2) / 2;
+console.log("A sua média é: ", media);
 
-if (media>7){
-    console.log("Você está aprovado. ")
-}else if(media<=6.9 && media==5){
-    console.log("Você está na recuperação. ")
-}else{
-    console.log("Você está reprovado.")
+if (media >= 7) {
+    console.log("Aprovado");
+} else if (media >= 5 && media < 7) {
+    console.log("Recuperação");
+} else {
+    console.log("Reprovado");
 }
