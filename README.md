@@ -101,12 +101,12 @@ git checkout nome-sobrenome
 ```bash
 cd Bolsa-Futuro-Digital-Turma-04-PB/modulo1
 ```
-## 3 - Caso não exista, crie uma pasta para a aula atual e entre na mesma
+## 3 - Caso não exista, crie uma pasta para a aula atual e entre na mesma, exemplo: 
 ```bash
 mkdir aula4
 cd aula4
 ```
-## 4 - git add, commit e push
+## 4 - Dentro da pasta, faça suas criações/alterações de arquivos e depois executem os comandos git add, git commit e git push
 ```bash
 git add .
 git commit -m "mensagem explicativa"
