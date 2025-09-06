@@ -99,7 +99,7 @@ git checkout nome-sobrenome
 ```
 ## 2 - Entre na pasta do modulo corrente
 ```bash
-cd Bolsa-Futuro-Digital-Turma-04-PB/modulo1
+cd Bolsa-Futuro-Digital-Turma-04-PB/modulo2
 ```
 ## 3 - Caso não exista, crie uma pasta para a aula atual e entre na mesma, exemplo: 
 ```bash
