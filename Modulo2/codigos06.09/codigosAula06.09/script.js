@@ -1,19 +1,20 @@
 const prompt = require('prompt-sync')();
 
-let diaDaSemana = parseInt(prompt("Informe o dia da semana (1 a 7): "));
+console.log("Calculando IMC");
 
-switch (diaDaSemana) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log("Dia útil.");
-        break;
-    case 6:
-    case 7:
-        console.log("Fim de semana.");
-        break;
-    default:
-        console.log("Insira um dado válido.");
+let peso = parseFloat(prompt("Digite o peso (kg): "));
+let altura = parseFloat(prompt("Digite sua altura (m): "));
+
+function calcularIMC(peso, altura) {
+    return peso / (altura * altura);
+}
+
+let resultado = calcularIMC(peso, altura);
+
+console.log("Seu IMC é:", resultado);
+
+if (resultado > 25) {
+    console.log("IMC ACIMA DO NORMAL\n");
+} else {
+    console.log("IMC NORMAL");
 }
