@@ -1,4 +1,15 @@
-const prompt = require('prompt-sync')();
+function verificarTruthy(valor){
+    if(valor){
+        console.log(`${valor} é Truthy`)
+    } else{
+        console.log(`${valor} é Falsy`)
+    }
+}
 
-let valor = prompt("Insira o valor: ");
-console.log(Boolean(valor));
+verificarTruthy (false)
+verificarTruthy (0)
+verificarTruthy (NaN)
+verificarTruthy (null)
+verificarTruthy (undefined)
+
+
