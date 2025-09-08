@@ -1,7 +1,7 @@
 const prompt= require("prompt-sync")();
 
 function Par(numero){
-    if (numero%2===0){
+    if (numero%2==0){
         return true;
     }else{
         return false;
