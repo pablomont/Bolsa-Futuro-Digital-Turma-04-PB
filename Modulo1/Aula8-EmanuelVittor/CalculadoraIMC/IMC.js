@@ -3,9 +3,9 @@ const prompt = require('prompt-sync')()
 let peso, altura, imc
 
 console.log ("Olá!")
-peso = prompt("Por favor, digite sua altura:")
+peso = prompt("Por favor, digite seu peso:")
 peso = parseFloat(peso)
-altura = prompt("Por favor, digite seu peso:")
+altura = prompt("Por favor, digite sua altura:")
 altura = parseFloat(altura)
 
 imc = peso / (altura * altura)
