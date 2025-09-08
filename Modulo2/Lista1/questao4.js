@@ -1,6 +1,5 @@
 function tipoDeDado(dado){
-    console.log(typeof(dado))
-    return true
+    return console.log(`O tipo do dado ${dado} é ${typeof(dado)}`)
 }
 
 tipoDeDado("oi")
