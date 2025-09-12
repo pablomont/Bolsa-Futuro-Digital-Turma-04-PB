@@ -14,9 +14,9 @@ function verificarGangorra(P1, C1, P2, C2) {
   var esquerda = P1 * C1;
   var direita = P2 * C2;
 
-  if (esquerda === direita) return "⚖️ Gangorra equilibrada";
-  if (esquerda > direita) return "⬅️ Gangorra desce para a esquerda";
-  return "➡️ Gangorra desce para a direita";
+  if (esquerda === direita) return "Gangorra equilibrada";
+  if (esquerda > direita) return "Gangorra desce para a esquerda";
+  return "Gangorra desce para a direita";
 }
 
 var P1 = parseInt(prompt("Digite o peso da criança à esquerda (P1): "));
@@ -25,7 +25,7 @@ var P2 = parseInt(prompt("Digite o peso da criança à direita (P2): "));
 var C2 = parseInt(prompt("Digite o comprimento do lado direito (C2): "));
 
 if (isNaN(P1) || isNaN(C1) || isNaN(P2) || isNaN(C2)) {
-  console.log("❌ Entrada inválida! Digite apenas números inteiros.");
+  console.log("Entrada inválida! Digite apenas números inteiros.");
   process.exit();
 }
 
