@@ -20,7 +20,7 @@ function isEquilibrada(p1,c1,p2,c2){
     else{
         console.log("Valor não suportado.")
     }
-
+    process.exit()
 }
 
 isEquilibrada()
