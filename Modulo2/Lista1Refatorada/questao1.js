@@ -1,29 +1,38 @@
 const prompt = require("prompt-sync")();
 
-function calcularSituacao() {
+//1ª
+function calcularMedia() {
   const nota1 = parseFloat(prompt("Digite a primeira nota: "));
   const nota2 = parseFloat(prompt("Digite a segunda nota: "));
 
   if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
     console.log("Notas inválidas. Ambas devem estar entre 0 e 10.");
-    return
+    return null; 
   }
 
-  const media = (nota1 + nota2) / 2;
+  return (nota1 + nota2) / 2;
+}
 
+//2ª
+function obterCriterios() {
   const notaAprovacao = parseFloat(prompt("Digite a nota mínima para aprovação: "));
   const notaRecuperacao = parseFloat(prompt("Digite a nota mínima para recuperação: "));
+  return { notaAprovacao, notaRecuperacao };
+}
 
-  let situacao = "";
-
+//3ª
+function verificarSituacao(media, notaAprovacao, notaRecuperacao) {
   if (media >= notaAprovacao) {
-    situacao = "APROVADO";
+    return "APROVADO";
   } else if (media >= notaRecuperacao) {
-    situacao = "RECUPERAÇÃO";
+    return "RECUPERAÇÃO";
   } else {
-    situacao = "REPROVADO";
+    return "REPROVADO";
   }
+}
 
+//4ª
+function exibirResultado(media, situacao) {
   console.log("\n=== MODO DE EXIBIÇÃO ===\n1- SIMPLES\n2- DETALHADO");
   const escolha = prompt("Escolha o modo de exibição (1 ou 2): ");
 
@@ -33,12 +42,18 @@ function calcularSituacao() {
     console.log(`\nMédia: ${media}`);
     console.log(`Situação: ${situacao}`);
   } else {
-    console.log("Opção de exibição inválida.");
+    console.log("Opção inválida.");
   }
 }
 
-
-for (let i = 1; i <= 3; i++){
-    console.log(`\n=== ALUNO ${i} ===`)
-    calcularSituacao();
+//5ª
+function main() {
+  const media = calcularMedia()
+  
+  const criterios = obterCriterios();
+  const situacao = verificarSituacao(media, criterios.notaAprovacao, criterios.notaRecuperacao);
+  
+  exibirResultado(media, situacao);
 }
+
+main();
