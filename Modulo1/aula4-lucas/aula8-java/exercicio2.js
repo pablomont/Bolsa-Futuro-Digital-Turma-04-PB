@@ -1,7 +1,7 @@
 function isTruthy(valor) {
   return !!valor; 
 }
-// Exemplos de uso:
+
 console.log(isTruthy(10));         // Saída: true (10 é truthy)
 console.log(isTruthy("Olá"));      // Saída: true ("Olá" é truthy)
 console.log(isTruthy([1, 2]));     // Saída: true (um array não vazio é truthy)

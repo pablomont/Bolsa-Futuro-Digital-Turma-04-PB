@@ -1,24 +1,48 @@
+const prompt = require('prompt-sync')();
 
-const prompt = require('prompt-sync')()
+function obterNotasAluno(nomeAluno) {
+    var notas = [];
+    for (let i = 0; i < 3; i++) {
+        const resposta = prompt(`Digite a ${i + 1}ª nota de ${nomeAluno}:`);
+        const nota = parseFloat(resposta);
 
-let nota1 = parseFloat(prompt('Informe sua primeira nota: '));
-let nota2 = parseFloat(prompt('Informe sua segunda nota: '));
-
-let media  = (nota1 + nota2) / 2;
-
-console.log('\nA média é ' + media + "\n");
-
-if(media >= 7){
-    
-    console.log("Aprovado por média!")
+        if (isNaN(nota) || nota < 0 || nota > 10) { 
+            console.error("Entrada inválida. Por favor, digite um número entre 0 e 10.");
+            process.exit(1); 
+        }
+        notas.push(nota);
+    }
+    return notas;
 }
 
-else if(media >= 5 && media <= 6.9){
 
-    console.log("Recuperação.")
+function calcularSituacao(notas) {
+    const somaNotas = notas.reduce((soma, nota) => soma + nota, 0);
+    const media = somaNotas / notas.length;
+
+    var situacao;
+    if (media >= 7.0) {
+        situacao = "aprovado";
+    } else if (media >= 5.0) {
+        situacao = "recuperação";
+    } else {
+        situacao = "reprovado";
+    }
+    return { media: media, situacao: situacao };
 }
 
-else{
 
-    console.log("Reprovado.")
+function main() {
+    const alunos = ["Aluno 1", "Aluno 2", "Aluno 3"];
+    for (const nomeAluno of alunos) {
+        console.log(`\n--- ${nomeAluno} ---`);
+        const notasDoAluno = obterNotasAluno(nomeAluno);
+        const resultado = calcularSituacao(notasDoAluno);
+
+        console.log(`Média: ${resultado.media.toFixed(2)}`);
+        console.log(`Situação: ${resultado.situacao}`);
+    }
 }
+
+
+main();
