@@ -5,10 +5,14 @@ function calcularMedia(n1, n2, n3) {
   return (n1 + n2 + n3) / 3;
 }
 
-function verificarSituacao(media) {
-  if (media >= 7) return "Aprovado";
-  if (media >= 5) return "Recuperação";
-  return "Reprovado";
+
+  function verificarSituacao(media, notaAprovacao, notaRecuperacao) {
+  var notaAprovacao = prompt(`Digite a média mínima para aprovação: ${notaAprovacao}`)
+  var notaRecuperacao = prompt(`Digite a média mínima para recuperação: ${notaRecuperacao} `)
+  if(media >= notaAprovacao) return "Aprovado"
+  if(media >= notaRecuperacao) return "Recuperação"
+  else 
+    return "Reprovado";
 }
 
 function lerNotasAluno(nomeAluno) {
@@ -25,6 +29,8 @@ function lerNotasAluno(nomeAluno) {
   }
   return notas;
 }
+
+console.log("======SISTEMA DE AVALIAÇÃO=====");
 
 for (var i = 1; i <= 3; i++) {
   console.log(`Aluno ${i}`);
