@@ -2,7 +2,7 @@ const prompt = require('prompt-sync')();
 
 function obterNotasAluno(nomeAluno) {
     var notas = [];
-    for (let i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++) {
         const resposta = prompt(`Digite a ${i + 1}ª nota de ${nomeAluno}:`);
         const nota = parseFloat(resposta);
 
