@@ -1,48 +1,82 @@
 const prompt = require('prompt-sync')();
 
-n1 = 0
-n2 = 0
-NotaApro = 7
-NotaRec = 5
-m = 0
+const NotaAprovado = 7
+const NotaRecuperacao = 5
 
 function InputNotas(){
     while(true){
-        n1 = parseFloat(prompt("Digite a primeira nota:"))
+        n = parseFloat(prompt("Digite a primeira nota:"))
         
-        if (n1>=0 && n1<=10){
+        if (n>=0 && n<=10){
             break
         } else{
             console.log("Nota inválida. Tente novamente")
         }
     }
-    while(true){
-        n2 = parseFloat(prompt("Digite a segunda nota:"))
-        
-        if (n2>=0 && n2<=10){
-            break
-        } else{
-            console.log("Nota inválida. Tente novamente um nota de 0 a 10.")
+    return n
+}
+
+function Conceitos(med){
+    if(med >= 9){
+        return "A"
+    } else if (med >= 7){
+        return "B"
+    } else if (med >= 5){
+        return "C"
+    } else if (med >= 3){
+        return "D"
+    } else {
+        return "E"
+    }
+}
+
+function PrintSituacao(med,sit){
+    console.log("=== MODO DE EXIBIÇÃO ===")
+    console.log("1 - Simples\n2 - Detalhado\n3 - Conceito")
+
+    var opc = 0
+    while(opc != 1 && opc != 2 && opc != 3){
+        opc = prompt("Escolha o modo de exibição (1,2 ou 3):")
+        if(opc != "1" && opc != "2" && opc != "3"){
+            console.log("ERRO: Digite apenas 1,2 ou 3")
         }
     }
-    return (n1+n2)/2
+    switch(opc){
+        case "1":
+            console.log("Situação:", sit)
+            break
+        case "2":
+            console.log(`Média: ${med} - Situação: ${sit}`)
+            break
+        case "3":
+            console.log(`Média: ${med} - Conceito: ${Conceitos(med)}`)
+    }
 }
 
-function VerificaSituacao(med,NotaApro, NotaRec){
-)
+function VerificaSituacao(NotaApro, NotaRec){
+    n1 = InputNotas()
+    n2 = InputNotas()
+    med = (n1+n2)/2
 
-    var sit
-   if(med >=NotaApro){
-    sit = "APROVADO"
-   } else if (med >=NotaRec){
-    sit = "RECUPERAÇÃO"
-   } else{
-    sit = "REPROVADO"
-   }
+    var sit 
+    if(med >=NotaApro){
+        sit = "APROVADO"
+    } else if (med >=NotaRec){
+        sit = "RECUPERAÇÃO"
+    } else{
+        sit = "REPROVADO"
+    }
 
-   console.log(n1)
-   console.log(`Média: ${med} - Situação: ${sit}`)
+   PrintSituacao(med, sit)
 }
 
-med = InputNotas()
-VerificaSituacao(med,NotaApro, NotaRec)
+function Verifica3Alunos(){
+    console.log("=== Aluno 1 ===")
+    VerificaSituacao(NotaAprovado, NotaRecuperacao)
+    console.log("=== Aluno 2 ===")
+    VerificaSituacao(NotaAprovado, NotaRecuperacao)
+    console.log("=== Aluno 3 ===")
+    VerificaSituacao(NotaAprovado, NotaRecuperacao)
+}
+
+Verifica3Alunos()
