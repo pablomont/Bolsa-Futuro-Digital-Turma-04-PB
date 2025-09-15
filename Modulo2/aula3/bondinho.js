@@ -27,7 +27,7 @@ let M = parseInt(input.split("\n")[1])
 if (A < 1 || A > 50 || M < 1 || M > 50) {
     console.log("Entrada inválida. Os valores devem estar entre 1 e 50.");
 } else {
-    const totalPessoas = A + A;
+    const totalPessoas = A + M;
 
     if (totalPessoas <= 50) {
         console.log("S");
