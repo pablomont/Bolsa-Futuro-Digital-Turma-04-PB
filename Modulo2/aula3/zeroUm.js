@@ -13,3 +13,19 @@ if (A !== B && A !== C) {
 } else {
     console.log('*');
 } 
+
+/*
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").match(/\S/g);
+const [a, b, c] = input
+
+if (A !== B && A !== C) {
+    console.log('A');
+} else if (B !== A && B !== C) {
+    console.log('B');
+} else if (C !== A && C !== B) {
+    console.log('C');
+} else {
+    console.log('*');
+}
+    */
