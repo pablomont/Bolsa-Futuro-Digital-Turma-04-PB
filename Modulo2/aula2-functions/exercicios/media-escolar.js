@@ -47,14 +47,13 @@ function mediaEscolar(minimos) {
 
 function displayValues(situacao, media) {
   console.log("== MODO DE EXIBIÇÃO ==");
-  while (true) {
+
     var tipo = parseInt(prompt("Escolha o modo de exibição (1, 2 ou 3): "));
     if (tipo === 1) {
       console.log(`situação: ${situacao}`);
-      break
     } else if (tipo === 2) {
       console.log(`Média: ${media} - situação: ${situacao}`);
-      break
+
     } else if (tipo === 3) {
         if ((9 <= media) && (media <= 10)){
             console.log(`Média: ${media} - conceito: A`);
@@ -67,13 +66,11 @@ function displayValues(situacao, media) {
         } else if ((0 <= media) && (media < 3)) {
             console.log(`Média: ${media} - conceito: F`);
         }
-        break
+       
     }  else {
         console.log("X ERRO: digite apenas 1 ou 2")
     }
   }
-}
-
 const prompt = require("prompt-sync")();
 
 let minimos = sistemaAvaliacao()
