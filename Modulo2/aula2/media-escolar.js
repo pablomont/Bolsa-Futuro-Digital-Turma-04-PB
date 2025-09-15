@@ -78,3 +78,22 @@ function lerAluno(numeroAluno, notaAprovacao, notaRecuperacao) {
         process.exit();
     }
 }
+
+console.log("=== SISTEMA DE AVALIAÇÃO ===");
+
+const notaAprovacao = parseFloat(prompt("Digite a média mínima para aprovação: "));
+const notaRecuperacao = parseFloat(prompt("Digite a média mínima para recuperação: "));
+
+function validarLimiteMedia(limite, descricao) {
+    if (isNaN(limite) || limite < 0 || limite > 10){
+        console.log(`Entrada iválida para ${descricao}: digite um número de 0 a 10.`);
+        process.exit();
+    }
+}
+
+validarLimiteMedia(notaAprovacao, "média mínima para aprovação");
+validarLimiteMedia(notaRecuperacao, "média mínima para recuperação");
+
+lerAluno(1, notaAprovacao, notaRecuperacao);
+lerAluno(2, notaAprovacao, notaRecuperacao);
+lerAluno(3, notaAprovacao, notaRecuperacao);
