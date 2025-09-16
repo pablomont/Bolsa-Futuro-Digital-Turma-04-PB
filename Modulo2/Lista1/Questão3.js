@@ -1,9 +1,9 @@
 const prompt = require('prompt-sync')();
 function par(num) {
     if (num % 2 == 0)
-        return "Par"
+        return "Par ✌️"
     else
-        return "Impar"
+        return "Impar ☝️"
 }
 let num = prompt("Digite um número: ")
 console.log(par(num))

@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
 function saudacao(nome) {
-    return `Olá ${nome}, bem-vindo ao mundo da programação!!`;
+    return `👋 Olá ${nome}, bem-vindo ao mundo da programação!! `;
 }
 
 let nome = prompt("Informe seu nome: ");
