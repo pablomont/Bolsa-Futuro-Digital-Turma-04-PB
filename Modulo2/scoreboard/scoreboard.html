@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Team 1 vs. Team 2</h1>
+    <table>
+        <tr class="header">
+            <th>Team 1</th>
+            <th>Team 2</th>
+        </tr>
+        <tr>
+            <td id="team1-score">0</td>
+            <td id="team2-score">0</td>
+        </tr>
+        <tr>
+            <td><button id="add1">+1</button></td>
+            <td><button id="add2">+1</button></td>
+        </tr>
+        
+    </table>
+    <script>
+        let buttonOne = document.getElementById("add1")
+        let buttonTwo = document.getElementById("add2")
+        let teamOneScore = document.getElementById("team1-score")
+        let teamTwoScore = document.getElementById("team2-score")
+        let score1 = 0
+        let score2 = 0
+        buttonOne.onclick = function() {
+            
+            score1++
+            teamOneScore.innerHTML = score1
+            if (score1 == 5){
+                score1 = 0
+                score2 = 0
+                
+            }
+        }
+        buttonTwo.onclick = function() {
+            
+            score2++
+            teamTwoScore.innerHTML = score2
+            if (score2 == 5){
+                
+                score2 = 0
+                score1 = 0
+            }
+        }   
+    </script>
+</body>
+</html>
