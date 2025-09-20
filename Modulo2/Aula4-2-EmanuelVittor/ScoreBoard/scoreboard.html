@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ScoreBoard</title>
+    <style></style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Team 1</td>
+            <td>Team 2</td>
+        </tr>
+        <tr>
+            <td id="score1">0</td>
+            <td id="score2">0</td>
+        </tr>
+        <tr>
+            <td>
+                <Button id="add1">+1</Button>
+            </td>
+            <td>
+                <button id="add2">+1</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var score1 = 0
+        let btn = document.getElementById("add1")
+        btn.onclick = function() {
+            score1 = score1 + 1
+            let tdScore1 = document.getElementById("score1")
+            tdScore1.innerHTML = score1
+        }
+    </script>
+</body>
+</html>
