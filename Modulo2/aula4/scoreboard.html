@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Time 1</td>
+            <td>Time 2</td>
+        </tr>
+        <tr>
+            <td id="score1">0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><button id="add1">+1</button></td>
+            <td><button>+1</button></td>
+        </tr>
+
+    </table>
+    <script>
+        var score1 = 0
+        let btn = document.getElementById("add1")
+        btn.onclick = function() {
+            score1 = score1 + 1 // score += 1 // score1++
+            let tdScore1 = document.getElementById("score1")
+            tdScore1.innerHTML = score1
+        }
+    </script>
+</body>
+</html>
