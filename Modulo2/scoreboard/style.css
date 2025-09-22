@@ -1,0 +1,21 @@
+.team{
+    background-color:deeppink;
+}
+td{
+    border: 2px solid ;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+button{
+    background-color: rgb(172, 186, 253);
+}
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
