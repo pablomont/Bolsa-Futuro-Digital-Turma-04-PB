@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1" />
+    <title>Scoreboard</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+    td {
+        border: 2px splid black;
+    }
+
+    #team1 {
+        background-color: #d8bfd8;
+    }
+    #team2 {
+
+    }
+    #add1 {
+        background-color: #ffa0ff;
+    }
+    #add2 {
+        background-color: #d8bfd8;
+    }
+    p{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <tr>
+        <td>Time 1</td>
+        <td>Time 2</td>
+    </tr>
+    <tr>
+        <td id = "score1">0</td>
+        <td id ="score2">0</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+<table>
+<script>
+    var score1 = localStorage.getItem('score1')
+    var score2 = localStorage.getItem('score2')
+    if(!score1){
+        score1 = 0
+    }
+
+        document.addEventListener('DOMcontentLoaded', function(){
+            let tdscore1 = document
+        }
+            
+        })
+    let btn = document.getElementById("add1")
+    btn1.onclick = function() {
+        score1 = score1 + 1 // score += 1 // score++
+        localStorage.setItem('score1', score1)
+        let tdscore1 = document.getElementById("score1")
+        let tdscore2 = document.getElementById("score2")
+
+
+        if(score1 == 5){
+            tdscore1.style.backgroundColor = 'greean'
+            tdscore2.style.backgroundColor = 'read'
+    }
+
+    let btn2 = document.getElementById("add1")
+    btn2.onclick = function() {
+        score2 = score2 + 2 // score += 1 // score++
+        let tdscore2++ = document.getElementById("score1")
+        tdscore1.innerHTML = score2
+
+        if(score1 == 5){
+            tdscore1.style.backgroundColor = 'greean'
+            tdscore2.style.backgroundColor = 'read'
+
+            let feedback = document.querySelector('p')
+            feedback.innerHTML = 'Time 1 venceu'
+        {
+
+    }
+<script>
+
+</body>
+

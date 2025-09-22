@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1" />
+    <title>Counter</title>
+</head>
+</boby>
+    <h1>0</h1>
+    <button>Contador</button>
+    <script>
+      // função para incrementar e mostrar o contador
+      function incrementarContador() {
+        let contador = localStorage.getItem('counter')
+        contador++;
+        document.querySelector('h1').innerHTML = contador;
+        localStorage.setItem('counter', contador)
+
+      }
+      document.querySelector('button').onclick = incrementarContador
+
+      document.addEventListener('DOMContentLoaded', function() {
+        let contador = localStorage.getItem('counter')
+        document.querySelector('h1').innerHTML = contador
+      });
+    </script>
+    
