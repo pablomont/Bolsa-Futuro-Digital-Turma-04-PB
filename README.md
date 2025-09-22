@@ -31,9 +31,7 @@ cd seu-nome
 
 ### 4. Resolva os exercícios
 
-Crie os arquivos necessários para cada questão
-
-IMPORTANTE: Faça um commit para cada questão resolvida
+IMPORTANTE: Faça um commit para cada questão resolvida.
 
 Use mensagens de commit descritivas
 
