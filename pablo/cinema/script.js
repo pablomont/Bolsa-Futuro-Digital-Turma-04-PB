@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', carregarTema);
 function carregarTema() {
 
     // 1. Leia o cookie
-
     // 2. Se tema=escuro, altere para tema-escuro.css
 
 }
