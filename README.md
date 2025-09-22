@@ -26,6 +26,7 @@ git checkout -b cinema-pablo
 
 ### 3. Navegue para sua pasta:
 ```bash
+mkdir seu-nome (crie uma caso não exista)
 cd seu-nome
 ```
 
