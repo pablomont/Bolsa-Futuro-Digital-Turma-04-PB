@@ -52,3 +52,4 @@ git push
 ```
 
 ### 6. Abra um Pull Request:
+Ver vídeo: https://drive.google.com/file/d/1MJyFLxuAAi4N-M5RLfXV3D0AOAs2TcSw/view?usp=sharing
