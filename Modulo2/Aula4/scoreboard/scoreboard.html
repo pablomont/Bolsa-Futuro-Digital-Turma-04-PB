@@ -1,91 +1,92 @@
-<!-- Esse arquivo não contém LocalStorage. Para ver a solução com LocalStorage acesse o arquivo scoreboad.html da aula5 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Scoreboard</title>
-        <style>
-            table {
-                border: 2px solid black;
-                border-collapse: collapse;
-                margin: 0 auto;
-                text-align: center;
+<head>
+    <title>Scoreboard</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        td{
+            border: 2px solid black
+        }
+
+        #team1{
+            background-color: #D8Bfd8;
+        }
+
+        #team2{
+            background-color: #FFA07A;
+        }
+
+        #add1{
+            background-color: #D8Bfd8;
+        }
+        #add2{
+            background-color: #FFA07A;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <table>
+        <tr>
+            <td id="team1">Time 1</td>
+            <td id="team2">Time 2</td>
+        </tr>
+        <tr>
+            <td id="score1">0</td>
+            <td id="score2">0</td>
+        </tr>
+        <tr>
+            <td><button id="add1">+1</button></td>
+            <td><button id="add2">+1</button></td>
+        </tr>
+    </table>
+    <script>
+        let score1 = 0
+        let score2 = 0
+
+        let btn = document.getElementById("add1")
+        btn.onclick = function() {
+            score1++
+            let tdScore1 = document.getElementById("score1")
+            let tdScore2 = document.getElementById("score2")
+
+            tdScore1.innerHTML = score1
+
+            if(score1 == 5){
+                tdScore1.style.backgroundColor = 'green'
+                tdScore2.style.backgroundColor = 'red'
+
+                let feedback = document.querySelector('p')
+                feedback.innerHTML = 'Time 1 venceu'
             }
+        }
 
-            td {
-                border: 2px solid black;
+        let btn2 = document.getElementById("add2")
+        btn2.onclick = function() {
+            score2++
+            let tdScore2 = document.getElementById("score2")
+            let tdScore1 = document.getElementById("score1")
+
+            tdScore2.innerHTML = score2
+
+            if(score2 == 5){
+                tdScore2.style.backgroundColor = 'green'
+                tdScore1.style.backgroundColor = 'red'
+
+                let feedback = document.querySelector('p')
+                feedback.innerHTML = 'Time 2 venceu'
             }
-
-            .team{
-                background-color: #D8Bfd8;
-            }
-
-            #add1 {
-                background-color: #ADD8E6;
-            }
-
-            #add2 {
-                background-color: #FFA07A;
-            }
-
-            #feedback{
-                text-align: center;
-            }
-
-
-        </style>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Team 1 vs. Team 2</h1>
-        <p id="feedback"></p>
-        <table>
-            <tr>
-                <td class="team">Team 1</td>
-                <td class="team">Team 2</td>
-            </tr>
-            <tr>
-                <td id="score1">0</td>
-                <td id="score2">0</td>
-            </tr>
-            <tr>
-                <td>
-                    <button id="add1">+1</button>
-                </td>
-                <td>
-                    <button id="add2">+1</button>
-                </td>
-            </tr>
-        </table>
-        <script>
-            let team1 = 0;
-            let team2 = 0;
-
-            const btn1 = document.getElementById('add1')
-            const btn2 = document.getElementById('add2')
-            const score1 = document.getElementById('score1')
-            const score2 = document.getElementById('score2')
-
-            btn1.onclick = function(){
-                team1++;
-                if(verificaSeTimeVenceu(team1, score1, score2))
-                    document.getElementById('feedback').innerHTML = "Time 1 venceu!";
-            }
-
-            btn2.onclick = function(){
-                team2++;
-                if(verificaSeTimeVenceu(team2, score2, score1))
-                    document.getElementById('feedback').innerHTML = "Time 2 venceu!";
-            }
-
-            function verificaSeTimeVenceu(team, scoreA, scoreB){
-                scoreA.innerHTML = team;
-                if (team == 5)
-                {
-                    scoreA.style.backgroundColor = "Green";
-                    scoreB.style.backgroundColor = "Red";
-                    return true
-                }
-                return false
-            }
+        }
     </script>
-  </body>
+</body>
 </html>

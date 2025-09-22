@@ -69,6 +69,8 @@
             let score1 = localStorage.getItem('score1')
             score1++
             let tdScore1 = document.getElementById("score1")
+            let tdScore2 = document.getElementById("score2")
+
             tdScore1.innerHTML = score1
             localStorage.setItem('score1', score1)
 
@@ -86,6 +88,8 @@
             let score2 = localStorage.getItem('score2')
             score2++
             let tdScore2 = document.getElementById("score2")
+            let tdScore1 = document.getElementById("score1")
+
             tdScore2.innerHTML = score2
             localStorage.setItem('score2', score2)
 
