@@ -39,10 +39,10 @@ Use mensagens de commit descritivas
 ### Exemplo de commits:
 ```bash
 git add .
-git commit -m "Resolve questão 1"
+git commit -m "Questão 1 resolvida"
 
 git add .
-git commit -m "Resolve questão 2"
+git commit -m "Questão 2 resolvida"
 ```
 
 ### 5. Faça o push:
