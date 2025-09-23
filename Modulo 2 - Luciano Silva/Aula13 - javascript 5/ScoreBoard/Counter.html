@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minha página web !</title>
+    <style>
+        body {
+            background-color: rgb(190, 190, 190);
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px 15px;
+            background-color: rgb(190, 169, 211);
+            color: rgb(32, 84, 206);
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+    </style>
+</head>
+    <body>
+        <h1>0</h1>
+        <button>contador</button>
+        <script>
+            function incrementarContador() {
+                let contador = localStorage.getItem('counter')
+                contador++;
+                document.querySelector('h1').innerHTML = contador    
+                localStorage.setItem('counter', contador)
+            }
+
+            document.querySelector('button').onclick = incrementarContador
+
+            document.addEventListener('DOMContentLoaded', function() {
+                let contador = localStorage.getItem('counter')
+                document.querySelector('h1').innerHTML = contador    
+            }); 
+        </script>
+    </body>
+
+</html>
