@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minha página web !</title>
+  <style>
+    body {
+    background-color: rgb(190, 190, 190);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+    /* Elementos da Pagina*/
+
+    table {
+      background-color: rgb(255, 255, 255);
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 20px; /* aumenta o tamanho do texto */
+
+    }
+
+    td {
+      border: 2px solid black;
+      padding: 15px;
+    }
+
+    button {
+      border: 2px solid rgb(0, 0, 0);
+      padding: 10px 15px;
+      background-color: rgb(190, 169, 211);
+      color: rgb(32, 84, 206);
+      font-size: 18px;
+    }
+
+    h1 {
+      text-align: center;
+
+    }
+
+    p {
+      text-align: center;
+      font-size: 35px;
+      color: rgb(76, 120, 99);
+    }
+
+    /* Cores de texto na Tabela */
+
+    #team1 {
+      background-color: #90d4e0;
+      font-weight: bold;
+    }
+
+    #team2 {
+      background-color: #c17d7d;
+      font-weight: bold;
+    }
+
+    #add1 {
+      background-color: #90d4e0;
+    }
+
+    #add2 {
+      background-color: #FFA07A;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>TEAM 1 VS. TEAM 2</h1>
+  <p></p>
+  <table>
+    <!-- Team 1 -->
+
+    <tr>
+      <td id="team1">Time 1</td>
+      <td id="team2">Time 2</td>
+    </tr>
+    </tr>
+    <tr>
+      <td id="score1">0</td>
+      <td id="score2">0</td>
+    </tr>
+    <!-- Team 2 -->
+
+    <tr>
+      <td>
+        <button id="add1">+1</button>
+      </td>
+      <td>
+        <button id="add2">+1</button>
+      </td>
+    </tr>
+  </table>
+  <script>
+
+    // Botão 1 //
+
+    var score1 = 0;
+    let btn = document.getElementById("add1");
+    btn.onclick = function () {
+      score1++;
+      localStorage.setItem('score', score1);
+      let tdscore1 = document.getElementById("score1");
+      let tdscore2 = document.getElementById("score2");
+
+      tdscore1.innerHTML = score1;
+
+      if (score1 == 5) {
+        tdscore1.style.backgroundColor = 'green';
+        tdscore2.style.backgroundColor = 'red';
+
+        let feedback = document.querySelector('p');
+        feedback.innerHTML = 'Time 1 venceu!';
+      }
+    };
+
+    // Botão 2 //
+
+    var score2 = 0;
+    let btn2 = document.getElementById("add2");
+    btn2.onclick = function () {
+      score2++;
+      localStorage.setItem('score', score2);
+      let tdscore2 = document.getElementById("score2");
+      let tdscore1 = document.getElementById("score1");
+
+      tdscore2.innerHTML = score2;
+
+      if (score2 == 5) {
+        tdscore2.style.backgroundColor = 'green';
+        tdscore1.style.backgroundColor = 'red';
+
+        let feedback = document.querySelector('p');
+        feedback.innerHTML = 'Time 2 venceu!';
+      }
+    };
+  </script>
+</body>
+
+</html>

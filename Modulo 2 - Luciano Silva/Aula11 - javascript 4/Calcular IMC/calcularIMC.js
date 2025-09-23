@@ -1,3 +1,4 @@
+// OBS: istalar Biblioteca "npm install prompt-sync"
 const prompt = require('prompt-sync')();
 
 // Pergunta os dados do usuário
