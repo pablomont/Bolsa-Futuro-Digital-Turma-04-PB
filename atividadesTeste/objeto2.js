@@ -24,9 +24,15 @@ var cachorro = {
     cor: "preto",
     idade: 10,
 
-    viuHomem: function latir(){
-        return "auau"
+    viuHomem : true,
+    late: function latir(){
+        if (this.viuHomem){
+            return "auau"
+        }
+        else{
+            return "não late"
+        }
     }
 }
 
-console.log(cachorro.viuHomem())
+console.log(cachorro.late())

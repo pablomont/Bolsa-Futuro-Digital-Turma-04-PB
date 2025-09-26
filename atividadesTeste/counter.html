@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button>CONTADOR</button>   
+    <script>
+        function incrementarContador(){
+            let contador = localStorage.getItem('counter')
+            contador++
+            document.querySelector('h1').innerHTML = contador
+            localStorage.setItem('counter', contador)
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+            let contador = localStorage.getItem('counter')
+            document.querySelector('h1').innerHTML = contador;
+        });
+    </script>
+</body>
+</html>
