@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button>contador</button>
+    <script>
+        let contador = 0;
+        
+        function incrementaContador(){
+            contador++;
+            document.querySelector("h1").innerHTML = contador;
+            localStorage.setItem("contador", contador);
+            
+        }
+
+        document.querySelector("button").onclick = incrementaContador;
+
+        document.addEventListener("DOMContentLoaded", function(){
+            let contador = localStorage.getItem("contador");
+            document.querySelector("h1").innerHTML = contador;
+            
+        }); 
+    </script>
+</body>
+</html>
