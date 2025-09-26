@@ -5,19 +5,20 @@ body {
 }
 p {
     font-size: 20px;
+    color: white;
 }
 
 h1,
 a {
-    color: white
+    color: white;
 }
 
 .hoje {
-    color: lightsalmon
+    color: lightsalmon;
 }
 
 .amanha {
-    color: lightskyblue
+    color: lightskyblue;
 }
 
 h2 a {
