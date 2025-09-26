@@ -3,106 +3,90 @@
 <head>
     <title>Scoreboard</title>
     <style>
-        table{
-            border:  2px solid;
+        table {
+            border: 2px solid black;
             border-collapse: collapse;
             margin: 0 auto;
-            text-align: center; 
-        }
-        td{
-            border: 2px solid black;
-        }
-        #team1{
-            background-color: #d8bfd8;
-        }
-        #team2{
-            background-color: #ffa07a;
-        }
-        #add1{
-            background-color: #d8bfd8;
-        }
-        #add2{
-            background-color: #ffa07a;
-        }
-        p{
             text-align: center;
         }
 
+        td{
+            border: 2px solid black
+        }
+
+        #team1{
+            background-color: #D8Bfd8;
+        }
+
+        #team2{
+            background-color: #FFA07A;
+        }
+
+        #add1{
+            background-color: #D8Bfd8;
+        }
+        #add2{
+            background-color: #FFA07A;
+        }
+
+        p{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <p></p>
     <table>
         <tr>
-            <td id="team1"> Time 1</td>
-            <td id="team2"> Time 2</td>
-
+            <td id="team1">Time 1</td>
+            <td id="team2">Time 2</td>
         </tr>
         <tr>
             <td id="score1">0</td>
             <td id="score2">0</td>
-
         </tr>
         <tr>
             <td><button id="add1">+1</button></td>
             <td><button id="add2">+1</button></td>
-
         </tr>
     </table>
     <script>
-        var score1 = localStorage.getItem('score1')
-        var score2 = localStorage.getItem('score2')
+        let score1 = 0
+        let score2 = 0
 
-        var score1 = parseInt(localStorage.getItem('score1')) || 0;
-        var score2 = parseInt(localStorage.getItem('score2')) || 0;
-
-        if(!score2 || !score1){
-            score2 = 0
-            score1 = 0
-
-        }
-
-        document.addEventListener('DOMContentLoaded', function(){
-            let tdScore1 = document.getElementById("score1")
-            let score1 = localStorage
-
-        })
-
-        let btn1 = document.getElementById("add1")
-        btn1.onclick = function() {
-            score1 = score1 + 1 //score1 +=1 //score1 ++
-            localStorage.setItem('score1',score1)
+        let btn = document.getElementById("add1")
+        btn.onclick = function() {
+            score1++
             let tdScore1 = document.getElementById("score1")
             let tdScore2 = document.getElementById("score2")
 
             tdScore1.innerHTML = score1
 
-            if (score1 === 5){
-                tdScore1.style.backgroundColor = "green"
-                tdScore2.style.backgroundColor = "red"
+            if(score1 == 5){
+                tdScore1.style.backgroundColor = 'green'
+                tdScore2.style.backgroundColor = 'red'
 
                 let feedback = document.querySelector('p')
-                feedback.innerHTML = "Time 1 venceu"
-
+                feedback.innerHTML = 'Time 1 venceu'
             }
         }
+
         let btn2 = document.getElementById("add2")
         btn2.onclick = function() {
-            score2 = score2 + 1 //score2 +=1 //score2 ++
-            localStorage.setItem('score2',score2)
-            let tdScore1 = document.getElementById("score1")
+            score2++
             let tdScore2 = document.getElementById("score2")
-            tdScore2.innerHTML = score2; 
+            let tdScore1 = document.getElementById("score1")
 
-            if (score2 === 5){
-                tdScore2.style.backgroundColor = "green"
-                tdScore1.style.backgroundColor = "red"
+            tdScore2.innerHTML = score2
+
+            if(score2 == 5){
+                tdScore2.style.backgroundColor = 'green'
+                tdScore1.style.backgroundColor = 'red'
 
                 let feedback = document.querySelector('p')
-                feedback.innerHTML = "Time 2 venceu"
+                feedback.innerHTML = 'Time 2 venceu'
             }
         }
-
     </script>
 </body>
 </html>
