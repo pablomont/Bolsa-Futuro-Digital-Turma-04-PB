@@ -9,23 +9,63 @@
 </head>
 
 <body>
+
+    <p></p>
     <table>
         <tr>
-            <td>Time 1</td>
-            <td>time 2</td>
+            <td class="team">Time 1</td>
+            <td class="team2">time 2</td>
         </tr>
         <tr>
-            <td id"score1">0</td>
-            <td>0</td>
+            <td id="score1">0</td>
+            <td id="score2">0</td>
+        <tr>
+            <td><button id="add1">+1</button></td>
+            <td><button id="add1">+1</button></td>
 
-              <tr>
-            <td><button id = "add1">+2</button></td>
-            <td>time 2</td>
         </tr>
 
 
     </table>
-<script src="scoreboard.js"></script>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function(){
+let tdscore1 = document.getElementById("score1");
+let score1 = localStorage.getItem("score1");
+tdscore1.innerHTML = score1;
+
+
+        var score1 = localStorage.getItem("score1");
+        var score2 = localStorage.getItem("score2");
+        if(!score1)||(!score2){
+            score1 = 0;
+            score2 = 0;
+        }
+
+       
+        
+        let btn = document.getElementById("add1");
+        btn.onclick = function () {
+            //console.log("clicou");
+            score1 = score1 + 1;
+            localStorage.setItem("score1", score1)
+            let tdscore1 = document.getElementById("score1");
+            let tdscore2 = document.getElementById("score2");
+            tdscore1.innerHTML = score1
+
+
+            if (score1 === 5) {
+                tdscore1.style.backgroundColor = "green";
+                tdscore2.style.backgroundColor = "red";
+
+                let feedback = document.querySelector("p");
+                feedback.innerHTML = "Time 1 venceu!";
+            }
+        }
+        
+    </script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+table {
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: rgb(214, 136, 136);
+    border-radius: 4px;
+}
+td{
+    border: 2px solid rgb(14, 14, 14);
+    
+}
+.team{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(248, 84, 34);
+}
+button{
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgb(136, 214, 136);
+    border: 1px solid black;
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
