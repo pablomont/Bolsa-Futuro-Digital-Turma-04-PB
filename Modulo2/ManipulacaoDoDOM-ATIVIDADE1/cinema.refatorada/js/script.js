@@ -1,8 +1,10 @@
 function alterarTema() {
     const link= document.querySelector('link[rel="stylesheet"]');
-    if (link.getAttribute('href') === 'css/estilo.css') {
-        link.setAttribute('href', 'css/estilo-dark.css');
-    } else {
+    const hrefAtual = link.getAttribute('href');
+
+    if (hrefAtual.includes('dark')) {
         link.setAttribute('href', 'css/estilo.css');
+    } else {
+        link.setAttribute('href', 'css/estilo-dark.css');
     }
 }
