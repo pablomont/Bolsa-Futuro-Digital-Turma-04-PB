@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css" id="theme-stylesheet">
 </head>
 <body>
     <h1>Cinema</h1>
     <h2><a href="estados/pb.html">Paraíba</a> </h2>
     <h2><a href="estados/sp.html">São Paulo</a></h2>
+    <button onclick="alterarTema()">Alterar tema</button>
+    <script>
+        function alterarTema(){
+            const linkElement = document.querySelector('#theme-stylesheet');
+
+            if(linkElement.href.includes('estilo.css')){
+                linkElement.href= 'css/estilo_dark.css';
+            } else{
+                linkElement.href = 'css/estilo.css';
+            }
+        }
+    </script>
 </body>
 </html>
