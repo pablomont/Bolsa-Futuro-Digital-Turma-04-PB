@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScoreBoard</title>
+    <title>Scoreboard</title>
     <style>
         table {
             border: 2px solid black;
-            border-colapse: collapse; 
+            border-collapse: collapse;
             margin-left: auto;
             margin-right: auto;
-            /*margin: 0 auto;*/
-            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            /* ao invés das margens anteriores pode usar: margin: 0 auto;*/
+            text-align: center; 
         }
-
-        td{
+        td {
             border: 2px solid black;
         }
-
         #team1{
-            background-color: #08a7e6;
+            background-color: lightblue;
         }
-
         #team2{
-            background-color: #d60988;
+            background-color: orange;
         }
-
         #add1{
-            background-color: #08a7e6;
+            background-color: lightblue;
         }
-
         #add2{
-            background-color: #d60988;
+            background-color: orange;
         }
         p{
             text-align: center;
         }
+
     </style>
 </head>
 <body>
     <p></p>
     <table>
         <tr>
-            <td id="team1">Team 1</td>
-            <td id="team2">Team 2</td>
+            <td id="team1">Time 1</td>
+            <td id="team2">Time 2</td>
         </tr>
         <tr>
             <td id="score1">0</td>
@@ -53,49 +51,57 @@
             <td><button id="add1">+1</button></td>
             <td><button id="add2">+1</button></td>
         </tr>
-
     </table>
-    <script>
 
-    document.addEventListener('DOMContentLoaded', function())
-    let tdScore1 = document.getElementById("score1")
-    let score1 = localStorage.getItem('score1')
-    tdScore1.innerHTML = score1
+    <script>
+        /*
+
+        document.addEventListener('DOMContentLoaded', function(){
+            let tdScore1 = document.getElementById("score1")
+            let score1 = localStorage.getItem('score1')
+            tdScore1.innerHTML = score1
+        } */
+       let score1 = 0
+       let score2 = 0
 
         let btn = document.getElementById("add1")
         btn.onclick = function() {
-            score1 = score1 + 1 // score += 1 // score1++
+            score1 = score1 + 1 // score1 += 1 // score1++
             localStorage.setItem('score1', score1)
             let tdScore1 = document.getElementById("score1")
             let tdScore2 = document.getElementById("score2")
 
             tdScore1.innerHTML = score1
 
-            if(score1 ==5){
-                tdScore1.style.backgroundColor = "green"
-                tdScore2.style.backgroundColor = "red"
+            if(score1 == 5){
+                tdScore1.style.backgroundColor = 'green';
+                tdScore2.style.backgroundColor = 'red';
 
-                let feedback = document.querySelector ('p')
+                let feedback = document.querySelector('p')
                 feedback.innerHTML = 'Time 1 venceu'
             }
         }
+
         let btn2 = document.getElementById("add2")
         btn2.onclick = function() {
-            score2 = score2 + 1 // score += 1 // score1++
+            score2 = score2 + 1 // score2 += 1 // score2++
             localStorage.setItem('score2', score2)
             let tdScore2 = document.getElementById("score2")
             let tdScore1 = document.getElementById("score1")
 
             tdScore2.innerHTML = score2
 
-            if(score2 ==5){
-                tdScore2.style.backgroundColor = "green"
-                tdScore1.style.backgroundColor = "red"
-                
-                let feedback = document.querySelector ('p')
+            if(score2 == 5){
+                tdScore2.style.backgroundColor = 'green';
+                tdScore1.style.backgroundColor = 'red';
+
+                let feedback = document.querySelector('p')
                 feedback.innerHTML = 'Time 2 venceu'
             }
         }
+
+                
     </script>
+ 
 </body>
 </html>
