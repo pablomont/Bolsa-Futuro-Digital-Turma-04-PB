@@ -12,15 +12,15 @@
     <h2><a href="estados/sp.html">São Paulo</a></h2>
     <button onclick="alterarTema()">Alterar tema</button>
     <script>
-        function alterarTema(){
-            const linkElement = document.querySelector('#theme-stylesheet');
+function alterarTema(){
+    const linkElement = document.querySelector('#theme-stylesheet');
 
-            if(linkElement.href.includes('estilo.css')){
-                linkElement.href= 'css/estilo_dark.css';
-            } else{
-                linkElement.href = 'css/estilo.css';
-            }
-        }
+    if(linkElement.href.includes("dark")){
+        linkElement.href = 'css/estilo.css';
+    } else {
+        linkElement.href = 'css/estilo_dark.css';
+    }
+}
     </script>
 </body>
 </html>
