@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <h1>Cinema</h1>
+    <h2><a href="ESTADOS/pb.html">Paraíba</a></h2>
+    <h2><a href="ESTADOS/sp.html">São Paulo</a></h2>
+
+    <button onclick="alterarTema()">Ativar Tema Escuro</button>
+
+    <script>
+        function alterarTema() {
+            let link = document.querySelector("link");
+            link.href = "CSS/estilo-dark.css"; // força o dark, sem alternância
+        }
+    </script>
+</body>
+</html>
