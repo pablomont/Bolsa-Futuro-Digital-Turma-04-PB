@@ -1,15 +1,20 @@
-const prompt = require('prompt-sync')()
 
-let P,R = prompt();
+// Obs --> Minha lógica foram só os if/else. Esse início foi do próprio sistema.
 
-if(P === 0 && R === 0){
-    console.log('C');
-}
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8");
 
-else if(P === 1 && R === 0){
-    console.log('B');
-}
+let P = parseInt(input.split(" ")[0])
+let R = parseInt(input.split(" ")[1])
 
-else if(P === 1 && R === 1){
-    console.log('A');
+if (P === 1 && R === 0) {
+    console.log("B");
+} else if (P === 1 && R === 1) {
+    console.log("A");
+} else if (P === 0 && R === 1) {
+    console.log("C");
+} else if (P === 0 && R === 0) {
+    console.log("C");
+} else if (P > 1 || R > 1) {
+    console.log("ERRO PORTA INCORRETA");
 }
