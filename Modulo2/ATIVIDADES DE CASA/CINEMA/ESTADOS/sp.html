@@ -15,12 +15,17 @@
         <p>O Auto da Compadecida - 15:00 - <span class="amanha">Amanhã</span></p>
     </div>
 
-    <button onclick="alterarTema()">Ativar Tema Escuro</button>
+    <button onclick="alterarTema()">Alternar Tema</button>
 
     <script>
         function alterarTema() {
             let link = document.querySelector("link");
-            link.href = "../CSS/estilo-dark.css"; // força o dark, sem alternância
+
+            if (link.href.includes("estilo-dark.css")) {
+                link.href = "../CSS/estilo.css";
+            } else {
+                link.href = "../CSS/estilo-dark.css";
+            }
         }
     </script>
 </body>
