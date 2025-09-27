@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>São Paulo</title>
-    <link rel="stylesheet" href="../CSS/estilo.css">
+  <meta charset="UTF-8">
+  <title>São Paulo</title>
+  <link id="tema-css" rel="stylesheet" href="../CSS/estilo.css">
 </head>
 <body>
-    <a href="../index.html">Voltar à página inicial</a>
-    <h1>São Paulo</h1>
+  <a href="../index.html">Voltar à página inicial</a>
+  <h1>São Paulo</h1>
 
-    <div class="filmes-container">
-        <p>Lisbela e o Prisioneiro - 20:00 - <span class="hoje">Hoje</span></p>
-        <p>Meu nome não é Jhonny - 21:00 - <span class="hoje">Hoje</span></p>
-        <p>O Auto da Compadecida - 15:00 - <span class="amanha">Amanhã</span></p>
-    </div>
+  <div class="filmes-container">
+    <p>Lisbela e o Prisioneiro - 20:00 - <span class="hoje">Hoje</span></p>
+    <p>Meu nome não é Jhonny - 21:00 - <span class="hoje">Hoje</span></p>
+    <p>O Auto da Compadecida - 15:00 - <span class="amanha">Amanhã</span></p>
+  </div>
 
-    <button onclick="alterarTema()">Alternar Tema</button>
+  <button onclick="alterarTema()">Alternar Tema</button>
 
-    <script>
-        function alterarTema() {
-            let link = document.querySelector("link");
+  <script>
+    const link = document.querySelector("#tema-css");
 
-            if (link.href.includes("estilo-dark.css")) {
-                link.href = "../CSS/estilo.css";
-            } else {
-                link.href = "../CSS/estilo-dark.css";
-            }
-        }
-    </script>
+    document.addEventListener('DOMContentLoaded', carregarTema);
+
+    function carregarTema() {
+      const temaSalvo = localStorage.getItem('theme');
+      if (temaSalvo) {
+        link.href = temaSalvo.replace("CSS/", "../CSS/");
+      }
+    }
+
+    function alterarTema() {
+      if (link.href.includes('dark')) {
+        link.href = "../CSS/estilo.css";
+        localStorage.setItem('theme', "CSS/estilo.css");
+      } else {
+        link.href = "../CSS/estilo-dark.css";
+        localStorage.setItem('theme', "CSS/estilo-dark.css");
+      }
+    }
+  </script>
 </body>
 </html>

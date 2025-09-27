@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Cinema</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+  <meta charset="UTF-8">
+  <title>Cinema</title>
+  <link id="tema-css" rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
-    <h1>Cinema</h1>
-    <h2><a href="ESTADOS/pb.html">Paraíba</a></h2>
-    <h2><a href="ESTADOS/sp.html">São Paulo</a></h2>
+  <h1>Cinema</h1>
+  <h2><a href="ESTADOS/pb.html">Paraíba</a></h2>
+  <h2><a href="ESTADOS/sp.html">São Paulo</a></h2>
 
-    <button onclick="alterarTema()">Alternar Tema</button>
+  <button onclick="alterarTema()">Alternar Tema</button>
 
-    <script>
-        function alterarTema() {
-            let link = document.querySelector("link");
+  <script>
+    const link = document.querySelector("#tema-css");
 
-            if (link.href.includes("estilo-dark.css")) {
-                link.href = "CSS/estilo.css";
-            } else {
-                link.href = "CSS/estilo-dark.css";
-            }
-        }
-    </script>
+    document.addEventListener('DOMContentLoaded', carregarTema);
+
+    function carregarTema() {
+      const temaSalvo = localStorage.getItem('theme'); // "CSS/estilo-dark.css" ou "CSS/estilo.css"
+      if (temaSalvo) {
+        link.href = temaSalvo;
+      }
+    }
+
+    function alterarTema() {
+      if (link.href.includes('dark')) {
+        link.href = "CSS/estilo.css";
+        localStorage.setItem('theme', "CSS/estilo.css");
+      } else {
+        link.href = "CSS/estilo-dark.css";
+        localStorage.setItem('theme', "CSS/estilo-dark.css");
+      }
+    }
+  </script>
 </body>
 </html>
