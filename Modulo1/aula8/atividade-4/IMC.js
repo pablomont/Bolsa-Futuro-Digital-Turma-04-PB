@@ -7,7 +7,6 @@ if (isNaN(peso) || isNaN(altura) || altura <= 0) {
     console.log("Entrada inválida. Reinicie o programa.");
     process.exit();
 }
-
 let imc = peso / (altura * altura);
 console.log(`Seu IMC é:`);
 
