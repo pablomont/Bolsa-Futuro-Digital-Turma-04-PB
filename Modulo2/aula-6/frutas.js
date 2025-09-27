@@ -1,0 +1,1 @@
+var frutas = ['Banana', 'Maçã', ' Pera', 'Uva', 'Melancia']
