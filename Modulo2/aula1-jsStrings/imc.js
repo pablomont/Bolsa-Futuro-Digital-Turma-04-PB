@@ -1,7 +1,13 @@
 const prompt = require("prompt-sync")()
 
 function readValues(){
-    const peso = parseFloat(prompt("Insira o seu peso (em KG):"))
+    do{
+        peso = parseFloat(prompt("Insira o seu peso (em KG):"))
+        if (!peso || peso < 0){
+            console.log("Peso inválido")
+        }
+    } while(isNaN(peso) || peso < 0)
+
     const altura = parseFloat(prompt("Insira sua altura (em Metros): "))
     return { peso, altura } 
 }
