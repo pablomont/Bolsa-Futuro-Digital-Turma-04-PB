@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cinema</title>
+  <link rel="stylesheet" href="css/estilo.css" id="tema">
+</head>
+<body>
+  <h1>Cinema</h1>
+<h1>Cinema</h1>
+        <h2>
+            <a href="estados/pb.html">Paraíba</a>
+        </h2>
+
+        <h2>
+            <a href="estados/sp.html">São Paulo</a>
+        </h2>
+  <button onclick="alterarTema()">Alterar Tema</button>
+
+  <script>
+    function alterarTema() {
+      let link = document.querySelector("#tema");
+      
+      if (link.href.includes("estilo-dark.css")) {
+        link.href = "css/estilo.css";
+      } else {
+        link.href = "css/estilo-dark.css";
+      }
+    }
+  </script>
+</body>
+</html>
