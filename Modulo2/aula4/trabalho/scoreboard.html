@@ -1,3 +1,5 @@
+<!-- adicionei variável para controlar o jogo -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,9 +55,13 @@
     <script>
         let score1 = 0
         let score2 = 0
+        let jogoFinalizado = false;
 
         let btn = document.getElementById("add1")
         btn.onclick = function() {
+            if (jogoFinalizado) { 
+                return;
+            }
             score1++
             let tdScore1 = document.getElementById("score1")
             let tdScore2 = document.getElementById("score2")
@@ -68,11 +74,18 @@
 
                 let feedback = document.querySelector('p')
                 feedback.innerHTML = 'Time 1 venceu'
+
+                jogoFinalizado = true;
+                document.getElementById("add1").disabled = true;
+                document.getElementById("add2").disabled = true;
             }
         }
 
         let btn2 = document.getElementById("add2")
         btn2.onclick = function() {
+            if (jogoFinalizado) { 
+                return;
+            }
             score2++
             let tdScore2 = document.getElementById("score2")
             let tdScore1 = document.getElementById("score1")
@@ -85,6 +98,10 @@
 
                 let feedback = document.querySelector('p')
                 feedback.innerHTML = 'Time 2 venceu'
+
+                ogoFinalizado = true;
+                document.getElementById("add2").disabled = true;
+                document.getElementById("add1").disabled = true;
             }
         }
     </script>
