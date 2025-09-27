@@ -1,11 +1,19 @@
 
 const prompt = require('prompt-sync')();
 
-let entrada1 = prompt('Digite sua altura: ');
-let altura = parseFloat(entrada1);
+let altura = parseFloat(prompt('Digite sua altura: '));
 
-let entrada2 = prompt('Digite sua massa: ');
-let massa = parseFloat(entrada2);
+if(isNaN(altura) || altura <= 0){
+    console.log('Valor inválido.');
+    process.exit();
+}
+
+let massa = parseFloat(prompt('Digite sua massa: '));
+
+if(isNaN(massa) || massa <= 0){
+    console.log('Valor inválido.');
+    process.exit();
+}
 
 let imc = massa / (altura * altura);
 
@@ -20,3 +28,4 @@ else{
 
     console.log("IMC normal.");
 }
+
