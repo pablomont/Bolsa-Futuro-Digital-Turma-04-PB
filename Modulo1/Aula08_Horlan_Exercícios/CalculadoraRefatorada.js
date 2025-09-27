@@ -1,10 +1,16 @@
 const prompt = require('prompt-sync')();
 
 let num1 = parseFloat(prompt('Informe o primeiro número: '));
+
+if(isNaN(num1) || num1 < 0 || num1 > 10){
+    console.log('Valor inválido.');
+    process.exit();
+}
 let num2 = parseFloat(prompt('Informe o segundo número: '));
 
-if(isNaN(num1) || isNaN(num2)){
-    console.log("Erro: um ou mais valores são inválidos.");
+if(isNaN(num2) || num2 < 0 || num2 > 10){
+    console.log('Valor inválido.');
+    process.exit();
 }
 
 else{
