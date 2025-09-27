@@ -21,4 +21,3 @@ if (imc > 25) {
 else {
     console.log ("Imc normal.")
 }
-
