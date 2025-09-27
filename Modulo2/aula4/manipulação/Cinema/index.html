@@ -8,17 +8,34 @@
 <body>
     <h1>Cinema</h1>
 
-    <button onclick="alterarTema()">Alterar Tema</button>
-
     <h2><a href="estados/pb.html">Paraíba</a></h2>
     <h2><a href="estados/sp.html">São Paulo</a></h2>
+
+    <button onclick="alterarTema()">Alterar Tema</button>
 
     <script>
         function alterarTema() {
             let linkCSS = document.querySelector('link');
 
-            linkCSS.href = 'css/estilo-dark.css';
+            if (linkCSS.href.includes('dark')) {
+                linkCSS.href = 'css/estilo.css';
+                localStorage.setItem('theme', 'light');
+            } else {
+                linkCSS.href = 'css/estilo-dark.css';
+                localStorage.setItem('theme', 'dark');
+            }
         }
+
+        function carregarTema() {
+            const temaSalvo = localStorage.getItem('theme');
+            let linkCSS = document.querySelector('link');
+
+            if (temaSalvo === 'dark') {
+                linkCSS.href = 'css/estilo-dark-mode.css';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', carregarTema);
     </script>
 </body>
 </html>

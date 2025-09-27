@@ -14,5 +14,18 @@
         <p>Ainda Estou Aqui - 21:00 - <span class="amanha">Amanhã</span></p>
         <p>O Auto da Compadecida - 15:00 - <span class="amanha">Amanhã</span></p>
     </div>
+
+    <script>
+        function carregarTema() {
+            const temaSalvo = localStorage.getItem('theme');
+            let linkCSS = document.querySelector('link');
+
+            if (temaSalvo === 'dark') {
+                linkCSS.href = '../css/estilo-dark-mode.css';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', carregarTema);
+    </script>
 </body>
-</html>>
+</html>
