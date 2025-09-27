@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Cinema</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <div class="img"> <img src="../Imagens/pipoca.png" alt="Cinema" width=12%  ></div>
-       
-        <h1>Cinema</h1>
-        
-        <h2><a href="Estados/Paraíba.html">Paraíba</a></h2> 
-        <h2><a href="Estados/SP.html">São Paulo</a></h2>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+    <link id="estilo" rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <button id="tema">Alterar Tema</button>
+    <div class="img"> <img
+            src="https://images.vexels.com/media/users/3/191712/isolated/preview/f0cf0bc1a94d7a02e7fdb3b1cc3aafa3-bom-cinema-pipoca.png"
+            alt="Cinema" width=12%></div>
+    <h1>Cinema</h1>
+
+
+    <h2><a href="Estados/Paraíba.html">Paraíba</a></h2>
+    <h2><a href="Estados/SP.html">São Paulo</a></h2>
+    <script>
+        let btn = document.getElementById("tema");
+        btn.onclick = function () {
+            let elemento = document.querySelector('link#estilo');
+            if (elemento.href.includes("styles-dark.css")) {
+                elemento.href = "css/style.css";
+            } else {
+                elemento.href = "css/styles-dark.css";
+            }
+        }
+            
+    </script>
+</body>
+
 </html>
