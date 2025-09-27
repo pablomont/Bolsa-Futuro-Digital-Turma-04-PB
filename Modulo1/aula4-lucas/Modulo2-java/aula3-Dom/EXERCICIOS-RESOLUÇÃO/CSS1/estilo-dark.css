@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.hoje {
+    color: rgb(248, 70, 0); /* vermelho visível no escuro */
+}
+
+.amanha {
+    color: rgb(240, 0, 0); /* azul visível no escuro */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(28, 238, 0);
+}
+
+h2 a {
+    color: white;
+}
+
+.filme {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+}
