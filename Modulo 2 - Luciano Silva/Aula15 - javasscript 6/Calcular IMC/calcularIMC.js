@@ -1,10 +1,11 @@
 // OBS: istalar Biblioteca "npm install prompt-sync"
 const prompt = require('prompt-sync')();
 
+let peso;
 // Pergunta os dados do usuário
 do {
-    const peso = parseFloat(prompt("Informe seu peso (kg): "));
-    if(isNaN(peso) || peso < 0{
+    peso = parseFloat(prompt("Informe seu peso (kg): "));
+    if(isNaN(peso) || peso < 0) {
     console.log("Peso inválido. Tente novamente.");
     }
 
@@ -18,7 +19,7 @@ function calcularIMC(peso, altura) {
     return imc;
 }
 
-let imc = calcularIMC(peso, altura);
-S
+const imc = calcularIMC(peso, altura);
+
 // Mostra o resultado
 console.log(`Seu IMC é ${imc.toFIxed(2)}`);
