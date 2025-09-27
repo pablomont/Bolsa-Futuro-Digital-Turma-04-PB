@@ -7,3 +7,6 @@ for (i=0; i<frutas.length; i++){
         break;
     }
 }
+let variavel=frutas[frutas.length-1];
+
+console.log(variavel);
