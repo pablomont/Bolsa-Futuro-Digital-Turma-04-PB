@@ -1,10 +1,13 @@
+/*centralizando elementos*/
 h1, table{
     text-align:center
 }
 
+/* Criando o corpo da tabela */
 table, th, td {
-  border:  solid black;
+  border:  2px solid black;
   border-collapse: collapse;
+  padding: 3px;
 }
 
 table {
@@ -12,18 +15,33 @@ table {
     margin-right: auto;
 }
 
-th {
-    background-color: violet;
+#team1 {
+    background-color: lightsalmon;
+}
+
+#team2 {
+    background-color: lightblue;
 }
 
 #add1 {
-    background-color: salmon;
+    background-color: lightsalmon;
 }
 
 #add2 {
-    background-color: aqua;
+    background-color: lightblue;
 }
 
 button {
-    border: none
+    border: 1px solid black;
+    transition: transform 0.2s ease;
+    border-radius: 3px;
+}
+
+p  {
+    text-align: center;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
 }

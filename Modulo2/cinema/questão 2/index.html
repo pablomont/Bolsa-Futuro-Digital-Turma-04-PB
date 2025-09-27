@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Cinema</h1>
+    <div class="estados-container">
+    <h2><a href="estados/pb.html">Paraíba</a></h2>
+    <h2><a href="estados/sp.html">São Paulo</a></h2>
+    <button>Alterar tema</button>
+    </div>
+
+    <script>
+
+        document.querySelector("button").onclick = function () {
+          alterarTema()
+        }   
+
+        function alterarTema(){
+            const css = document.querySelector("link")
+            const currentUrl = css.href
+            if (currentUrl.includes('css/styleDarkMode.css')){
+                css.href = 'css/style.css'
+                localStorage.setItem('theme', 'light')
+            } else {
+                css.href = 'css/styleDarkMode.css'
+                localStorage.setItem('theme', 'dark')
+            }
+        }
+    </script>
+</body>
+</html>

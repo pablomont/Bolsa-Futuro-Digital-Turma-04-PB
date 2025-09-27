@@ -9,10 +9,11 @@
         <h1>Team 1 vs. Team 2</h1>
     </header>
     <main>
+        <p id="vencedor"></p>
         <table>
             <tr class="header">
-                <th>Team 1</th>
-                <th>Team 2</th>
+                <th id="team1">Team 1</th>
+                <th id="team2">Team 2</th>
             </tr>
             <tr>
                 <td id="team1-score">0</td>
@@ -23,37 +24,61 @@
                 <td><button id="add2">+1</button></td>
             </tr>    
         </table>
+        <p>Dê um zoom para ficar mais visivel</p>
     </main>
     <script>
+
         let buttonOne = document.getElementById("add1")
         let teamOneScore = document.getElementById("team1-score")
+        let vencedor = document.getElementById("vencedor")
         let score1 = 0
+       
         buttonOne.onclick = function() {
             if((score1 < 5) && (score2 < 5)){
+                
+                teamTwoScore.style.backgroundColor = "white"
+                teamOneScore.style.backgroundColor = "white"
                 score1++
-                teamOneScore.innerHTML = score1 
+                teamOneScore.innerHTML = score1
+                localStorage.setItem("team1-score", score1)
+                 
             } 
             if(score1 > 4){
-                teamOneScore.style.backgroundColor = "lightgreen"
+                teamOneScore.style.backgroundColor = "green"
                 teamTwoScore.style.backgroundColor = "red"
+                vencedor.innerHTML = "Time 1 venceu!"
+                score1 = 0
+                score2 = 0
+                teamOneScore.innerHTML = score1
+                teamTwoScore.innerHTML = score2
             }
         
         }
 
-        let score2 = 0
         let teamTwoScore = document.getElementById("team2-score")
         let buttonTwo = document.getElementById("add2")
+        let score2 = localStorage.getItem("team1-score")
+  
         buttonTwo.onclick = function() {
             if((score2 < 5) && (score1 < 5)){
+                teamTwoScore.style.backgroundColor = "white"
+                teamOneScore.style.backgroundColor = "white"
                 score2++
                 teamTwoScore.innerHTML = score2
+                localStorage.setItem("team2-score", score2)
+                localStorage.getItem("team2-score")
             }
             if(score2 > 4){
-                teamTwoScore.style.backgroundColor = "lightgreen"
+                teamTwoScore.style.backgroundColor = "green"
                 teamOneScore.style.backgroundColor = "red"
+                vencedor.innerHTML = "Time 2 venceu!"
+                score1 = 0
+                score2 = 0
+                teamOneScore.innerHTML = score1
+                teamTwoScore.innerHTML = score2
             }
             
-        }   
+        }
     </script>
 </body>
 </html>
