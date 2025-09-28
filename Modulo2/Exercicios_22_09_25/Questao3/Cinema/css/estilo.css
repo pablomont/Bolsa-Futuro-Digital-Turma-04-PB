@@ -1,0 +1,45 @@
+body{
+    
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+p{
+
+    font-size: 25px;
+    font-weight: bold; /* colocar em negrito */
+    font-style: italic;
+}
+
+a{
+
+    color: black;
+    text-decoration: none;
+}
+
+div{
+
+    border-color: #b2b2b2;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;  
+    width: 80%;
+}
+
+.link_H2{
+    color: lightseagreen;
+}
+
+.filmesHoje{
+    color: darkblue;
+}
+
+.filmesAmanha{
+    color: darkred;
+}
+
+a :hover{
+
+    color: purple;
+}
