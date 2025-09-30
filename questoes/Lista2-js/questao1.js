@@ -10,13 +10,13 @@ const order1 = {
  
 
 function calculatePrice(order){
-    if (1 <= order.price <= 2000){
+    if (order.price >= 1 && order.price <= 2000) {
         custoEnvio = 300
     }
-    else if (2001 <= order.price <= 4000){
+    else if (order.price >= 2001 && order.price <= 4000) {
         custoEnvio = 500
     }
-    else if (order.price > 4000){
+    else if (order.price > 4000) {
         custoEnvio = 700
     }
     else {
