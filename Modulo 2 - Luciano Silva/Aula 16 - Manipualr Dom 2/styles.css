@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+}
+
+h1 {
+    color: #333333;
+}
+
+input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #dddddd;
+}
+
+button {
+    background-color: #008cff;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+}
