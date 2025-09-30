@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="/Modulo 2 - Luciano Silva/Aula 16 - Manipualr Dom 2/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -15,38 +15,21 @@
         <p>Preencha os campos abaixo para calcular seu IMC.</p>
 
         <span>Peso (em kg):</span>
-        <input type="number" placeholder="Ex: 70">
+        <input id="peso" type="number" placeholder="Ex: 70">
         <br><br>
         <span>Altura (em metros):</span>
-        <input type="number" placeholder="Ex: 1.75">
+        <input id="altura" type="number" placeholder="Ex: 1.75">
 
         <br><br>
 
-        <button>calcular</button>
+        <button id="calcular">calcular</button>
 
-        <h2 id="resultado">Resultado:</h2>
-        <p></p>
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
     </div>
 
-    <Script>
-        // OBS: istalar Biblioteca "npm install prompt-sync"
-        const prompt = require('prompt-sync')();
+<script src="script.js"></script>
 
-        // Pergunta os dados do usuário
-        const peso = parseFloat(prompt("Informe seu peso (kg): "));
-        const altura = parseFloat(prompt("Informe sua altura (m): "));
-
-        // peso e altura são os parâmetros
-        function calcularIMC(peso, altura) {
-            const imc = peso / (altura ** 2);
-            return imc;
-        }
-
-        let imc = calcularIMC(peso, altura);
-
-        // Mostra o resultado
-        console.log(`Seu IMC é ${imc}`);
-    </Script>
 </body>
 
 </html>
