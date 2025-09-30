@@ -1,0 +1,51 @@
+.hoje{
+    text-decoration:none;
+    color:lightcoral;
+}
+.amanha{
+    color:lightblue;
+    text-decoration:none;
+}
+h2{
+    color: lightgreen;
+    text-align: center;
+}
+a, a:visited{
+    color:seagreen;
+}
+h1{
+    color: white;
+    font-size:20px;
+    font-family:Arial, sans-serif;
+}
+p{
+    color: white;
+    font-size:20px;
+    font-family:Arial, sans-serif;
+}
+body{
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+}
+.filmes-container{
+    background-color:#000000;
+    color:rgb(255, 255, 255);
+    border-color:#b2b2b2;
+    border:1px;
+    border-style:solid;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.home-container{
+    text-align: center;
+    background-color: black;
+    border-color:#878787;
+    border:1px;
+    border-style:solid;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}

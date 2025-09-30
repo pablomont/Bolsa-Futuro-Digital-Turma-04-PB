@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+    <link rel="stylesheet" id="estilo" href="estados/css/estiloHome.css"> </head>
+<body>
+    <h1>Bem vindo ao CINEMA:</h1>
+    <div class="home-container">    
+        <h2><a href="estados/pb.html">Paraíba</a><br></h2>
+        <h2><a href="estados/sp.html">São Paulo</a></h2>
+        <button>ALTERAR TEMA</button>
+    </div>
+    
+    <script> 
+        document.querySelector('button').onclick = function (){
+            alterarTema();
+        }
+    
+        document.addEventListener('DOMContentLoaded', carregarTema);  //poderia usar o window.onload também
+    
+        function carregarTema() {
+            const themeState = localStorage.getItem('themeState');
+            const temaLink = document.getElementById('estilo'); 
+            
+            const temaClaroHome = 'estados/css/estiloHome.css';
+            const temaEscuroHome = 'estados/css/estiloDark.css';
+    
+            if (themeState === 'dark') {
+                temaLink.href = temaEscuroHome; 
+            } else {
+                temaLink.href = temaClaroHome;
+            }
+        }
+        
+        function alterarTema(){
+            const temaLink = document.getElementById('estilo'); 
+            const temaClaroHome = 'estados/css/estiloHome.css';
+            const temaEscuroHome = 'estados/css/estiloDark.css';
+            
+            let currentState = localStorage.getItem('themeState') || 'light'; 
+    
+            if (currentState === 'light') {
+                temaLink.href = temaEscuroHome;
+                localStorage.setItem('themeState', 'dark');
+            } else {
+                temaLink.href = temaClaroHome;
+                localStorage.setItem('themeState', 'light');
+            }
+        }
+    
+    </script>
+</body>
+</html>
