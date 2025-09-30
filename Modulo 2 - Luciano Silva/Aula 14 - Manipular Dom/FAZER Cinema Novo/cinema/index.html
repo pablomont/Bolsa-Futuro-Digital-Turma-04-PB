@@ -15,15 +15,31 @@
 
     <script>
 
-        let temaCss = document.querySelector('#temaCss');
-        let btn = document.getElementById("tema");
+        const temaCss = document.querySelector('#temaCss');
+        const btn = document.querySelector('#tema');
+        
+        // Alterna tema ao clicar e salva no localStorage
         btn.onclick = function () {
             if (temaCss.href.includes('dark.css')) {
+                temaCss.href = 'css/light.css'; // troca para claro
+                localStorage.setItem('theme', 'light');
+            } else {
+                temaCss.href = 'css/dark.css';  // troca para escuro
+                localStorage.setItem('theme', 'dark');
+            }
+
+        }
+
+         // Carrega o tema salvo ao abrir a página
+        document.addEventListener('DOMContentLoaded', function() {
+             const temaSalvo = localStorage.getItem('theme');
+             if (temaSalvo === 'light') {
                 temaCss.href = 'css/light.css'; // troca para claro
             } else {
                 temaCss.href = 'css/dark.css';  // troca para escuro
             }
-        }
+        });
+
     </script>
 </body>
 
