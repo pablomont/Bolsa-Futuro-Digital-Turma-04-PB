@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+    <link id="temaCss" rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+    <h1>Cinema</h1>
+    <h2><a href="estados/pb.html">Paraíba</a></h2>
+    <h2><a href="estados/sp.html">São Paulo</a></h2>
+    <button id="tema">Trocar Tema</button>
+
+<script>
+    const temaCss = document.getElementById('temaCss');
+    const btn = document.getElementById('tema');
+
+    btn.onclick = function() {
+        if (temaCss.getAttribute('href') === 'css/dark.css') {
+            temaCss.setAttribute('href', 'css/light.css');
+        } else {
+            temaCss.setAttribute('href', 'css/dark.css');
+        }
+    }
+</script>
+</body>
+</html>
