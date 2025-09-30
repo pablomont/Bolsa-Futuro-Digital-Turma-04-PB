@@ -17,8 +17,8 @@
 
         const temaCss = document.querySelector('#temaCss');
         const btn = document.querySelector('#tema');
-        
-        // Alterna tema ao clicar e salva no localStorage
+
+        // Alterna tema, salva no localStorage e muda texto do botão
         btn.onclick = function () {
             if (temaCss.href.includes('dark.css')) {
                 temaCss.href = 'css/light.css'; // troca para claro
@@ -27,17 +27,21 @@
                 temaCss.href = 'css/dark.css';  // troca para escuro
                 localStorage.setItem('theme', 'dark');
             }
-
+        // Muda texto do botão
+        btn.textContent = temaCss.href.includes('css/dark.css') ? "Para o Sol" : "Para a Lua";
         }
 
-         // Carrega o tema salvo ao abrir a página
-        document.addEventListener('DOMContentLoaded', function() {
-             const temaSalvo = localStorage.getItem('theme');
-             if (temaSalvo === 'light') {
+        // Carrega tema salvo ao abrir página e muda texto do botão
+        document.addEventListener('DOMContentLoaded', function () {
+            const temaSalvo = localStorage.getItem('theme');
+            if (temaSalvo === 'light') {
                 temaCss.href = 'css/light.css'; // troca para claro
             } else {
                 temaCss.href = 'css/dark.css';  // troca para escuro
             }
+        
+        // Muda texto do botão
+        btn.textContent = temaCss.href.includes('css/dark.css') ? "Para o Sol" : "Para a Lua";
         });
 
     </script>

@@ -1,9 +1,19 @@
 /* Estilo global */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(238, 238, 238);
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
+}
+
+/* Destaque */
+.destaque {
+    color: rgb(116, 116, 116);
+    background-color: rgb(199, 208, 223);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 /* Links */
@@ -22,7 +32,7 @@ p {
 }
 
 .hoje {
-    color: lightsalmon;
+    color: rgb(199, 139, 116);
 }
 
 .amanha {

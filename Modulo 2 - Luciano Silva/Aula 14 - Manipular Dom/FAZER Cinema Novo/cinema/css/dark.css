@@ -1,15 +1,25 @@
 /* Estilo global */
 body {
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
+/* Destaque */
+.destaque {
+    color: rgb(114, 116, 117);
+    background-color: rgb(95, 95, 95);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
 /* Links */
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 h2 a {
@@ -22,11 +32,11 @@ p {
 }
 
 .hoje {
-    color: lightsalmon;
+    color: rgb(199, 139, 116);
 }
 
 .amanha {
-    color: rgb(12, 26, 148);
+    color: rgb(255, 255, 255);
 }
 
 /* Títulos */
