@@ -1,0 +1,26 @@
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    background-color: black;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    color: white;
+}
+
+a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.hoje{
+    color: lightsalmon;
+}
+
+h2{
+    color: lightgreen;
+}
