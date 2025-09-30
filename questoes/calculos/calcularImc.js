@@ -4,13 +4,17 @@ function calcularIMC(peso, altura){
     return imc = peso / (altura * altura);
 }
 
-let entradaPeso = prompt("Digite o peso: ");
-let numero = parseFloat(entradaPeso);
+do{
+    peso = parseFloat(prompt("Informe seu peso:"))
+    if((isNaN(peso) || peso < 0)){
+        console.log("Entrada inválida.")
+    }
+}
+while (isNaN(peso) || peso < 0)
 
-let entradaAltura = prompt("Digite a altura: ")
-let numero2 = parseFloat(entradaAltura);
+let altura = parseFloat(prompt("Digite a altura: "));
 
-imc = calcularIMC(numero,numero2);
+imc = calcularIMC(peso,altura);
 
 if (imc >= 25){
     console.log("IMC acima do normal.")
@@ -18,5 +22,3 @@ if (imc >= 25){
 else{
     console.log("IMC normal")
 }
-
-process.exit();
