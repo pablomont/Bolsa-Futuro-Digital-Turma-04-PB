@@ -6,6 +6,7 @@ body{
 
 p{
     font-size: 20px;
+    color: white;
 }
 
 h1{
@@ -23,4 +24,16 @@ a{
 
 h2{
     color: lightgreen;
+}
+
+.amanha{
+    color: lightblue;
+}
+
+.filmes-container{
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+    padding: 20px;
+    width:  80%;
+    margin: 0 auto;
 }
