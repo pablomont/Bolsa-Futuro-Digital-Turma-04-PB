@@ -4,8 +4,8 @@ let button = document.querySelector("#botao");
 let resultado = document.querySelector("#resultado");
 
 function displayImc(value){
-    let cor = '';
-    let classificacao = '';
+    let cor;
+    let classificacao;
 
     if (value < 18.5) {
         // Abaixo do peso
