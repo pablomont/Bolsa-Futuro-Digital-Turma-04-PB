@@ -1,27 +1,25 @@
-const prompt = require('prompt-sync')();
+let peso = document.getElementById("peso");
+let altura = document.getElementById("altura");
+let resultado = document.getElementById("resultado");
+let botaoCalcular = document.getElementById("calcular");
 
-console.log("Calculando IMC");
+function calcularIMC() {
+    let p = parseFloat(peso.value);
+    let a = parseFloat(altura.value);
 
-let peso = parseFloat(prompt("Digite o peso (kg): "));
-do {
-    if (isNaN(peso) || peso <= 0) {
-        console.log("Peso inválido. Por favor, insira um valor numérico positivo.");
+    if (isNaN(p)  || isNaN(a) || a <= 0){
+        alert("Preencha os campos corretamente");
+        return;
     }
-    peso = parseFloat(prompt("Digite o peso (kg): "));
-} while (isNaN(peso) || peso <= 0);
+    let imc = p / (a * a);
+    let padrao = "";
 
-let altura = parseFloat(prompt("Digite sua altura (m): "));
-
-function calcularIMC(peso, altura) {
-    return peso / (altura * altura);
+    if (imc >= 25) {
+        padrao = "IMC ACIMA DO NORMAL";
+    } else {
+        padrao = "IMC NORMAL";
+    }
+    resultado.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${padrao}`;
 }
 
-let resultado = calcularIMC(peso, altura);
-
-console.log("Seu IMC é:", resultado);
-
-if (resultado > 25) {
-    console.log("IMC ACIMA DO NORMAL\n");
-} else {
-    console.log("IMC NORMAL");
-}
+botaoCalcular.addEventListener("click", calcularIMC);
