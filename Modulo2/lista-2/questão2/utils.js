@@ -3,7 +3,7 @@ export function addID(products) {
 }
 
 export function displayNames(products) {
-    products.forEach(product => console.log(product.name))
+    products.forEach(product => console.log(`-> ${product.name}`))
 }
 
 export function printByID(products, ID) {
