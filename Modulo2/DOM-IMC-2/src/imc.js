@@ -11,19 +11,19 @@ function displayImc(value){
         // Abaixo do peso
         cor = 'blue';
         classificacao = 'Abaixo do Peso';
-    } else if (value >= 18.5 && value <= 24.9) {
+    } else if (value >= 18.5 && value < 25) {
         // Peso Normal
         cor = 'green';
         classificacao = 'Peso Normal';
-    } else if (value >= 25 && value <= 29.9) {
+    } else if (value >= 25 && value < 30) {
         // Sobrepeso
         cor = '#FFD700'; // Um amarelo/dourado
         classificacao = 'Sobrepeso';
-    } else if (value >= 30 && value <= 34.9) {
+    } else if (value >= 30 && value < 35) {
         // Obesidade Grau I
         cor = 'orange';
         classificacao = 'Obesidade Grau I';
-    } else if (value >= 35 && value <= 39.9) {
+    } else if (value >= 35 && value < 40) {
         // Obesidade Grau II
         cor = 'red';
         classificacao = 'Obesidade Grau II';
