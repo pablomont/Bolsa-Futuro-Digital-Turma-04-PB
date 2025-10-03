@@ -20,10 +20,12 @@ function idsProdutos(arr){
 }
 
 products = idsProdutos(products);
-console.log("1. Produto com seu ID", products[0]);
 
-function imprimirNomesProdutos(arr){
+console.log("1. Produto com seu ID");
+console.log(products[0]);
+
 console.log("2. Nomes dos produtos")
+function imprimirNomesProdutos(arr){
     for (let i = 0; i < arr.length; i++){
         console.log(arr[i].name)
     }
@@ -32,7 +34,7 @@ console.log("2. Nomes dos produtos")
 imprimirNomesProdutos(products)
 
 function imprimirProdutoPId(arr, idProcurado){
-console.log("3. Imprimir o produto pelo seu ID")
+    console.log("3. Imprimir o produto pelo seu ID")
     for (let i = 0; i < arr.length; i++){
         if (arr[i].id === idProcurado){
             console.log(arr[i])
@@ -44,7 +46,7 @@ console.log("3. Imprimir o produto pelo seu ID")
 imprimirProdutoPId(products, 3)
 
 function imprimirProdutoPCor(arr, corProcurada) {
-console.log("4. Imprimir o produto pela cor")
+    console.log("4. Imprimir o produto pela cor")
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].colors.includes(corProcurada)){
             console.log(arr[i].name)
@@ -54,7 +56,7 @@ console.log("4. Imprimir o produto pela cor")
 imprimirProdutoPCor(products, 'black')
 
 function imprimirProdutoSCor(arr){
-console.log("5. Imprimir produto sem cor")
+    console.log("5. Imprimir produto sem cor")
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].colors.length === 0){
             console.log(arr[i].name)
@@ -72,7 +74,52 @@ const novoProduto = {
 }
 
 function adicionarNovoProduto(arr, produto) {
-console.log()
+    console.log()
     produto.id = arr.length + 1;
     arr.push(produto);
 }
+
+adicionarNovoProduto(products, novoProduto);
+console.log("6. Produto novo adicionado")
+imprimirNomesProdutos(products)
+
+function excluirForaDeEstoque(arr) {
+    console.log('7. Excluindo o que está fora de estoque')
+    const produtosEmEstoque = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].quantity > 0) {
+            produtosEmEstoque.push(arr[i]);
+        }
+    }
+    return produtosEmEstoque
+}
+products = excluirForaDeEstoque(products)
+imprimirNomesProdutos(products)
+
+function somarEstoque(arr){
+    console.log('8. Soma do estoque total:')
+    let somaTotal = 0;
+    for (let i = 0; i < arr.length; i++) {
+        somaTotal = somaTotal + arr[i].quantity 
+    }
+    console.log('O estoque total é:', somaTotal)
+}
+
+somarEstoque(products) 
+
+function precoMaiorQue(arr){
+    const maiorQue100 = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].price > 100){
+            maiorQue100.push(arr[i]);
+        }
+    }
+    return maiorQue100
+}
+
+products = precoMaiorQue(products)
+
+imprimirNomesProdutos(products)
+
+// enquanto fazia, percebi que também podia ter só feito um "console.log" (dentro do if) para solucionar a questão 9
+// mas como já havia começado, resolvi terminar a primeira solução que pensei, e deixar ela mesmo :v
