@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="calculadora">
         <h1>Calculadora de IMC</h1>
 
         <p>Preencha os campos abaixo para calcular seu IMC.</p>
 
         <span>Peso (em kg):</span>
-        <input type="number" placeholder="Ex: 70">
+        <input id="peso" type="number" placeholder="Ex: 70">
         <br><br> 
         <span>Altura (em metros):</span>
-        <input type="number" placeholder="Ex: 1.75">
+        <input id="altura" type="number" placeholder="Ex: 1.75">
 
         <br><br>
 
-        <button>Calcular</button>
+        <button id="calcular">Calcular</button>
 
         <h2>Resultado:</h2>
-        <p></p>
+        <p id="resultado"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

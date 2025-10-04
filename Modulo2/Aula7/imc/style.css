@@ -1,0 +1,42 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Uma fonte simples e universal */
+    background-color: #f0f0f0;      /* Um fundo cinza claro */
+}
+
+/* Um container para centralizar a calculadora na página */
+.calculadora {
+    width: 300px;
+    background-color: #ffffff; /* Fundo branco para a calculadora */
+    padding: 20px;             /* Espaçamento interno */
+    margin: 50px auto;         /* Centraliza o container na tela */
+    border: 1px solid #cccccc; /* Uma borda simples */
+    text-align: center;        /* Centraliza todo o texto */
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #333333; /* Cor de texto escura */
+}
+
+/* Estilo para os campos de entrada de texto */
+input {
+    width: 100px;  /* Largura fixa */
+    padding: 5px;  /* Espaçamento interno pequeno */
+    border: 1px solid #dddddd; /* Borda cinza claro */
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #ffffff;            /* Cor do texto branca */
+    padding: 10px 15px;        /* Espaçamento interno (vertical e horizontal) */
+    border: none;              /* Remove a borda padrão do botão */
+    cursor: pointer;           /* Mostra uma "mãozinha" ao passar o mouse */
+}
+
+/* Estilo para o parágrafo onde o resultado será exibido */
+#resultado {
+    font-size: 20px;       /* Tamanho da fonte maior para destaque */
+    font-weight: bold;     /* Texto em negrito */
+}
