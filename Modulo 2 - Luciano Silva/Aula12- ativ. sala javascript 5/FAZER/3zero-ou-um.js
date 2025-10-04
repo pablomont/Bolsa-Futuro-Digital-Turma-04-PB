@@ -12,5 +12,5 @@ if (entrada === 110) {
 } else if (entrada === 100) {
     console.log("Vencedor é A\n");
 } else {
-    console.log("Ningém\n");
+    console.log("Ninguém\n");
 }
