@@ -1,0 +1,25 @@
+body {
+    font-size: 48px;
+    color: #fff;
+    background-color: coral;
+}
+div {
+    background-color: seagreen;
+}
+span {
+    background-color: dodgerblue;
+}
+li {
+    background-color: purple;
+}
+ul {
+    padding: 0px;
+}
+
+div, span, li, ul {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+    display: inline-block;
+}

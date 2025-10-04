@@ -16,7 +16,7 @@ function createReader() {
             console.log(`Valor ${c} não suportado.`)
             process.exit()
         }
-
+c
         if (i > 2 || j > 2) {
             i = j = 1;
         }
