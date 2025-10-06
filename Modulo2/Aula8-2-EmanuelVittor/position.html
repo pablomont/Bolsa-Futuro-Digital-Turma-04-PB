@@ -5,11 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        body{
+        div{
             font-size: 60px;
             padding: 30px;
             border: solid 5px #222;
         }
+
+        .static {
+            position: static;
+            top: 100px;
+            left: 100px;
+            background-color: rgb(0, 255, 255);
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: rgb(70, 131, 180);
+        }
+
+        .relative1 {
+            position: relative;
+            background-color: rgb(0, 255, 255);
+            left: 250px;
+            top: 120px;
+        }
+
+        .absolute1 {
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color: rgb(0, 255, 255);
+        }
+
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 255, 255);
+        }
+
+        .absolute2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 133, 156);
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: blue;
+            top: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -17,5 +70,12 @@
     <div class="fixed">Fixed</div>
     <div class="relative1">relative</div>
     <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;"></p>
 </body>
 </html>

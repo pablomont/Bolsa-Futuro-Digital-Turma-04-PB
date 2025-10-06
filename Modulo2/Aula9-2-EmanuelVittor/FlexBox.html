@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+        }
+
+        body{
+            background-color: purple;
+        }
+        div{
+            font-size: 40px;
+            margin: 5px;
+        }
+        .flex-container{
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            align-items: center;
+            align-items: stretch;
+            align-items: baseline;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        .flex-container div{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="font-size: medium">A</div>
+        <div style="font-size: x-large">B</div>
+        <div style="font-size: small">C</div>
+        <div style="font-size: medium">D</div>
+    </div>
+</body>
+</html>
