@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Position</title>
 </head>
 
 <body>
