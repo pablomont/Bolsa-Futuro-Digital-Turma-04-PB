@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Position</title>
     <style>
         div {
             font-size: 60px;
@@ -24,19 +24,38 @@
         }   
         .relative{
             position: relative;
-            \background-color: sandybrown;
+            background-color: sandybrown;
+            left: 250px;
+            top: 120px  ;
         }
         .absolute {
             position: absolute;
-            \background-color: aquamarine;
+            background-color: aquamarine;
+            left: 350px;
+            top: 120px
         }
         .relative2 {
             position: relative;
-            \background-color: dodgerblue;
+            background-color: cadetblue ;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
         }
         .absolute2 {
             position: absolute;
-            \background-color: sienna;
+            background-color: sienna;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .sticky {
+            position: sticky;
+            background-color: greenyellow;
+            top: 10px   
+
         }
 
     </style>
@@ -49,7 +68,7 @@
     <div class="relative2">
         <div class="absolute2"></div>
     </div>
-    <div class="Sticky">Sticky</div>
+    <div class="sticky">Sticky</div>
     <p style="padding-bottom: 2000px;">Opa</p>
 </body>
 </html>
