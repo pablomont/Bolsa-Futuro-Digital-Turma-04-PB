@@ -1,0 +1,33 @@
+.calculadora{
+    margin: 50px auto;
+    width: 320px;
+    height: 400px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+button{
+    border-radius: 8px;
+    width: 90px;
+    height: 35px;
+    background-color:rgb(0, 140, 255);
+    color:white;
+    font-size: 15px;
+    border-color: white;
+}
+button:hover{
+    color: #d72e0c
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cac9c9;
+}
+input[type="number"]{
+    width: 120px;
+}
+#resultado{
+    font-weight: bold; 
+    font-size: 40px;
+}
