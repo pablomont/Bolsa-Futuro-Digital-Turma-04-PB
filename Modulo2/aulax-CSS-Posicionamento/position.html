@@ -10,6 +10,35 @@
             padding: 30px;
             border: solid 5px #222;
         }
+        .static {
+            position: static;
+            top: 100px;
+            left: 100px;
+            background-color: steelblue;    
+        }
+        .fixed {
+            position: fixed;
+            background-color: seagreen;
+            bottom: 30px;
+            right: 0px;
+        }   
+        .relative{
+            position: relative;
+            \background-color: sandybrown;
+        }
+        .absolute {
+            position: absolute;
+            \background-color: aquamarine;
+        }
+        .relative2 {
+            position: relative;
+            \background-color: dodgerblue;
+        }
+        .absolute2 {
+            position: absolute;
+            \background-color: sienna;
+        }
+
     </style>
 </head>
 <body>
@@ -20,7 +49,7 @@
     <div class="relative2">
         <div class="absolute2"></div>
     </div>
-    <div>Sticky</div>
-    <p>Opa</p>
+    <div class="Sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
 </body>
 </html>
