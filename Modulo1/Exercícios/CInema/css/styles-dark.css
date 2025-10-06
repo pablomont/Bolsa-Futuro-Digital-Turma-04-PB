@@ -7,7 +7,9 @@ body {
    
     align-items: center
 }
-
+p {
+    color:#0b0c1a;
+}
 
 h1 {
     color: #a8d39a;
@@ -27,7 +29,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     width: 50%;
-    background-color: #faecd3;
+    background-color: #120e25;
 }
 
 table, td {
@@ -57,7 +59,7 @@ a:hover {
 }
 
 .hoje{
-    color:#721e09;
+    color:#953017;
     font-weight: bold;
 }
 .amanhã{

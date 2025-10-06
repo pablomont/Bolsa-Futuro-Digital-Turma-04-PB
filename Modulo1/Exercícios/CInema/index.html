@@ -5,30 +5,53 @@
     <meta charset="UTF-8">
     <title>Cinema</title>
     <link id="estilo" rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
-    <button id="tema">Alterar Tema</button>
-    <div class="img"> <img
-            src="https://images.vexels.com/media/users/3/191712/isolated/preview/f0cf0bc1a94d7a02e7fdb3b1cc3aafa3-bom-cinema-pipoca.png"
-            alt="Cinema" width=12%></div>
+    <button id="tema">Ativar Modo Escuro</button>
+    <div class="img">
+        <img src="https://images.vexels.com/media/users/3/191712/isolated/preview/f0cf0bc1a94d7a02e7fdb3b1cc3aafa3-bom-cinema-pipoca.png"
+            alt="Cinema" width="12%">
+    </div>
     <h1>Cinema</h1>
-
-
     <h2><a href="Estados/Paraíba.html">Paraíba</a></h2>
     <h2><a href="Estados/SP.html">São Paulo</a></h2>
+
     <script>
-        let btn = document.getElementById("tema");
-        btn.onclick = function () {
-            let elemento = document.querySelector('link#estilo');
-            if (elemento.href.includes("styles-dark.css")) {
-                elemento.href = "css/style.css";
+        function alterarTema(event) {
+            const botao = event.target;
+            const link = document.getElementById('estilo');
+
+            if (link.href.includes("styles-dark.css")) {
+                
+                link.href = "css/style.css";
+                localStorage.setItem('theme', 'light');
+                botao.textContent = "Ativar Modo Escuro";
             } else {
-                elemento.href = "css/styles-dark.css";
+             
+                link.href = "css/styles-dark.css";
+                localStorage.setItem('theme', 'dark');
+                botao.textContent = "Ativar Modo Claro";
             }
         }
-            
+
+        document.getElementById('tema').addEventListener('click', alterarTema);
+
+        function carregarTema() {
+            const temaSalvo = localStorage.getItem('theme');
+            const link = document.getElementById('estilo');
+            const botao = document.getElementById('tema');
+
+            if (temaSalvo === 'dark') {
+                link.href = "css/styles-dark.css";
+                botao.textContent = "Ativar Modo Claro";
+            } else {
+                link.href = "css/style.css";
+                botao.textContent = "Ativar Modo Escuro";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', carregarTema);
     </script>
 </body>
 
