@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body {
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+        div { background-color: seagreen;}
+        span { background-color: dodgerblue;}
+        li { background-color: purple;}
+        ul { padding: 0px;}
+
+        div, span, li, ul {
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+            text-align: left;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Texto 1</div>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
+
+<!-- 
+- ul>li*3 , cria 3 listas;
+- largura, altura e text-align só funcionam para elementos do tipo in-block; 
+- padding funciona para block e também para in-line
+
+-->
