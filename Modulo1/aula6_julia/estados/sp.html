@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estados</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css" id='theme-stylesheet'>
 </head>
 <body>
   
@@ -15,6 +15,16 @@
         <p>Meu nome não é Jhonny - 20:00 -<span class="destaUnico">Hoje</span></p>
         <p>O auto da compadecida - 19:00 -<span class="destaDois"> Amanhã</span></p>
     </div>
-   
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+     
+            const temaSalvo = localStorage.getItem('theme');
+        
+            if (temaSalvo === 'dark') {
+                const linkElement = document.querySelector('#theme-stylesheet');
+                linkElement.href = '../css/estilo_dark.css';
+            }
+        });
+    </script>
 </body>
 </html>
