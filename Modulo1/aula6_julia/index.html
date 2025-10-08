@@ -10,27 +10,34 @@
     <h1>Cinema</h1>
     <h2><a href="estados/pb.html">Paraíba</a></h2>
     <h2><a href="estados/sp.html">São Paulo</a></h2>
-    <button onclick="alterarTema()">Alterar tema</button>
+    <button onclick="alterarTema(event)" id="botao-alterar-tema">Alterar tema</button>
 
     <script>
        function carregaTema(){
         const temaSalvo = localStorage.getItem('theme');
+        const botao = document.querySelector('#botao-alterar-tema');
         if(temaSalvo === 'dark'){
             const linkElement = document.querySelector('#theme-stylesheet');
             linkElement.href='css/estilo_dark.css' //Alterar o arquivo para dark 
+            botao.textContent="Ativar modo claro"
+        }else{
+            botao.textContent='Ativar modo escuro'
         }
        }
        
-       function alterarTema(){
+       function alterarTema(event){
         const linkElement = document.querySelector('#theme-stylesheet');
         let novoTema; 
+        const botao = event.target; 
         
         if(linkElement.href.includes('estilo_dark.css')){
             linkElement.href = 'css/estilo.css'; //tema claro
             novoTema = 'light'
+            botao.textContent='Ativar modo escuro';
         }else{
             linkElement.href='css/estilo_dark.css';
             novoTema = 'dark';
+            botao.textContent = 'Ativar modo claro'
         }
         
         localStorage.setItem('theme', novoTema);
