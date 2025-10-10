@@ -4,13 +4,13 @@ const prompt = require('prompt-sync')();
 // Verficação:
 function isTruthy(valor) {
   if (valor) {
-    console.log(`${valor} é Truthy`);
+    console.log(`${valor} é truthy`);
   } else {
     console.log(`${valor} é Falsy`);
   }
 }
 
 // Teste alterando o valor:
-let valor = "olá"; 
+let valor = "olá";
 
 isTruthy(valor);
