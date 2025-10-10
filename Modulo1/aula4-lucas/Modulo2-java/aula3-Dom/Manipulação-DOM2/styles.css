@@ -1,0 +1,97 @@
+/* ============================
+   ESTILOS GERAIS DA PÁGINA
+============================ */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cac9c9;
+}
+
+/* ============================
+   CABEÇALHO
+============================ */
+header {
+  height: 90px;
+  padding: 15px 20px;
+  background-color: #f9fafb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ============================
+   LOGO
+============================ */
+.logo {
+  height: 50px;
+  width: 200px;
+}
+
+/* ============================
+   MENU DE NAVEGAÇÃO
+============================ */
+nav {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d72e0c;
+}
+
+/* ============================
+   ÁREA DE AUTENTICAÇÃO
+============================ */
+.auth {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.auth a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(107, 25, 25);
+  transition: color 0.3s ease;
+}
+
+.auth a:hover {
+  color: #d72e0c;
+}
+
+/* ============================
+   CONTEÚDO PRINCIPAL
+============================ */
+main {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #333;
+}

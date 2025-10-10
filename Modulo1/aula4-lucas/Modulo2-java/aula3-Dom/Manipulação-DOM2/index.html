@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Calculadora IMC</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="auth">
+      <a href="#">Login</a>
+      <a href="#">Cadastrar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="imc-section">
+      <h1>Calculadora de IMC</h1>
+      <p>Informe seu peso e altura para calcular o Índice de Massa Corporal.</p>
+
+      <div class="form-imc">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ex: 70">
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75">
+
+        <button id="calcular">Calcular IMC</button>
+
+        <p id="resultado"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
