@@ -1,9 +1,9 @@
 const input = document.querySelector('input') as HTMLInputElement | null;
-
 const total = localStorage.getItem('total');
-if (input) {
-  input.value = total ?? '';
-  calcularGanho(input.value);
+
+if (input && total) {
+  input.value = total;
+  calcularGanho(Number(total).toString());
 }
 
 function calcularGanho(value: string) {
