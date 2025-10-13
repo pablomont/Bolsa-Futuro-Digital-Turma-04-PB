@@ -1,5 +1,4 @@
-//@ts-check
-/** @param {any[]} texto*/
+
 
 const input = document.querySelector('input');
 
@@ -23,6 +22,6 @@ function totalMudou() {
     }
 }
 
-if(input && total){
+if(input){
     input.addEventListener('keyup', totalMudou);
 }

@@ -19,6 +19,6 @@ function totalMudou() {
         calcularGanho(value);
     }
 }
-if (input && total) {
+if (input) {
     input.addEventListener('keyup', totalMudou);
 }
