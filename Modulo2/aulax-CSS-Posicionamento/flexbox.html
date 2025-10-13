@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox #01</title>
     <style>
+        
         body {          
             background-color: purple;
         }
         div {
+            display: inline;
             font-size: 40px;
             margin: 5px;
         }
         .flex-container {
             display: flex;
+            height: 100px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly   ;
+
         }
         .flex-container div {
             background-color: orange;
         }
+        
+        
         
     </style>
 </head>
