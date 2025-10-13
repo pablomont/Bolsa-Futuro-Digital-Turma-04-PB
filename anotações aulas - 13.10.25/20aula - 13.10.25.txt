@@ -1,0 +1,8 @@
+transpilção vs compilação
+
+javascript esta dentro do typescritp
+precisa de um compilador pra fucionar
+
+npm insttal typecript --save-dev
+
+npx tsc
