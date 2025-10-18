@@ -10,6 +10,53 @@
             padding:30px;
             border:solid 5px #222;
         }
+        .static{
+            /*nao aceita valores para top, bottom, etc*/
+            position:static;
+            top:100px;
+            left: 100px;
+            background-color: blue;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 30px;
+            right: 0;
+            background-color:darkmagenta;
+        }
+        .relative1{
+            /*aceita valores para top, bottom, etc.*/
+            position: relative;
+            left:250px;
+            top:50px;
+            right: 50px;
+            background-color: deeppink;
+        }
+        .relative2{
+            position: relative;
+            top:2000px;
+            left:250px;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+
+        }
+        .absolute1{
+            left:350px;
+            top: 120px;;
+            background-color: darkred;
+            position: absolute;
+
+        }
+        .absolute2{
+            background-color: darkseagreen;
+            position: absolute;
+        }
+        .sticky{
+            position:sticky;
+            background-color: chocolate;
+            top:10px;
+
+        }
     </style>
 </head>
 <body>
@@ -19,7 +66,7 @@
     <div class ="absolute1">Absolute</div>
 
     <div class ="relative2">
-        <div class = "absolute2">Div interna</div>
+        <div class = "absolute2"> </div>
     </div>
     <div class = "sticky">Sticky</div>
     <p style = "padding-bottom: 2000px;">OPA</p>
