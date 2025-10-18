@@ -21,13 +21,14 @@ return "R$ 700";
 
 // Preço final
 function calculatePrice(price1, price2, tax) {
-    const taxa1 = price1 + tax;
-    const taxa2 = price2 + tax;
+    const finalPrice1 = price1 + tax;
+    const finalPrice2 = price2 + tax;
     return {finalPrice1, finalPrice2};
 }
+const envio = calculateTax(order1.price, order2.price, envio);
 
-let {finalprice1, finalprice2 } = calculatePrice(price1, price2);
+const {finalPrice1, finalPrice2 } = calculatePrice(order1.price, order1.price, envio);
 
 // Resultado
-console.log(`O produto ${order1} custa ${price1}. Seu custo de envio ${tax}. Portanto, o preço final é de ${finalPrice1}`)
-console.log(`O produto ${order1} custa ${price2}. Seu custo de envio ${tax}. Portanto, o preço final é de ${finalPrice1}`)
+console.log(`O produto ${order1,price} custa ${envio}. Seu custo de envio ${envio}. Portanto, o preço final é de ${finalPrice1}`)
+console.log(`O produto ${order2.price} custa ${envio}. Seu custo de envio ${envio}. Portanto, o preço final é de ${finalPrice1}`)
