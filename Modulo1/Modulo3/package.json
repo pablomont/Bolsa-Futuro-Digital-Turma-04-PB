@@ -1,0 +1,17 @@
+{
+  "name": "modulo3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cadeira.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
