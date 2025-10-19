@@ -1,33 +1,32 @@
-import './styles.css';
+const btnPedra = document.getElementById('pedra');
 
-const btnPedra = document.getElementById('rock');
+// ----------------------------------------------
+// Questão 1:
+// Implemente o evento de onclick para os outros botões (papel e tesoura)
+// ----------------------------------------------
 
 if (btnPedra) {
     btnPedra.onclick = () => {
         const escolhaComputador = obterEscolhaComputador();
-        mostrarResultado('rock', escolhaComputador);
+        mostrarResultado('pedra', escolhaComputador);
     }
 }
 
-// ----------------------------------------------
-// Questão 1:
-// Implemente o evento de onclick para os outros botões (paper e scissors)
-// ----------------------------------------------
-
 function obterEscolhaComputador() {
-    const opcoes = ['rock', 'paper', 'scissors'];
+    const opcoes = ['pedra', 'papel', 'tesoura'];
     return opcoes[Math.floor(Math.random() * opcoes.length)];
 }
 
 function mostrarResultado(escolhaUsuario: string, escolhaComputador: string) {
     const opcoes = `Computador: ${escolhaComputador} - Usuário: ${escolhaUsuario}`;
     
-    if (escolhaUsuario === escolhaComputador) {
-        alert(`É um empate! \n${opcoes}`);
-    }
-    
-    // ----------------------------------------------
+
+     // ----------------------------------------------
     // Questão 2:
     // Termine de implementar a função mostrarResultado
     // ----------------------------------------------
+
+    if (escolhaUsuario === escolhaComputador) {
+        alert(`É um empate! \n${opcoes}`);
+    }
 }
