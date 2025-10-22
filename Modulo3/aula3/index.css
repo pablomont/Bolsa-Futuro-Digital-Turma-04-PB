@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    padding: 24px;
+}
+
+button {
+    margin-top: 16px;
+    margin-left: 4px;
+    padding: 16px 32px 16px 32px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: medium;
+    background: #fff;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93 / 50%);
+}
