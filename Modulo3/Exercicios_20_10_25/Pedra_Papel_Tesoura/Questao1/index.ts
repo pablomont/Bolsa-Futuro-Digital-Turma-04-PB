@@ -43,6 +43,8 @@ function mostrarResultado(escolhaUsuario: string, escolhaComputador: string) {
     // Termine de implementar a função mostrarResultado
     // ----------------------------------------------
 
+    // Eu poderia usar o map para para limpar mais o código, certo?! Mas como o senhor não deu, não usei.
+
     if (escolhaUsuario === escolhaComputador) {
         alert(`É um empate! \n${opcoes}`);
     }
