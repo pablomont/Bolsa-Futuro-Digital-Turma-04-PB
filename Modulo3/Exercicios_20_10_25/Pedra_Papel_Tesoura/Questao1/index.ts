@@ -46,4 +46,29 @@ function mostrarResultado(escolhaUsuario: string, escolhaComputador: string) {
     if (escolhaUsuario === escolhaComputador) {
         alert(`É um empate! \n${opcoes}`);
     }
+
+    else if(escolhaUsuario === 'pedra' && escolhaComputador === "tesoura"){
+        alert(`Você venceu! \n${opcoes}`);
+    }
+
+    else if(escolhaUsuario === 'papel' && escolhaComputador === "pedra"){
+        alert(`Você venceu! \n${opcoes}`);
+    }
+
+    else if(escolhaUsuario === 'tesoura' && escolhaComputador === "papel"){
+        alert(`Você venceu! \n${opcoes}`);
+    }
+
+    else if(escolhaUsuario === 'tesoura' && escolhaComputador === "pedra"){
+        alert(`O computador venceu! \n${opcoes}`);
+    }
+
+    else if(escolhaUsuario === 'pedra' && escolhaComputador === "papel"){
+        alert(`O computador venceu! \n${opcoes}`);
+    }
+
+    else if(escolhaUsuario === 'papel' && escolhaComputador === "tesoura"){
+        alert(`O computador venceu!! \n${opcoes}`);
+    }
+
 }
