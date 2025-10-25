@@ -43,3 +43,4 @@ function mostrarResultado(escolhaUsuario: string, escolhaComputador: string) {
         alert(`O computador venceu!\n${opcoes}`);
     }
 }
+
