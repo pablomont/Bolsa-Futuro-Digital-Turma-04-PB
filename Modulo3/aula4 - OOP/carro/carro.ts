@@ -1,8 +1,9 @@
 import { Painel } from "./painel/painel"
+import { motor } from "./motor/motor"
 
 class Carro {
 
-    constructor(private nome: string = "", private potencia: number = 0, private velocidade: number = 0, private Painel:Painel){
+    constructor(private nome: string = "", private potencia: number = 0, private velocidade: number = 0, private Painel:Painel, private Motor:motor){
 
     }
 
@@ -10,12 +11,12 @@ class Carro {
         return this.velocidade
     }
 
-    acelerar(){
-        this.velocidade += this.potencia // velocidade = velocidade + potencia
+    atualizarVelocidade(){
+        this.velocidade = this.Motor.acelerar(this.velocidade, this.potencia)
     }
 
-    frear(){
-        this.velocidade *= 0.5 // velocidade = velocidade * 0.5
+    reduzirVelocidade(){
+        this.velocidade = this.Motor.frear(this.velocidade) 
     }
  
     exibirVelocidadeAtual(){
@@ -23,18 +24,18 @@ class Carro {
     }
 }
 
-const fusca = new Carro("fusca 1988", 2, 0, new Painel())
+const fusca = new Carro("fusca 1988", 2, 0, new Painel(), new motor())
 
-fusca.acelerar()
-fusca.acelerar()
-fusca.acelerar()
+fusca.atualizarVelocidade()
+fusca.atualizarVelocidade()
+fusca.atualizarVelocidade()
 fusca.exibirVelocidadeAtual() 
 
-const ferrari = new Carro("Ferraro GTB", 15, 0, new Painel())
+const ferrari = new Carro("Ferraro GTB", 15, 0, new Painel(), new motor())
 
-ferrari.acelerar()
-ferrari.frear()
-ferrari.frear()
+ferrari.atualizarVelocidade()
+ferrari.reduzirVelocidade()
+ferrari.reduzirVelocidade()
 ferrari.exibirVelocidadeAtual()
 
 if(ferrari.getVelocidade() > fusca.getVelocidade()){
