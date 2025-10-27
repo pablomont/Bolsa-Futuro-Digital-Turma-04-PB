@@ -1,4 +1,6 @@
 import { Painel } from "./painel"
+import { Motor } from "./motor"
+
 class Carro {
     constructor(
         public nome: string ,
@@ -16,16 +18,7 @@ class Carro {
     }
 
 }
-class Motor{
-    constructor(
-            public potencia: number
-    
-        ) { }
 
-        aumentaVelocidade(velocidade: number) {
-            return velocidade += this.potencia
-    }
-}
 
 const fusca = new Carro('fusca 1988', new Motor(2), 0, new Painel())
 
