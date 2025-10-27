@@ -1,7 +1,9 @@
+import { Painel } from "./painel"
+
 class Carro {
-    nome: string = ''
-    potencia: number = 0
-    velocidade: number = 0
+
+    constructor(public nome: string, public potencia: number, 
+        public velocidade :number,public painel: Painel){}
 
     acelerar(){
         this.velocidade += this.potencia // velocidade = velocidade + potencia
@@ -10,32 +12,24 @@ class Carro {
     frear(){
         this.velocidade *= 0.5 // velocidade = velocidade * 0.5
     }
- 
-    exibirVelocidadeAtual(){
-        console.log(`A velocidade atual do carro ${this.nome} é de ${this.velocidade} km/h`)
-    }
 }
 
-const fusca = new Carro()
-fusca.nome = 'fusca 1988'
-fusca.potencia = 2
+const fusca = new Carro('fusca 1988',2,0, new Painel())
 
 fusca.acelerar()
 fusca.acelerar()
 fusca.acelerar()
-fusca.exibirVelocidadeAtual() 
+fusca.painel.exibir(fusca.velocidade)
 
-const ferrari = new Carro()
-ferrari.potencia = 15
-ferrari.nome = 'Ferraro GTB'
+// const ferrari = new Carro('Ferraro GTB', 15, 0)
 
-ferrari.acelerar()
-ferrari.frear()
-ferrari.frear()
-ferrari.exibirVelocidadeAtual()
+// ferrari.acelerar()
+// ferrari.frear()
+// ferrari.frear()
+// ferrari.exibirVelocidadeAtual()
 
-if(ferrari.velocidade > fusca.velocidade){
-    console.log('A velocidade da ferrari é maior')
-} else {
-    console.log('A velocidade do fusca é maior')
-}
+// if(ferrari.velocidade > fusca.velocidade){
+//     console.log('A velocidade da ferrari é maior')
+// } else {
+//     console.log('A velocidade do fusca é maior')
+// }
