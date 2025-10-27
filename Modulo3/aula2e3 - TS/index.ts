@@ -12,12 +12,14 @@ if (btnPedra) {
         const escolhaComputador = obterEscolhaComputador();
         mostrarResultado('pedra', escolhaComputador);
     }
-} else if (btnPapel){
+} 
+if (btnPapel){
     btnPapel.onclick = () => {
         const escolhaComputador = obterEscolhaComputador();
         mostrarResultado('papel', escolhaComputador);
     }
-} else if (btnTesoura){
+} 
+if (btnTesoura){
     btnTesoura.onclick = () => {
         const escolhaComputador = obterEscolhaComputador();
         mostrarResultado('tesoura', escolhaComputador);
@@ -40,5 +42,13 @@ function mostrarResultado(escolhaUsuario: string, escolhaComputador: string) {
 
     if (escolhaUsuario === escolhaComputador) {
         alert(`É um empate! \n${opcoes}`);
+    } else if (
+        (escolhaUsuario === 'pedra' && escolhaComputador === 'tesoura') ||
+        (escolhaUsuario === 'papel' && escolhaComputador === 'pedra') ||
+        (escolhaUsuario === 'tesoura' && escolhaComputador === 'papel')
+    ) {
+        alert(`Você venceu! 🎉\n${opcoes}`);
+    } else {
+        alert(`Você perdeu! 😢\n${opcoes}`);
     }
 }
