@@ -1,0 +1,3 @@
+exibir (velocidade:) {
+    console.log()
+}
