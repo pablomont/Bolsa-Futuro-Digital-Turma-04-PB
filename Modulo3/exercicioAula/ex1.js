@@ -1,8 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Carro = /** @class */ (function () {
-    function Carro() {
-        this.nome = '';
-        this.potencia = 0;
-        this.velocidade = 0;
+    /*     nome: string = ''
+        potencia: number = 0
+        velocidade: number = 0
+     */
+    function Carro(nome, potencia, velocidade, painel) {
+        if (velocidade === void 0) { velocidade = 0; }
+        this.nome = nome;
+        this.potencia = potencia;
+        this.velocidade = velocidade;
+        this.painel = painel;
     }
     Carro.prototype.acelerar = function () {
         this.velocidade += this.potencia;
@@ -15,27 +23,22 @@ var Carro = /** @class */ (function () {
     };
     return Carro;
 }());
-var fusca = new Carro();
-fusca.nome = 'fusca 1998';
-fusca.potencia = 2;
-fusca.acelerar();
-fusca.acelerar();
-fusca.acelerar();
-fusca.ExibirVelocidadeAtual();
-var ferrari = new Carro();
-ferrari.nome = 'Ferarri GTB';
-ferrari.potencia = 15;
-ferrari.acelerar();
-ferrari.frear();
-ferrari.frear();
-ferrari.ExibirVelocidadeAtual();
-if (fusca.velocidade > ferrari.velocidade) {
-    console.log("A velociddade do Fusca é maior");
+/* const fusca = new Carro('Fusca 1998', 2,0, new Painel())
+fusca.acelerar()
+fusca.acelerar()
+fusca.acelerar()
+fusca.painel.Exibir(fusca.velocidade)
+
+const ferrari = new Carro('Ferrari GTB', 15)
+ferrari.acelerar()
+ferrari.frear()
+ferrari.frear()
+ferrari.ExibirVelocidadeAtual()
+
+if(fusca.velocidade > ferrari.velocidade){
+    console.log("A velociddade do Fusca é maior")
+} else{
+    console.log("A velociddade da Ferrari é maior")
 }
-else {
-    console.log("A velociddade da Ferrari é maior");
-}
-/* function comp(obj1:object, obj2:object, atr:number){
-    if(obj1.atr >)
-}
+
  */ 
