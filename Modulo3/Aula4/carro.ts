@@ -19,17 +19,5 @@ const fusca = new Carro('fusca 1988',2,0, new Painel())
 fusca.acelerar()
 fusca.acelerar()
 fusca.acelerar()
+fusca.frear()
 fusca.painel.exibir(fusca.velocidade)
-
-// const ferrari = new Carro('Ferraro GTB', 15, 0)
-
-// ferrari.acelerar()
-// ferrari.frear()
-// ferrari.frear()
-// ferrari.exibirVelocidadeAtual()
-
-// if(ferrari.velocidade > fusca.velocidade){
-//     console.log('A velocidade da ferrari é maior')
-// } else {
-//     console.log('A velocidade do fusca é maior')
-// }
