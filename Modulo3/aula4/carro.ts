@@ -10,7 +10,7 @@ class Carro {
 
     ) { }
     acelerar() {
-        this.velocidade += this.motor.aumentaVelocidade(this.velocidade)
+        this.velocidade = this.motor.aumentaVelocidade(this.velocidade) //a nova velocidade do carro é o resultado do motor aumentando a antiga
     }
 
     frear() {

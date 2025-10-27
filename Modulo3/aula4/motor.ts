@@ -1,4 +1,4 @@
-class Motor{
+export class Motor{
     constructor(
             public potencia: number
     
