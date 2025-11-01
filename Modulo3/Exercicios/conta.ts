@@ -32,9 +32,19 @@ class ContaEspecial extends ContaCorrente {
         this.saldo -= valor;
           if (this.saldo<=0){
             this.limite+=this.saldo
-            this.saldo=0
+           
           }
         return true;
     }
     return false}
 }
+
+const conta1 = new ContaCorrente(1000);
+console.log("Saldo inicial conta1:", conta1.saldo); // 1000
+
+conta1.depositar(500);
+console.log("Após depósito de 500:", conta1.saldo); // 1500
+
+let saque1 = conta1.sacar(200);
+console.log("Saque de 200 realizado?", saque1); // true
+console.log("Saldo após saque:", conta1.saldo); // 1300
