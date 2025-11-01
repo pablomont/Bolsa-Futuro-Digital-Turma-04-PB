@@ -1,0 +1,1 @@
+{"version":3,"file":"carrinho.d.ts","sourceRoot":"","sources":["../carrinho.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,qBAAa,QAAQ;IACnB,MAAM,EAAE,KAAK,EAAE,CAAM;IAErB,cAAc,CAAC,KAAK,EAAE,KAAK,GAAG,IAAI;IAQlC,UAAU,IAAI,MAAM;CAOrB"}
