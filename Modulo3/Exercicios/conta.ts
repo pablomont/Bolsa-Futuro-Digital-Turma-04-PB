@@ -13,6 +13,7 @@ class ContaCorrente {
   sacar(valor: number): boolean {
     if (valor <= this.saldo) {
       this.saldo -= valor;
+    
       return true; 
     }
     return false; 
@@ -29,6 +30,10 @@ class ContaEspecial extends ContaCorrente {
    sacar(valor: number): boolean {
     if (valor<=this.saldo+this.limite){
         this.saldo -= valor;
+          if (this.saldo<=0){
+            this.limite+=this.saldo
+            this.saldo=0
+          }
         return true;
     }
     return false}
