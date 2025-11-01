@@ -21,7 +21,7 @@ var ContaCorrente = /** @class */ (function () {
     }
     ContaCorrente.prototype.depositar = function (valor) {
         this.saldo += valor;
-        console.log;
+        console.log("Sucesso - Novo saldo ap\u00F3s deposito: ".concat(this.saldo));
     };
     ContaCorrente.prototype.sacar = function (valor) {
         if (this.saldo >= valor) {

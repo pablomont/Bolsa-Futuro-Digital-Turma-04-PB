@@ -5,7 +5,7 @@ class ContaCorrente{
 
     depositar(valor: number){
         this.saldo += valor
-        console.log
+        console.log(`Sucesso - Novo saldo após deposito: ${this.saldo}`)
     }
 
       sacar(valor:number){
