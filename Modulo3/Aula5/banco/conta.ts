@@ -10,6 +10,10 @@ class ContaCorrente {
     sacar(valor:number ){
         if(this.saldo >= valor){
         this.saldo -= valor
+        console.log('Sucesso - Novo Saldo: ${this.saldo}')
+        }
+        else{
+        console.log('Falha - Saldo insuficiente')
         }
     }
 
