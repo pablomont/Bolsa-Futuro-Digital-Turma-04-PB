@@ -17,6 +17,7 @@ var ContaCorrente = /** @class */ (function () {
     function ContaCorrente(saldo) {
         if (saldo === void 0) { saldo = 0; }
         this.saldo = 0;
+        this.saldo = saldo;
     }
     ContaCorrente.prototype.depositar = function (valor) {
         this.saldo += valor;
@@ -28,39 +29,32 @@ var ContaCorrente = /** @class */ (function () {
         }
         else {
             this.saldo -= valor;
-            console.log("SUCESSO - Voc\u00EA sacou ".concat(valor, ". novo saldo: ").concat(this.saldo));
+            console.log("SUCESSO - Voc\u00EA sacou ".concat(valor, ". Novo saldo: ").concat(this.saldo));
         }
     };
     return ContaCorrente;
 }());
 var ContaEspecial = /** @class */ (function (_super) {
     __extends(ContaEspecial, _super);
-    function ContaEspecial(limite) {
-        var _this = _super.call(this) || this;
+    function ContaEspecial(limite, saldo) {
+        var _this = _super.call(this, saldo) || this;
         _this.limite = 0;
+        _this.limite = limite;
         return _this;
     }
     ContaEspecial.prototype.sacar = function (valor) {
-        if (valor > this.saldo && (this.saldo + this.limite) > valor) { // usa o limite
-            var novoLimite = (this.saldo + this.limite) - valor;
-            console.log("SUCESSO -Voc\u00EA sacou ".concat(valor, " utilizando seu limite e seu novo limite \u00E9 ").concat(novoLimite));
+        var saldoDisp = this.saldo + this.limite;
+        if (valor > saldoDisp) {
+            console.log("FALHA - Limite insuficiente.");
         }
-        else if (this.saldo < 0) {
-            console.log("FALHA - Saldo insuficiente");
-        }
-        else { // nao usa o limite
+        else {
             this.saldo -= valor;
-            console.log("SUCESSO - Voc\u00EA sacou ".concat(valor, " e seu novo saldo \u00E9 ").concat(this.saldo));
+            console.log("SUCESSO - Voc\u00EA sacou ".concat(valor, " e seu novo saldo \u00E9: ").concat(this.saldo));
         }
-    };
-    ContaEspecial.prototype.depositar = function (valor) {
-        this.saldo += valor;
-        console.log("SUCESSO - Novo saldo : ".concat(this.saldo));
     };
     return ContaEspecial;
 }(ContaCorrente));
-var conta = new ContaEspecial(1000);
-conta.saldo = 500;
-conta.sacar(800);
-conta.sacar(800);
-conta.depositar(100);
+var conta = new ContaEspecial(1000, 500);
+conta.sacar(800); // Saída: -300
+conta.sacar(800); // saída: falha
+conta.depositar(100); // saída: -200

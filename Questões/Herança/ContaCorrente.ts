@@ -1,7 +1,9 @@
 class ContaCorrente{
     saldo: number = 0
 
-    constructor(saldo: number = 0){}
+    constructor(saldo: number = 0){
+        this.saldo = saldo;
+    }
 
     depositar(valor: number) {
         this.saldo += valor;
@@ -20,32 +22,26 @@ class ContaCorrente{
 class ContaEspecial extends ContaCorrente{
     limite: number = 0
 
-    constructor (limite:number){
-        super()
+    constructor (limite:number, saldo: number){
+        super(saldo);
+        this.limite = limite;
     }
+    
     sacar(valor:number){
-        if (valor > this.saldo && (this.saldo + this.limite) > valor){ // usa o limite
-            const novoLimite = (this.saldo + this.limite) - valor;
-            console.log(`SUCESSO -Você sacou ${valor} utilizando seu limite e seu novo limite é ${novoLimite}`)
-        }
-        else if (this.saldo < 0){
-            console.log("FALHA - Saldo insuficiente")
-        }
-        else { // nao usa o limite
-            this.saldo -= valor
-            console.log(`SUCESSO - Você sacou ${valor} e seu novo saldo é ${this.saldo}`)
-        }
-    }
+        const saldoDisp = this.saldo + this.limite;
 
-    depositar(valor:number){
-        this.saldo += valor;
-        console.log(`SUCESSO - Novo saldo : ${this.saldo}`)
+        if (valor > saldoDisp){
+            console.log(`FALHA - Limite insuficiente.`)
+        }
+        else {
+            this.saldo -= valor;
+            console.log(`SUCESSO - Você sacou ${valor} e seu novo saldo é: ${this.saldo}`)
+        }
     }
 }
 
-const conta = new ContaEspecial(1000)
-conta.saldo = 500;
+const conta = new ContaEspecial(1000, 500)
 
-conta.sacar(800)
-conta.sacar(800)
-conta.depositar(100)
+conta.sacar(800) // Saída: -300
+conta.sacar(800) // saída: falha
+conta.depositar(100) // saída: -200
