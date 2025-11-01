@@ -5,5 +5,5 @@ precisa de um compilador pra fucionar
 
 npm install typecript --save-dev
 
-npx tsc
+npx tsc nomeaArquivo
 

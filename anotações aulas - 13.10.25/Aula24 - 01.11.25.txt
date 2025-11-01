@@ -1,0 +1,8 @@
+soma.contador
+
+
+criar class
+
+herança de classes. ex class Empregado: diretor, gerente
+superclasse
+subclasse
