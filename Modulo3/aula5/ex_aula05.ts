@@ -6,9 +6,10 @@ class ContaCorrente{
         console.log("Sucesso - novo saldo", this._saldo)
     }
 
-    sacar(valor:number){
-        if(this._saldo>=valor){
+    public sacar(valor:number){
+        if(this.podeSacar(valor)){
             this._saldo-=valor;
+            console.log("Sucesso - novo saldo", this._saldo)
         }else{
             console.log("Falha - saldo insuficiente.")
         }
@@ -19,6 +20,13 @@ class ContaCorrente{
     set saldo(valor: number){
         this._saldo = valor;
     }
+    protected podeSacar(valor: number){
+        if(this._saldo>=valor){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
 
 
@@ -26,13 +34,11 @@ class ContaEspecial extends ContaCorrente{
     constructor(public limite:number){
         super();
     }
-    sacar(valor:number){
-        if(this.saldo+this.limite>=valor){
-            this.saldo-=valor;
-            console.log("Sucesso - novo saldo", this.saldo);
-        }else{
-        console.log("Falha - saldo insuficiente.")
+    protected podeSacar(valor: number){
+        if(this.podeSacar(valor)==='true'){
+            
         }
+        
     }
 }
 
