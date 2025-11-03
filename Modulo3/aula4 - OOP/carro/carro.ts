@@ -1,5 +1,6 @@
-import { Painel } from "./painel/painel"
-import { Motor } from "./motor/motor"
+import { Motor } from "./motor/motor.js"
+import { Painel } from "./painel/painel.js"
+
 
 class Carro {
 

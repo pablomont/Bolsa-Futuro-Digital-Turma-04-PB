@@ -1,5 +1,5 @@
-import { Pizza } from "./Pizza";
-import { Carrinho } from "./Carrinho"
+import { Pizza } from "./Pizza.js";
+import { Carrinho } from "./Carrinho.js"
 
 const pizza1 = new Pizza(["Calabresa", "Queijo"]);
 const pizza2 = new Pizza(["Frango", "Catupiry", "Milho"]);

@@ -1,4 +1,4 @@
-import { Pizza } from "./Pizza";
+import { Pizza } from "./Pizza.js";
 export class Carrinho {
     pizzas : Pizza[] = []
 
