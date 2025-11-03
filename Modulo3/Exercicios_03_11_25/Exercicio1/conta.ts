@@ -4,11 +4,11 @@ class contaCorrente1{
         this._saldo = _saldo;
     }
 
-    protected get saldo(): number{
+    get saldo(): number{
         return this._saldo
     }
 
-    protected set saldo(valor: number){
+    set saldo(valor: number){
         this._saldo = valor
     }
 
