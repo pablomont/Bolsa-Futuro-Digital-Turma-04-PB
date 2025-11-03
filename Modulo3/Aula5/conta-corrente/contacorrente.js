@@ -1,12 +1,14 @@
 class ContaCorrente {
-  salario: number = 0;
+  constructor() {
+    this.salario = 0;
+  }
 
-  depositar(valor: number): void {
+  depositar(valor) {
     this.salario += valor;
     console.log(`Sucesso - novo saldo: ${this.salario}`);
   }
 
-  sacar(valor: number): void {
+  sacar(valor) {
     if (valor <= this.salario) {
       this.salario -= valor;
       console.log(`Sucesso - novo saldo: ${this.salario}`);
@@ -17,9 +19,12 @@ class ContaCorrente {
 }
 
 class ContaEspecial extends ContaCorrente {
-  limite: number = 1000;
+  constructor() {
+    super();
+    this.limite = 1000;
+  }
 
-  sacar(valor: number): void {
+  sacar(valor) {
     if (valor <= this.salario + this.limite) {
       this.salario -= valor;
       console.log(`Sucesso - novo saldo: ${this.salario}`);
