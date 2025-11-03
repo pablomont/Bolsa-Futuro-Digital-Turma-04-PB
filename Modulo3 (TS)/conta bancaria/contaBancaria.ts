@@ -9,21 +9,30 @@ class ContaCorrente {
         this._saldo = valor
     }
 
-    depositar(valor: number) {
-        this._saldo += valor
-        console.log(`Depósito de ${valor} realizado com sucesso. Novo saldo: ${this._saldo}`)
+    protected podeSacar(valor: number): boolean {
+        return this._saldo >= valor
     }
 
-    sacar(valor: number) {
+    public sacar(valor: number) {
         //verificar se tem saldo disponivel
         //se sim remove valor do saldo
-        if (this._saldo >= valor) {
+        if (this.podeSacar(valor)) {
             this._saldo -= valor
             console.log(`Saque de ${valor} realizado com sucesso. Novo saldo: ${this._saldo}`)
         } else {
             console.log(`Saque de ${valor} não realizado. Saldo insuficiente: ${this._saldo}`)
         }
     }
+
+    public depositar(valor: number) {
+        if(this.podeSacar(valor)) {
+            this._saldo += valor
+            console.log(`Depósito de ${valor} realizado com sucesso. Novo saldo: ${this._saldo}`)
+        } else {
+            console.log(`Depósito de ${valor} não realizado. Saldo insuficiente: ${this._saldo}`)
+        }
+    }
+
 }
 
 class ContaEspecial extends ContaCorrente {
@@ -31,13 +40,13 @@ class ContaEspecial extends ContaCorrente {
         super(saldo);
     }
 
-    sacar (valor: number) {
-        if (this.saldo + this.limite >= valor) {
-            this.saldo -= valor
-            console.log(`Saque de ${valor} realizado com sucesso. Novo saldo: ${this.saldo}`)
-        } else {
-            console.log(`Saque de ${valor} não realizado. Saldo insuficiente: ${this.saldo}`)
-        }
+    protected podeSacar(valor: number): boolean {
+        return this.saldo + this.limite >= valor
+    }
+
+    public depositar(valor: number): void {
+        this.saldo += valor
+        console.log(`Depósito de ${valor} realizado com sucesso. Novo saldo: ${this.saldo}`)
     }
 }
 
