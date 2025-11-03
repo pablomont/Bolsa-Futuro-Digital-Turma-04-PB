@@ -1,0 +1,45 @@
+import { Painel } from "./painel.js";
+class Carro {
+    nome;
+    potencia;
+    _velocidade;
+    painel;
+    constructor(nome, potencia, _velocidade, painel) {
+        this.nome = nome;
+        this.potencia = potencia;
+        this._velocidade = _velocidade;
+        this.painel = painel;
+    }
+    acelerar() {
+        this._velocidade += this.potencia; // velocidade = velocidade + potencia
+    }
+    frear() {
+        this._velocidade *= 0.5; // velocidade = velocidade * 0.5
+    }
+    get velocidade() {
+        return this._velocidade;
+    }
+    set velocidade(valor) {
+        this._velocidade = valor;
+    }
+}
+class CarroEsportivo extends Carro {
+    constructor(nome, potencia, velocidade, painel) {
+        super(nome, potencia, velocidade, painel);
+    }
+    acelerar() {
+        this._velocidade += this.potencia * 2;
+    }
+}
+const fusca = new Carro('fusca 1988', 2, 0, new Painel());
+const fuscaEsportivo = new CarroEsportivo('fusca 1988', 2, 0, new Painel());
+fusca.acelerar();
+fusca.acelerar();
+fusca.acelerar();
+fuscaEsportivo.acelerar();
+fuscaEsportivo.acelerar();
+fuscaEsportivo.acelerar();
+fusca.painel.exibir(fusca.velocidade);
+fuscaEsportivo.painel.exibir(fuscaEsportivo.velocidade);
+//npm init -y para executar vários arquivos da página
+//# sourceMappingURL=carro.js.map
