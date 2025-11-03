@@ -17,7 +17,7 @@ class Empregado {
 class Gerente extends Empregado {
     private bonus: number = 0;
 
-    constructor(nome:string = "", idade: number = 0, salario: number = 0, bonus:number =){
+    constructor(nome:string = "", idade: number = 0, salario: number = 0, bonus:number = 0){
         super(nome, idade, salario);
         this.bonus = bonus;
     }
