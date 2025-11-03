@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "name": "aula6",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
