@@ -1,13 +1,16 @@
 export class Pizza {
 
-    constructor(public ingredientes: string[]) {}
-    calculaPreco(){
-        if (this.ingredientes.length <= 2) {
-            return 15;
-    } else if (this.ingredientes.length <= 5) {
-            return 20;
-    } else {
-            return 23;
-    }
-}
+        constructor(private _ingredientes: string[]) { }
+        calculaPreco() {
+                if (this._ingredientes.length <= 2) {
+                        return 15;
+                } else if (this._ingredientes.length <= 5) {
+                        return 20;
+                } else {
+                        return 23;
+                }
+        }
+        public get ingredientes(): string[] {
+                return this._ingredientes;
+        }
 }
