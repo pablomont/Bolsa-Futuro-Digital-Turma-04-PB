@@ -1,44 +1,54 @@
 import { Painel } from "./painel/painel"
-import { motor } from "./motor/motor"
+import { Motor } from "./motor/motor"
 
 class Carro {
 
-    constructor(private nome: string = "", private potencia: number = 0, private velocidade: number = 0, private Painel:Painel, private Motor:motor){
+    constructor(protected nome: string = "", protected potencia: number = 0, protected _velocidade: number = 0, protected painel:Painel, protected motor:Motor){
 
     }
 
-    getVelocidade(){
-        return this.velocidade
+    get Velocidade(){
+        return this._velocidade
     }
 
     atualizarVelocidade(){
-        this.velocidade = this.Motor.acelerar(this.velocidade, this.potencia)
+        this._velocidade = this.motor.acelerar(this._velocidade, this.potencia)
     }
 
     reduzirVelocidade(){
-        this.velocidade = this.Motor.frear(this.velocidade) 
+        this._velocidade = this.motor.frear(this._velocidade) 
     }
  
     exibirVelocidadeAtual(){
-        this.Painel.exibir(this.velocidade)
+        this.painel.exibir(this._velocidade)
     }
 }
 
-const fusca = new Carro("fusca 1988", 2, 0, new Painel(), new motor())
+class CarroEsportivo extends Carro{
+    constructor(nome:string, potencia:number, velocidade:number, painel:Painel, motor:Motor){
+        super(nome, potencia, velocidade, painel, motor)
+    }
+
+    atualizarVelocidade(){
+        this._velocidade = this.motor.acelerar(this._velocidade, this.potencia) * 2
+    }
+}
+
+const fusca = new Carro("fusca 1988", 2, 0, new Painel(), new Motor())
 
 fusca.atualizarVelocidade()
 fusca.atualizarVelocidade()
 fusca.atualizarVelocidade()
 fusca.exibirVelocidadeAtual() 
 
-const ferrari = new Carro("Ferraro GTB", 15, 0, new Painel(), new motor())
+const ferrari = new CarroEsportivo("Ferraro GTB", 15, 0, new Painel(), new Motor())
 
 ferrari.atualizarVelocidade()
 ferrari.reduzirVelocidade()
 ferrari.reduzirVelocidade()
 ferrari.exibirVelocidadeAtual()
 
-if(ferrari.getVelocidade() > fusca.getVelocidade()){
+if(ferrari.Velocidade > fusca.Velocidade){
     console.log('A velocidade da ferrari é maior')
 } else {
     console.log('A velocidade do fusca é maior')

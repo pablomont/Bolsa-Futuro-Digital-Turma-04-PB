@@ -1,4 +1,4 @@
-export class motor{
+export class Motor{
     acelerar(velocidade:number, potencia:number){
         return velocidade += potencia // velocidade = velocidade + potencia
     }
