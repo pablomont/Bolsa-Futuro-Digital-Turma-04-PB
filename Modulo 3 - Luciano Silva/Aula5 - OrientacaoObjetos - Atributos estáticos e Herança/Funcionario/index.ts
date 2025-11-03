@@ -1,4 +1,5 @@
-/*class Empregado{
+/*
+class Empregado{
  idade?: number
  salario?: number = 0
 
@@ -23,8 +24,8 @@ gerente.liquido
 
 class Empregado{
     construtor(public nome:string ,
-        public idade:number,
-        public salario: number
+        public idade?:number,
+        public salario?: number
     ){}
 }
 

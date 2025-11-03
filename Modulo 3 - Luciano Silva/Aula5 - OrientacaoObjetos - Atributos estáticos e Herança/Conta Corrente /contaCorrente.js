@@ -15,14 +15,20 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var ContaCorrente = /** @class */ (function () {
     function ContaCorrente() {
-        this.salario = 0;
+        this.saldo = 500;
     }
     ContaCorrente.prototype.depositar = function (valor) {
-        this.salario += valor;
-        console.log("Sucesso - novo saldo: ".concat(this.salario));
+        this.saldo += valor;
+        console.log("Sucesso - novo saldo: ".concat(this.saldo));
     };
     ContaCorrente.prototype.sacar = function (valor) {
-        this.salario -= valor;
+        if (valor <= this.saldo) {
+            this.saldo -= valor;
+            console.log("sucesso - Novo saldo: ".concat(this.saldo));
+        }
+        else {
+            console.log("Falha - Saldo Insificiente");
+        }
     };
     return ContaCorrente;
 }());
@@ -34,20 +40,17 @@ var ContaEspecial = /** @class */ (function (_super) {
         return _this;
     }
     ContaEspecial.prototype.sacar = function (valor) {
-        if (valor <= this.salario + this.limite) {
-            this.salario += valor;
-            console.log("Sucesso - sucesso novo saldo: ".concat(this.salario));
+        if (valor <= this.saldo + this.limite) {
+            this.saldo -= valor;
+            console.log("Sucesso - novo saldo: ".concat(this.saldo));
         }
         else {
-            console.log("Falha - salado insuficiente");
+            console.log("Falha - saldo insuficiente");
         }
     };
     return ContaEspecial;
 }(ContaCorrente));
-var conta1 = new ContaCorrente();
-conta1.depositar(500);
-conta1.sacar(200);
-conta1.sacar(600);
-var conta2 = new ContaEspecial();
-conta2.sacar(500);
-conta2.depositar(700);
+var conta = new ContaEspecial();
+conta.sacar(800);
+conta.sacar(800);
+conta.depositar(100);
