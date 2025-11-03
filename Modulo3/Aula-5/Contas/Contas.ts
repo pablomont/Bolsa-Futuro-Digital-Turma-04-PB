@@ -1,34 +1,51 @@
 class ContaCorrente{
-    constructor (public saldo: number){}
+    constructor (protected _saldo: number){}
 
     depositar(valor: number){
-        this.saldo += valor
-        console.log (`Sucesso! seu saldo é: ${this.saldo}`)
+        this._saldo += valor
+        console.log (`Sucesso! seu saldo é: ${this._saldo}`)
     }
-    sacar(valor: number){
-        if (this.saldo >= valor){
-            this.saldo -= valor;
-            console.log (`Sucesso! seu saldo é: ${this.saldo}`)
+    public sacar(valor: number){
+        if (this.podeSacar(valor)){
+            this._saldo -= valor;
+            console.log (`Sucesso! seu saldo é: ${this._saldo}`)
         }
         else {
             console.log ("Falha - saldo insuficiente.")
+        }
+    }
+
+    protected get saldo(){
+        return this._saldo
+    }
+
+    protected set saldo(valor: number){
+        this._saldo =
+    }
+
+    protected podeSacar(valor: number){
+        if (this._saldo >= valor){
+            return true
+        }
+
+        else {
+            return false
         }
     }
 
 }
 
 class ContaEspecial extends ContaCorrente{
-    constructor (public limite: number, saldo: number){
-        super(saldo)
+    constructor (public limite: number, _saldo: number){
+        super(_saldo)
     }
 
-    sacar(valor: number){
-        if ((this.saldo + this.limite) >= valor){
-            this.saldo -= valor;
-            console.log (`Sucesso! seu saldo é: ${this.saldo}`)
+    protected podeSacar(valor: number){
+        if ((this._saldo + this.limite) >= valor){
+            return true
         }
         else {
-            console.log ("Falha - saldo insuficiente.")
+            return false
         }
     }
 }
