@@ -31,6 +31,6 @@ class Empregado {
 }
 class Gerente extends Empregado {
     constructor(public bonus: number){
-        super()
+        super("Su", 19, 1900)
     }
 }
