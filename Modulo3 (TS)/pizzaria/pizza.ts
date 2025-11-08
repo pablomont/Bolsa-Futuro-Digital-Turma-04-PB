@@ -1,4 +1,5 @@
 export class Pizza {
+        pizzaPremium: () => boolean = () => this._ingredientes.length > 5;
 
         constructor(private _ingredientes: string[]) { }
         calculaPreco() {

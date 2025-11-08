@@ -18,4 +18,12 @@ carrinho.adicionarPizza(pizza4);
 
 
 const total = carrinho.obterTotal();
+
+carrinho.obterListaPrecos();
+carrinho.obterPizzasPremium();
+carrinho.obterIngredientesPorPizzaPremium();
+
 console.log(`O total do carrinho é: R$ ${total},00`);
+console.log(`Preço individual de cada pizza: ${carrinho.obterListaPrecos()}`);
+console.log(`Pizzas premium - quantidade de ingredientes: ${carrinho.obterPizzasPremium()[0]?.ingredientes.length}`);
+console.log(`Ingredientes das pizzas premium: ${carrinho.obterIngredientesPorPizzaPremium()}`);
