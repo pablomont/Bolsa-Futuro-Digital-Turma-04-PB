@@ -1,5 +1,5 @@
 export class Pizza {
-    constructor(private _ingredientes: string[], private _preco: number){
+    constructor(private _ingredientes: string[], private _preco: number = 0){
         this._preco = this.calculaPreco()
     }
 
