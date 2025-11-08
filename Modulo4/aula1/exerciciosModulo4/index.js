@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Pizza_js_1 = require("./Pizza.js");
+var Carrinho_js_1 = require("./Carrinho.js");
+var pizza1 = new Pizza_js_1.Pizza(["Calabresa", "Queijo"]);
+var pizza2 = new Pizza_js_1.Pizza(["Frango", "Catupiry", "Milho"]);
+var pizza3 = new Pizza_js_1.Pizza(["Lombo", "Bacon", "Queijo", "Tomate", "Cebola", "Orégano"]);
+var pizza4 = new Pizza_js_1.Pizza([]);
+var carrinho = new Carrinho_js_1.Carrinho();
+carrinho.adicionarPizza(pizza1);
+carrinho.adicionarPizza(pizza2);
+carrinho.adicionarPizza(pizza3);
+carrinho.adicionarPizza(pizza4);
+console.log("Total do Carrinho: R$ ".concat(carrinho.obterTotal()));
