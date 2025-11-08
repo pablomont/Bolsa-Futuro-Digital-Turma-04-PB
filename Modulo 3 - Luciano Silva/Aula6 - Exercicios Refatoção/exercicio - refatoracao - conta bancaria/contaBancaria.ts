@@ -12,7 +12,7 @@ class ContaCorrente{
      this._saldo -= valor;
      console.log(`sucesso - Novo saldo: ${this._saldo}`)
      } else{
-        console.log (`Falha - Saldo Insificiente`)
+        console.log (`Falha - Saldo Insuficiente`)
      }
  }
 

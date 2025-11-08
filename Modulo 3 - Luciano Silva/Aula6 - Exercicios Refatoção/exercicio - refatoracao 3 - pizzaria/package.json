@@ -2,10 +2,11 @@
   "dependencies": {
     "typescript": "^5.9.3"
   },
-  "name": "exercicio---refatoracao---conta-bancaria",
+  "name": "exercicio---refatoracao-3---pizzaria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

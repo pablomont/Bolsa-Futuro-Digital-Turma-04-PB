@@ -18,19 +18,6 @@ var ContaCorrente = /** @class */ (function () {
         if (_saldo === void 0) { _saldo = 500; }
         this._saldo = _saldo;
     }
-    ContaCorrente.prototype.depositar = function (valor) {
-        this._saldo += valor;
-        console.log("Sucesso - novo saldo: ".concat(this._saldo));
-    };
-    ContaCorrente.prototype.sacar = function (valor) {
-        if (valor <= this._saldo) {
-            this._saldo -= valor;
-            console.log("sucesso - Novo saldo: ".concat(this._saldo));
-        }
-        else {
-            console.log("Falha - Saldo Insuficiente");
-        }
-    };
     Object.defineProperty(ContaCorrente.prototype, "saldo", {
         get: function () {
             return this._saldo;
@@ -41,6 +28,22 @@ var ContaCorrente = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    ContaCorrente.prototype.podeSacar = function (valor) {
+        return valor <= this._saldo;
+    };
+    ContaCorrente.prototype.sacar = function (valor) {
+        if (this.podeSacar(valor)) {
+            this._saldo -= valor;
+            console.log("sucesso - Novo saldo: ".concat(this._saldo));
+        }
+        else {
+            console.log("Falha - Saldo Insuficiente");
+        }
+    };
+    ContaCorrente.prototype.depositar = function (valor) {
+        this._saldo += valor;
+        console.log("Sucesso - novo saldo: ".concat(this._saldo));
+    };
     return ContaCorrente;
 }());
 var ContaEspecial = /** @class */ (function (_super) {
@@ -50,14 +53,8 @@ var ContaEspecial = /** @class */ (function (_super) {
         _this.limite = 1000;
         return _this;
     }
-    ContaEspecial.prototype.sacar = function (valor) {
-        if (valor <= this.saldo + this.limite) {
-            this.saldo -= valor;
-            console.log("Sucesso - novo saldo: ".concat(this.saldo));
-        }
-        else {
-            console.log("Falha - saldo insuficiente");
-        }
+    ContaEspecial.prototype.podeSacar = function (valor) {
+        return valor <= this.saldo + this.limite;
     };
     return ContaEspecial;
 }(ContaCorrente));
