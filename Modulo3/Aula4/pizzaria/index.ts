@@ -16,3 +16,6 @@ carrinho.adicionarPizza(pizza4)
 
 
 console.log(`Total do Carrinho: R$ ${carrinho.obtemTotal()}`)
+console.log(`Preço individual de cada pizza: ${carrinho.obterListaPrecos()}`)
+console.log(`Pizza premium - quantidade de ingrediente: ${carrinho.obterPizzasPremium()[0]?.ingredientes.length}`)
+console.log(carrinho.obterIngredientesPorPizzaPremium())
