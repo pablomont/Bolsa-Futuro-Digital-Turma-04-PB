@@ -22,4 +22,13 @@ export class Carrinho {
         return this.pizzas.map(pizza => pizza.preco)
     }
 
+    obterPizzasPremium(): Pizza[] {
+        return this.pizzas.filter(pizza => pizza.preco >= 23)
+    }
+    obterIngredientesPorPizzaPremium(): string[][] {
+        return this.pizzas.filter(pizza => pizza.preco >= 23)
+                .map(pizza => pizza.ingredientes)
+    }
+
+
 }
