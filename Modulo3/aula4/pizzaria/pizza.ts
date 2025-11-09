@@ -1,11 +1,11 @@
 export class Pizza{
     constructor(public ingredientes: string[]){}
     calcularPreco(){
-        if(this.ingredientes.length>=2){
+        if(this.ingredientes.length<=2){
             return 15;
-        }else if( this.ingredientes.length<=5){
+        }else if( this.ingredientes.length>=3 && this.ingredientes.length <=5){
             return 20;
-        }else if(this.ingredientes.length>5){
+        }else{
             return 23;
         }        
     }

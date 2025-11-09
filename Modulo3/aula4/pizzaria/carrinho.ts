@@ -1,4 +1,4 @@
-import { Pizza } from "./pizza.ts";
+import { Pizza } from "./pizza.js";
 
 export class Carrinho{
     public pizzas: Pizza[] = [];
@@ -12,11 +12,10 @@ export class Carrinho{
         }
     }
     obterTotal(){
-        let valorTotal = 0
-        this.pizzas.forEach(pizza => {
-            valorTotal +=pizza.calcularPreco();
-        })
-        return valorTotal
-    }
+        let Total = 0
+       for (const pizza of this.pizzas){
+            Total+=pizza.calcularPreco();
+       }
+        return Total;
     }
 }
