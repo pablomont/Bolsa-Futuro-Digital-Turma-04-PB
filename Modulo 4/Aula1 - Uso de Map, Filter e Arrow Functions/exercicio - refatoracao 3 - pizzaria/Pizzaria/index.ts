@@ -1,4 +1,4 @@
-import { Pizza } from './pizza.js'
+import { Pizza } from './pizza'
 import { Carrinho } from './carrinho.js'
 
 const pizza1 = new Pizza(["queijo", "presunto"]); //15
