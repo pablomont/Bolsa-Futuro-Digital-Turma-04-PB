@@ -1,34 +1,39 @@
-import { Pizza } from "./pizza.js";
+import { Pizza } from "./pizza";
+
 export class Carrinho {
-    pizzas : Pizza[] = []
+  pizzas: Pizza[] = [];
 
-    adicionarPizza(pizza:Pizza){
-        if(pizza.ingredientes.length > 0){
-            this.pizzas.push(pizza)
-        } else {
-            console.log('Não é possível adicionar pizza sem ingredientes!')
-        }
+  adicionarPizza(pizza: Pizza): void {
+    if (pizza.ingredientes.length > 0) {
+      this.pizzas.push(pizza);
+    } else {
+      console.log("Não é possível adicionar pizza sem ingredientes!");
     }
+  }
 
-    obterTotal() {
-        let total = 0;
-        for (let pizza of this.pizzas) {
-            total += pizza.preco; 
-        }
-        return total;
+  obtemTotal(): number {
+    let total = 0;
+    for (const pizza of this.pizzas) {
+      total += pizza.calculaPreco();
     }
+    return total;
+  }
 
-    obterListaPrecos():number[]{
-        return this.pizzas.map(pizza => pizza.preco)
-    }
+  //  parte 1 - novo método usando map
+  obterListaPrecos(): number[] {
+    return this.pizzas.map(pizza => pizza.calculaPreco());
+  }
 
-    obterPizzasPremium(): Pizza[] {
-        return this.pizzas.filter(pizza => pizza.preco >= 23)
-    }
-    obterIngredientesPorPizzaPremium(): string[][] {
-        return this.pizzas.filter(pizza => pizza.preco >= 23)
-                .map(pizza => pizza.ingredientes)
-    }
+  //  parte 1 - novo método usando filter
+  obterPizzasPremium(): Pizza[] {
+    return this.pizzas.filter(pizza => pizza.calculaPreco() >= 23);
+  }
 
+  //  parte 1 - novo método usando encadeamento (filter + map)
+  obterIngredientesPorPizzaPremium(): string[][] {
+    return this.pizzas
+      .filter(pizza => pizza.calculaPreco() >= 23)
+      .map(pizza => pizza.ingredientes);
+  }
 
 }

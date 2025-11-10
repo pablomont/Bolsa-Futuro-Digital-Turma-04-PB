@@ -1,22 +1,21 @@
 export class Pizza {
-    constructor(private _ingredientes: string[], private _preco: number){
-        this._preco = this.calculaPreco()
-    }
+  // atributo privado
+  private _ingredientes: string[];
 
-    private calculaPreco(){
-        if(this._ingredientes.length <= 2){
-            return 15;
-        } else if(this._ingredientes.length > 2 && this._ingredientes.length <= 5){
-            return 20;
-        } else {
-            return 23;
-        }
-    }
+  constructor(ingredientes: string[]) {
+    this._ingredientes = ingredientes;
+  }
 
-    get ingredientes(){
-        return this._ingredientes;
-    }
-    get preco(){
-        return this._preco;
-    }
+  calculaPreco(): number {
+    const qtd = this._ingredientes.length;
+
+    if (qtd <= 2) return 15;
+    if (qtd <= 5) return 20;
+    return 23;
+  }
+
+  // getter público
+  get ingredientes(): string[] {
+    return this._ingredientes;
+  }
 }

@@ -2,32 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pizza = void 0;
 var Pizza = /** @class */ (function () {
-    function Pizza(_ingredientes, _preco) {
-        this._ingredientes = _ingredientes;
-        this._preco = _preco;
-        this._preco = this.calculaPreco();
+    function Pizza(ingredientes) {
+        this._ingredientes = ingredientes;
     }
     Pizza.prototype.calculaPreco = function () {
-        if (this._ingredientes.length <= 2) {
+        var qtd = this._ingredientes.length;
+        if (qtd <= 2)
             return 15;
-        }
-        else if (this._ingredientes.length > 2 && this._ingredientes.length <= 5) {
+        if (qtd <= 5)
             return 20;
-        }
-        else {
-            return 23;
-        }
+        return 23;
     };
     Object.defineProperty(Pizza.prototype, "ingredientes", {
+        // getter público
         get: function () {
             return this._ingredientes;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Pizza.prototype, "preco", {
-        get: function () {
-            return this._preco;
         },
         enumerable: false,
         configurable: true
