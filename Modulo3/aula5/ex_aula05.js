@@ -23,8 +23,9 @@ var ContaCorrente = /** @class */ (function () {
         console.log("Sucesso - novo saldo", this._saldo);
     };
     ContaCorrente.prototype.sacar = function (valor) {
-        if (this._saldo >= valor) {
+        if (this.podeSacar(valor)) {
             this._saldo -= valor;
+            console.log("Sucesso - novo saldo", this._saldo);
         }
         else {
             console.log("Falha - saldo insuficiente.");
@@ -40,6 +41,14 @@ var ContaCorrente = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    ContaCorrente.prototype.podeSacar = function (valor) {
+        if (this._saldo >= valor) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
     return ContaCorrente;
 }());
 var ContaEspecial = /** @class */ (function (_super) {
@@ -49,14 +58,9 @@ var ContaEspecial = /** @class */ (function (_super) {
         _this.limite = limite;
         return _this;
     }
-    ContaEspecial.prototype.sacar = function (valor) {
-        if (this.saldo + this.limite >= valor) {
-            this.saldo -= valor;
-            console.log("Sucesso - novo saldo", this.saldo);
-        }
-        else {
-            console.log("Falha - saldo insuficiente.");
-        }
+    ContaEspecial.prototype.podeSacar = function (valor) {
+        var saldoDisponivel = this.saldo + this.limite;
+        return saldoDisponivel >= valor;
     };
     return ContaEspecial;
 }(ContaCorrente));

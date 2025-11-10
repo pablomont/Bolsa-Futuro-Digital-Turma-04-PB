@@ -35,9 +35,8 @@ class ContaEspecial extends ContaCorrente{
         super();
     }
     protected podeSacar(valor: number){
-        if(this.podeSacar(valor)==='true'){
-            
-        }
+        const saldoDisponivel = this.saldo + this.limite;
+        return saldoDisponivel >= valor;
         
     }
 }
