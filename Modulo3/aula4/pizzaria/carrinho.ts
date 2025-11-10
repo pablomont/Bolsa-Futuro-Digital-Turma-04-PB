@@ -1,4 +1,4 @@
-import { Pizza } from "./pizza.js";
+import type { Pizza } from "./pizza.js";
 
 export class Carrinho{
     public pizzas: Pizza[] = [];

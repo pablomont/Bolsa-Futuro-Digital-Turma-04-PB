@@ -1,7 +1,7 @@
 import { Pizza } from './pizza.js';
 import { Carrinho } from './carrinho.js';
-const pizza1 = new Pizza(["Calabresa", "Queijo"]); //Deve custar 15
-const pizza2 = new Pizza(['Frango', 'Catupiry', 'Milho']); //Vai custar R$20,00
+const pizza1 = new Pizza(["Calabresa", "Queijo"]);
+const pizza2 = new Pizza(['Frango', 'Catupiry', 'Milho']);
 const pizza3 = new Pizza(["Lombo", "Bacon", "Queijo", "Tomate", "Cebola", "Oregáno"]);
 const pizza4 = new Pizza([]);
 const carrinho = new Carrinho();

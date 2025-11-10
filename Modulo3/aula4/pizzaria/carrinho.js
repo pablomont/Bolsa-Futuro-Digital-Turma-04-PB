@@ -1,4 +1,3 @@
-import { Pizza } from "./pizza.js";
 export class Carrinho {
     pizzas = [];
     adicionarPizza(pizza) {

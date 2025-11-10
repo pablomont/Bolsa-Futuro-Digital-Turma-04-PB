@@ -1,4 +1,4 @@
-import { Pizza } from "./pizza.js";
+import type { Pizza } from "./pizza.js";
 export declare class Carrinho {
     pizzas: Pizza[];
     adicionarPizza(pizza: Pizza): void;
