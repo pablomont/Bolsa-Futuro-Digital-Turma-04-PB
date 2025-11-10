@@ -1,7 +1,6 @@
 class contaCorrente1{
 
     constructor(protected _saldo: number = 0){
-        this._saldo = _saldo;
     }
 
     get saldo(): number{
@@ -17,30 +16,29 @@ class contaCorrente1{
         return `Sucesso - Novo saldo: ${this._saldo}`
     }
 
+    protected podeSacar(valor: number): boolean{
+        return this._saldo >= valor
+    }
+
     sacar(valor:number){
-        if(this._saldo >= valor){
+        if(this.podeSacar(valor)){
             this._saldo-=valor
             return `Sucesso - Novo saldo: ${this._saldo}`
+        }
+        else{
+            return 'Falha - Saldo insuficiente'
         }
     }
 }
 
 class contaEspecial1 extends contaCorrente1{
-    limite: number = 0
 
-    constructor(saldo: number =0, limite:number =0){
+    constructor(saldo: number =0, protected limite:number =0){
         super(saldo)
-        this.limite = limite
     }
 
-    sacar(valor:number){
-        if(this.saldo + this.limite >= valor){
-            this.saldo-=valor
-            return `Sucesso - Novo saldo: ${this.saldo}`
-        }
-        else{
-            return "Falha - Saldo insuficiente"
-        }
+    protected podeSacar(valor: number): boolean {
+        return this.saldo + this.limite >= valor
     }
 }
 

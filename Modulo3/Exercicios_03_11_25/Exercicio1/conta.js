@@ -17,7 +17,6 @@ var contaCorrente1 = /** @class */ (function () {
     function contaCorrente1(_saldo) {
         if (_saldo === void 0) { _saldo = 0; }
         this._saldo = _saldo;
-        this._saldo = _saldo;
     }
     Object.defineProperty(contaCorrente1.prototype, "saldo", {
         get: function () {
@@ -33,10 +32,16 @@ var contaCorrente1 = /** @class */ (function () {
         this._saldo += valor;
         return "Sucesso - Novo saldo: ".concat(this._saldo);
     };
+    contaCorrente1.prototype.podeSacar = function (valor) {
+        return this._saldo >= valor;
+    };
     contaCorrente1.prototype.sacar = function (valor) {
-        if (this._saldo >= valor) {
+        if (this.podeSacar(valor)) {
             this._saldo -= valor;
             return "Sucesso - Novo saldo: ".concat(this._saldo);
+        }
+        else {
+            return 'Falha - Saldo insuficiente';
         }
     };
     return contaCorrente1;
@@ -47,18 +52,11 @@ var contaEspecial1 = /** @class */ (function (_super) {
         if (saldo === void 0) { saldo = 0; }
         if (limite === void 0) { limite = 0; }
         var _this = _super.call(this, saldo) || this;
-        _this.limite = 0;
         _this.limite = limite;
         return _this;
     }
-    contaEspecial1.prototype.sacar = function (valor) {
-        if (this.saldo + this.limite >= valor) {
-            this.saldo -= valor;
-            return "Sucesso - Novo saldo: ".concat(this.saldo);
-        }
-        else {
-            return "Falha - Saldo insuficiente";
-        }
+    contaEspecial1.prototype.podeSacar = function (valor) {
+        return this.saldo + this.limite >= valor;
     };
     return contaEspecial1;
 }(contaCorrente1));
