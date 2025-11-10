@@ -18,4 +18,15 @@ export class Carrinho{
        }
         return Total;
     }
+    obterListaPrecos(){
+        return this.pizzas.map((pizza)=> pizza.calcularPreco());
+    }   
+    obterPizzasPremium(): Pizza[]{
+        return this.pizzas.filter((pizza) => pizza.calcularPreco()>=23);
+    }
+    public obterIngredientesPorPizzaPremium(): string[][]{
+          return this.pizzas
+            .filter((pizza) => pizza.calcularPreco() >= 23)
+            .map((pizza) => pizza.ingredientes);
+    }
 }

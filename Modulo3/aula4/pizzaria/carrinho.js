@@ -15,5 +15,16 @@ export class Carrinho {
         }
         return Total;
     }
+    obterListaPrecos() {
+        return this.pizzas.map((pizza) => pizza.calcularPreco());
+    }
+    obterPizzasPremium() {
+        return this.pizzas.filter((pizza) => pizza.calcularPreco() >= 23);
+    }
+    obterIngredientesPorPizzaPremium() {
+        return this.pizzas
+            .filter((pizza) => pizza.calcularPreco() >= 23)
+            .map((pizza) => pizza.ingredientes);
+    }
 }
 //# sourceMappingURL=carrinho.js.map

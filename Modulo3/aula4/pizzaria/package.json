@@ -10,5 +10,8 @@
   "author": "",
   "license": "ISC",
   "types": "./index.d.ts",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
 }
