@@ -15,6 +15,6 @@ carrinho.adicionarPizza(pizza2);
 carrinho.adicionarPizza(pizza3);
 
 console.log(`Valor total do pedido: R$${carrinho.obterTotal()}`);
-console.log(`A lista de preços do seu pedido: ${carrinho.obterListaPrecos()}`)
-console.log(`Pizza premium - quantidade de ingredientes: ${carrinho.obterPizzasPremium()}`);
+console.log(`Preço individual de cada pizza: ${carrinho.obterListaPrecos()}`)
+console.log(`Pizza Premium - ${carrinho.obterIngredientesPorPizzaPremium()}`);
 carrinho.adicionarPizza(pizza4);
