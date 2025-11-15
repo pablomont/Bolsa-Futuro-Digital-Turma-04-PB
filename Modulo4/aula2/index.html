@@ -14,12 +14,13 @@
 
     <!-- Seu código JSX -->
     <script type="text/babel">
-      function App() {
-        
+      function Saudacao() {
+        const nome = 'Pablo'
+        return <h1>Ola, {nome}!</h1>
       }
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(<App />);
+      root.render(<Saudacao />);
     </script>
   </body>
 </html>
