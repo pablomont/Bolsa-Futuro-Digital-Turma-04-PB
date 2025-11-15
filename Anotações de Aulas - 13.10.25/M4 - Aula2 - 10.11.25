@@ -1,0 +1,6 @@
+React install command:
+
+npx create-vite@latest carros-bicicletas --template react-ts
+
+rodar projeto:
+npm run dev

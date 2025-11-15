@@ -7,7 +7,7 @@ function App() {
     <Profile/>
     </>
   )
-
+=
 function Gallery(){
     return (
       <div>
