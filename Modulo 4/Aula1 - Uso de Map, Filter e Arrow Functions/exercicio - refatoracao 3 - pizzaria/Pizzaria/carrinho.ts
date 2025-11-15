@@ -26,13 +26,14 @@ export class Carrinho {
       }
 //Retornar um novo array contendo apenas as pizzas "Premium: R$23". filter + arrow
       obterPizzasPremium(): Pizza []{
-       return this.pizzas.filter(pizza => pizza.preco > 23);
+       return this.pizzas
+       .filter(pizza => pizza.preco === 23);
 
       }
 //a lista de ingredientes apenas das pizzas que são Premium. filter + map
       obterIngredientesPorPizzaPremium(): string[][]{
         return this.pizzas
-        .filter(pizza => pizza.preco > 23)
+        .filter(pizza => pizza.preco === 23)
         .map(pizza => pizza.ingredientes);
       }
 }

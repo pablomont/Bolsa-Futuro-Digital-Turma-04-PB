@@ -15,8 +15,7 @@ carrinho.adicionarPizza (pizza2);
 carrinho.adicionarPizza (pizza3);
 carrinho.adicionarPizza (pizza4);
 
-console.log(`Total do carrinho: R$ ${carrinho.obterTotal()}`);
-console.log(`${carrinho.obterListasPrecos()}`)
-console.log(`${carrinho.obterPizzasPremium()}`)
-console.log(carrinho.obterIngredientesPorPizzaPremium())
+console.log(`Total do carrinho: R$ ${carrinho.obterTotal()}`)
+console.log(`Preço individual de cada pizza: ${carrinho.obterListasPrecos()}`)
+console.log("Pizza premium - quantidade de ingredientes:", carrinho.obterPizzasPremium().map(pizza => pizza.ingredientes.length).join(", "))
 console.log(carrinho.obterIngredientesPorPizzaPremium())
