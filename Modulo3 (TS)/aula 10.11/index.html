@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React sem build tool</title>
+    <!-- React e ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel para converter JSX no navegador -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Seu código JSX -->
+    <script type="text/babel">
+      function Saudação() {
+        // variavel javascript
+        const nome = "Lara";
+        return <h1>Olá {nome}!</h1>;
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<Saudação />);
+    </script>
+  </body>
+</html>
