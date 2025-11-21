@@ -1,5 +1,5 @@
 import "./App.css";
-import { Profile } from "./Profile";
+import Profile from "./Profile";
 
 export default function App() {
   return (
