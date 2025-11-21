@@ -16,6 +16,7 @@ export default function Profile() {
   );
 }
 
+//podemos colcoar a função em arquivo separado como utils.ts
 // function getImageUrl(person, size = 's') {
 //   return (
 //     'https://i.imgur.com/' +
