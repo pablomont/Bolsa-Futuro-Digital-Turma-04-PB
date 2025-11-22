@@ -1,0 +1,5 @@
+Css:
+- div: aplica uma classe em um grupo de paragrafos
+- span: destacar palavra especifica
+- pading
+- margin

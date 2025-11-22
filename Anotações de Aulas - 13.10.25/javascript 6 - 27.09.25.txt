@@ -1,0 +1,43 @@
+criar rede
+
+Array
+
+pop 
+
+push
+
+acessar elemntos
+
+Data types:
+
+1.primitive:
+2.
+
+Ação	Código	        I     O que faz
+                        I
+Criar array	        I      let lista = ['a', 'b']	Cria a lista
+Adicionar	        I     lista.push('c')	Adiciona no final
+Remover	lista.pop()	I     Remove o último
+Acessar	lista[0]	I     Acessa o primeiro
+
+
+
+whileloop: resuista a mesma infromção quando ele esta no codgio que pede informção.
+
+ponto de interrupção
+
+for loop
+for true
+foreach.
+
+
+
+🔁 Extra: Percorrer um array
+
+Você pode usar loops para acessar todos os elementos:
+
+let linguagens = ['JavaScript', 'Python', 'C++'];
+
+for (let i = 0; i < linguagens.length; i++) {
+    console.log(linguagens[i]);
+}

@@ -1,0 +1,15 @@
+var valor = 1 + 2
+var valor2 = valor + 1
+console.log (valor)
+
+
+return
+
+
+function: Importante
+
+
+if
+varconsole.log
+else
+

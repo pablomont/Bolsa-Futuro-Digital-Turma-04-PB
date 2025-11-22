@@ -1,0 +1,32 @@
+coamndos:
+
+- pwd; verifica diretroiro
+- cp; copia pasta
+- mkdir: cria pasta
+- cd ..   : retorna diretório
+- rm: exclui arquivo
+- cd: volta pasta mãe
+mv: renomeia rquivo
+- git clone
+
+bolsa digital e curso: ci expert
+
+^C
+
+git commit -m "pasta" ; savepoint
+
+VIM- editor de texto
+
+comando pra sair do vim   ::wq 
+- code .
+- ls
+- git status
+- add git
+- git pull
+- ::wq 
+- Git push
+- shift + ..
+- git log
+- git reset --hard commitname
+- clt + Q ..
+-git push

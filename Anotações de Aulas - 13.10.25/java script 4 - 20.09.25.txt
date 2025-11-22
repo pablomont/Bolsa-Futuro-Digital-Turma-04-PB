@@ -1,0 +1,42 @@
+Rotação de objetos:
+dot ou var ou let
+
+
+if 
+return
+
+else
+
+criar objeto parecido com structure.
+
+
+let filme = {
+ nameFilme; "Poderoso chefão",
+ diretor; "nenhum",
+
+}
+
+filme,namefilme = "poderoso Chefão"
+console.log(filme)
+
+
+math
+
+adicionar propriedade e Métodos
+
+this
+
+
+dar função a string
+
+
+
+document
+I      I
+head   body
+I
+
+
+
+
+ 

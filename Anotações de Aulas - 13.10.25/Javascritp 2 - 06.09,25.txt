@@ -1,0 +1,20 @@
+var a= null;
+console.log(typest a)
+
+
+string
+
+===
+
+"string"
+
+true, false, undefined
+
+typeof === NaN
+
+if
+
+
+
+
+
