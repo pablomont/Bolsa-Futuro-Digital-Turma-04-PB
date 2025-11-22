@@ -1,9 +1,14 @@
 import "./App.css";
+import Carro from "./components/Carro";
+import Bicicleta from "./components/Bicicleta";
+
 
 export default function App() {
   return (
     <>
       <Gallery />
+      <Carro />
+      <Bicicleta />
     </>
   );
 }
