@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffff;
+}
+
+#Titulo {
+  text-align: center;
+  color: #000;
+}
+.Carro {
+  background-color: black;
+  margin: 3%;
+  padding: 2%;
+  
+}
+.Bicicleta {
+  background-color: black;
+  margin: 3%;
+  padding: 2%;
+}
+
+h2 {
+  color: white;
+  margin: 1%;
+}
+span {
+  color: #febe01;
+}
+
+p {
+  margin: 1%;
+  color: #b2b2b2;
+}
+
+.Botao {
+  color: #332200;
+  background-color: #febe01;
+  border-radius: 4px;
+  border: none;
+  margin: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
+
+.Botao:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
