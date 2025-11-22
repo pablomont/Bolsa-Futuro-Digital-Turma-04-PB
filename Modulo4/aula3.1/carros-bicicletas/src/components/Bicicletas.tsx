@@ -1,13 +1,25 @@
 function Bicicletas() {
+
+  const dadosBicicleta = {
+    nome: 'Bicicleta',
+    ano: '2050',
+    km: '20km',
+    preco: 'R$ 199',
+    textoBotao: 'Comprar Bicicleta'
+  };
+
   return (
     <div className="div">
-        <h2>
-            Bicicleta: <span className="texto-amarelo ">R$ 199</span>
-        </h2>
-        <p>
-            Bicicleta modelo <span className="texto-amarelo">2050</span>, com <span className="texto-amarelo">20km</span> rodados.
-        </p>
-        <button>Comprar Bicicleta</button>
+      <h2>
+        {dadosBicicleta.nome}: <span className="texto-amarelo">{dadosBicicleta.preco}</span>
+      </h2>
+
+      <p>
+        {dadosBicicleta.nome} modelo <span className="texto-amarelo">{dadosBicicleta.ano}</span>, com  
+        <span className="texto-amarelo"> {dadosBicicleta.km}</span> rodados.
+      </p>
+
+      <button>{dadosBicicleta.textoBotao}</button>
     </div>
   );
 }
