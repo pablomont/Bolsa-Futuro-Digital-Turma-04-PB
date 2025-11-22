@@ -1,3 +1,19 @@
+
+/* Faz as imagens ficarem lado a lado */
+.gallary {
+  display: flex;
+  gap: 10px; /* espaço entre as imagens */
+  flex-wrap: wrap; /* quebra linha se não couber */
+  justify-content: center;
+}
+/* Reduz o tamanho das imagens */
+.gallary img {
+  width: 100%;       /* cada imagem ocupa 20% da largura da tela */
+  max-width: 150px; /* tamanho máximo para não ficar gigante em telas grandes */
+  height: auto;     /* mantém proporção */
+  border-radius: 8px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
