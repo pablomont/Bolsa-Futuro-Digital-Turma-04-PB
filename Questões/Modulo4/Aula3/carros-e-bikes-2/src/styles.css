@@ -1,0 +1,34 @@
+.Amarelo{
+    font:Arial;
+    color: #febe01
+}
+button {
+    padding: 10px;
+    font:Arial;
+    color:black;
+    border-radius:10px;
+    background-color: #febe01;
+    cursor:pointer;
+    margin-bottom: 40px;
+}
+.ficha {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    border-radius: 15px;
+    text-align:left;
+    color:black;
+    border:none;
+}
+h2,h3{
+    font-family:Arial;
+    color: white;
+}
+h1{
+    font-family:Arial;
+    text-align: center;
+}
+.padrao{
+    color: white;
+}
