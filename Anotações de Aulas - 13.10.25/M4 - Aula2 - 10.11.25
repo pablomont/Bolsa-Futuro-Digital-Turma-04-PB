@@ -4,3 +4,84 @@ npx create-vite@latest carros-bicicletas --template react-ts
 
 rodar projeto:
 npm run dev
+
+
+
+1. exerciico:
+
+import "./styles.css";
+import { getImageUrl } from "./utils";
+
+export default Profile({ name,imageId,awards,discovery}) {
+  
+  return(
+    <section className="profile">
+    <h2>{name}</h2>
+
+    <img 
+    className="Avatar"
+    src={getImageUrl(imageId)}
+    alt="name"
+    width={70}
+    height={70}
+  />
+
+  <ul>
+  <li>
+  <b>Profissão: </b>
+ {profissão}
+ </li>
+
+ <li>
+ <b>Premio: {awards.count} </b>{awards.item.join(",")})
+ </li>
+
+ <li>
+  <b>Descobertas</b>
+  {descovery}
+  </li>
+  </ul>
+  </section>
+  );
+}
+
+
+export default function Gallery() {
+  return (
+    <div>
+      <h1>Cientistas Notáveis</h1>
+
+      <Profile
+        Name="Maria Skłodowska-Curie"
+        imageId="szV5sdG"
+        porfession="fisica quimica"
+        awards={{
+          count: 4
+          items: [
+            "Premio nobel de fisica"
+            "Premio nobel de quimica"
+            "Medalha Davy"
+            "Medalha MAtteucci"
+
+          ]
+        }}
+        discovery="polônio (elemento químico)"
+        />
+
+    <Profile
+        Name="Katsuko saruhashi"
+        imageId="YfeOqp2"
+        porfession="geoquimica"
+        awards={{
+          count: 4
+          items: [
+            "Premio Myake para Geoquimica"
+            "Premio Tanaka"
+
+          ]
+        }}
+        discovery="um metodo para medir dioxido de carbono na agua do mar"
+        />
+    </div>
+  );
+}
