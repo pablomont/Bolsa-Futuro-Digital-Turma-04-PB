@@ -1,16 +1,11 @@
+import "./App.css";
+import TodoList from "./TodoListHedyLamar";
 
-import './App.css'
-import Gallery from'./Gallery'
-function App() {
-
-  
-export default App
-  return(
+export default function App() {
+  return (
     <>
-   
-    <Gallery/>
+      <TodoList />
     </>
-  )
+  );
 }
-
 
