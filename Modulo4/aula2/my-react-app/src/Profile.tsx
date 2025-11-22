@@ -31,12 +31,14 @@ export default function Profile() {
             />
             </Card>
        
-        <Avatar
+        <Card><Avatar
             person = {{
                 name: 'Alan Turing', 
                 imageId:"lsEoPwV"
             }}
         />
+        </Card>
+
     </>
   );
 }
