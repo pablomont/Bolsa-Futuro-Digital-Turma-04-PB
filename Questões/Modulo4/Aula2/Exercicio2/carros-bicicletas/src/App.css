@@ -1,0 +1,39 @@
+.Amarelo{
+  font:Arial;
+  color: #febe01
+}
+button {
+  padding: 10px;
+  font:Arial;
+  color:black;
+  border-radius:10px;
+  background-color: #febe01;
+  cursor:pointer;
+}
+div {
+  border-radius: 4px;
+  margin:10px;
+  padding:15px;
+  background-color:rgb(0, 0, 0);
+  text-align:left;
+  color:black;
+  border:none;
+}
+h2,h3{
+  font-family:Arial;
+  color: white;
+}
+h1{
+  color: white;
+  font-family:Arial;
+  text-align: center;
+}
+body{
+  background-color: white;
+}
+.padrao {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
