@@ -12,12 +12,12 @@ function Avatar() {
 
 export default function Profile() {
   return (
-    <Avatar />
+      <Avatar/>
   );
 }
 
 //podemos colcoar a função em arquivo separado como utils.ts
-// function getImageUrl(person, size = 's') {
+// function getImageUrl(person: any, size: string = 's') {
 //   return (
 //     'https://i.imgur.com/' +
 //     person.imageId +
