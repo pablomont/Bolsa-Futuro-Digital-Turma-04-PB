@@ -6,3 +6,4 @@ export function getImageUrl(person: any, size: string = 's') {
     '.jpg'
   );
 }
+

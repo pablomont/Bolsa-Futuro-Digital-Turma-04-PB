@@ -1,25 +1,26 @@
-import { getImageUrl } from "./utils";
-
-function Avatar({ person, size } : any) {
-  return (
-    <img
-      className="avatar"
-      src={getImageUrl(person)}
-      alt={person.name}
-      width={size}
-      height={size}
-    />
-  );
-}
+import Avatar from "./avatar";
+import Card from "./card";
 
 export default function Profile() {
   return (
-    <Avatar
+    <>
+    <Card>
+      <Avatar
       person={{
-        name: "Lin Lanying",
-        urlId: "1bX5QH6",
+        name: "Albert Einsten",
+        imageId: "4yH6xnp",
       }}
-      size={100}
     />
+    </Card>
+    <Card> 
+      <Avatar
+      person={{
+        name: "Shinji",
+        imageId: "XrolOn1",
+      }}
+    />
+    </Card>
+    
+    </>
   );
 }
