@@ -1,27 +1,25 @@
-function Avatar() {
+import { getImageUrl } from "./utils";
+
+function Avatar({ person, size } : any) {
   return (
     <img
       className="avatar"
-      src="https://i.imgur.com/1bX5QH6.jpg"
-      alt="Lin Lanying"
-      width={100}
-      height={100}
+      src={getImageUrl(person)}
+      alt={person.name}
+      width={size}
+      height={size}
     />
   );
 }
 
 export default function Profile() {
   return (
-      <Avatar/>
+    <Avatar
+      person={{
+        name: "Lin Lanying",
+        urlId: "1bX5QH6",
+      }}
+      size={100}
+    />
   );
 }
-
-//podemos colcoar a função em arquivo separado como utils.ts
-// function getImageUrl(person: any, size: string = 's') {
-//   return (
-//     'https://i.imgur.com/' +
-//     person.imageId +
-//     size +
-//     '.jpg'
-//   );
-// }
