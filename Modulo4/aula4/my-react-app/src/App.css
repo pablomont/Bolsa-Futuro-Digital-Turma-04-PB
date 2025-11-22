@@ -51,6 +51,7 @@ body { min-height: 120px; }
 .avatar { margin: 10px; border-radius: 50%; }
 
 .card {
+  
   width: fit-content;
   margin: 5px;
   padding: 5px;
