@@ -1,0 +1,46 @@
+function Drink({ name }: any) {
+  let info;
+
+  if (name === 'tea') {
+    info = {
+      plant: 'leaf',
+      caffeine: '15–70 mg/cup',
+      age: '4,000+ years'
+    };
+  } else {
+    info = {
+      plant: 'bean',
+      caffeine: '80–185 mg/cup',
+      age: '1,000+ years'
+    };
+  }
+
+  return (
+    <section>
+      <h1>{name}</h1>
+      <ul>
+        <li>
+          <strong>Part of plant: </strong>
+          {info.plant}
+        </li>
+        <li>
+          <strong>Caffeine content: </strong>
+          {info.caffeine}
+        </li>
+        <li>
+          <strong>Age: </strong>
+          {info.age}
+        </li>
+      </ul>
+    </section>
+  );
+}
+
+export default function DrinkList() {
+  return (
+    <div>
+      <Drink name="tea" />
+      <Drink name="coffee" />
+    </div>
+  );
+}
