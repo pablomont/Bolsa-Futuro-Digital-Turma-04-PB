@@ -1,18 +1,17 @@
-function Item({ name, isPacked }: any) {
+function Item({ name, isPacked, importance }: any) {
     // return (
     // <li className="item"> 
     //     {isPacked ? name + '✅' : name} 
     // </li>);
-    let itemContent = name;
-    if (isPacked){
-        itemContent = name + '✅'
-    }
-    return(
+    
+    return (
         <li className="item">
-            {itemContent}
+        {isPacked ? `${name} ✅` : `${name} ❌`}
+        <i>{importance && importance !== 0 ? ` (Importância: ${importance})` : null}</i>
         </li>
     );
 }
+
 
 export default function PackingList() {
     return (
@@ -22,11 +21,11 @@ export default function PackingList() {
             </h1>
             <ul>
                 <Item isPacked={true}
-                    name="Traje espacial" />
+                    name="Traje espacial" importance={9}/>
                 <Item isPacked={true}
-                    name="Capacete com folha dourada" />
+                    name="Capacete com folha dourada" importance={0}/>
                 <Item isPacked={false}
-                    name="Foto do Tam" />
+                    name="Foto do Tam" importance={6}/>
             </ul>
         </section>
     )
