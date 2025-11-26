@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+.produto {
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.preco {
+    color: #febe01;
+}
+
+button {
+    background-color: #febe01;
+    color: #332200;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
