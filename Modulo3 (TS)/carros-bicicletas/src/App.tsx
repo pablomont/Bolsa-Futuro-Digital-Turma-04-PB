@@ -1,35 +1,24 @@
 import "./App.css";
-import Carro from "./components/Carro";
-import Bicicleta from "./components/Bicicleta";
-
+import Produto from "./components/Produto";
 
 export default function App() {
   return (
-    <>
-      <Gallery />
-      <Carro />
-      <Bicicleta />
-    </>
-  );
-}
+    <div className="App">
+      <Produto
+        nome="Carro"
+        ano="2045"
+        km="200km"
+        preco="R$ 1.999"
+        vendido={true}
+      />
 
-function Gallery() {
-  return (
-    <div>
-      <h1>Cientistas incríveis</h1>
-      <Profile />
-      <Profile />
-      <Profile />
+      <Produto
+        nome="Bicicleta"
+        ano="2050"
+        km="20km"
+        preco="R$ 199"
+        vendido={false}
+      />
     </div>
-  );
-}
-
-function Profile() {
-  return (
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeK76ON20FIbTr9u4z9xIJBCxjNr_2xswX-oWSAkiFbFCBHrN15jj_6oCsDVDiyUdN5PSFPln76JXdpgTkZp0WlL-ODuCbIRv3i2lFEK87AA&s=10"
-      alt=""
-      width="20%"
-    />
   );
 }
