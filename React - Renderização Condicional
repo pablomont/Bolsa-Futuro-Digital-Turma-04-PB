@@ -1,0 +1,8 @@
+React - Renderização Condicional
+
+
+Crie uma aplicação react do zero executando o seguinte comando:
+
+npx degit pablomont/Bolsa-Futuro-Digital-Turma-04-PB/template-ts state
+npm isntall
+npm run
