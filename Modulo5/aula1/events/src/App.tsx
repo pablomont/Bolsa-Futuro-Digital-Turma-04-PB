@@ -1,57 +1,36 @@
-import "./App.css";
+import { useState } from "react";
+import { sculptureList } from "./data";
+import Button from "./Button";
 
-// function Button({onClick, children} : any){
-//   return (
-//     <button onClick={onClick}>
-//       {children}
-//     </button>
-//   )
-// }
+export default function Gallery() {
+  const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
-// function PlayButton({ movieName }: any) {
+  function handleNextClick() {
+    setIndex(index + 1);
+  }
 
-//   function handlePlayClick(){
-//     alert(`Playing ${movieName}`)
-//   }
+  function handleMoreClick() {
+    setShowMore(!showMore);
+  }
 
-//   return <Button onClick={handlePlayClick}>Play {movieName}</Button>;
-// }
-
-// function UploadButton() {
-//   return <Button onClick={() => alert('Uploading')}>Upload Image</Button>;
-// }
-
-// export default function ToolBar() {
-//   return (
-//     <>
-//       <PlayButton movieName="Dune part 2"></PlayButton>
-//       <UploadButton />
-//     </>
-//   )
-// }
-
-export default function ToolBar() {
+  let sculpture = sculptureList[index];
   return (
-    <div
-      className="toolBar"
-      onClick={() => {
-        alert("Você clicou na div");
-      }}
-    >
-      <button
-        onClick={() => {
-          alert("Você clicou no play");
-        }}
-      >
-        Play movie
-      </button>
-      <button
-        onClick={() => {
-          alert("Você clicou no upload");
-        }}
-      >
-        Upload Image
-      </button>
-    </div>
+    <>
+      <Button onClick={handleNextClick}>Next</Button>{" "}
+      <h2>
+        <i>{sculpture.name} </i>
+        by {sculpture.artist}
+      </h2>
+      <h3>
+        ({index + 1} of {sculptureList.length})
+      </h3>
+      <Button onClick={handleMoreClick}>
+        {showMore ? "Hide" : "Show"} details
+      </Button> 
+      {showMore && <p>{sculpture.description}</p>}
+      <img src={sculpture.url} alt={sculpture.alt} />
+    </>
   );
 }
+
