@@ -1,35 +1,63 @@
 import { useState } from "react";
 
-
 export default function Gallery() {
-  const [index, setIndex] = useState(0);
+  const [currentId, setCurrentId] = useState(1);
   const [showMore, setShowMore] = useState(false);
-  const [sculptureList, setSculptureList] = useState<any[]>([]);
+  const [sculpture, setSculpture] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(false); 
 
-  function carregarDados(){
-      fetch("https://api.npoint.io/ea21dc9c530d2018335f")
-      .then((response)=> response.json())
-      .then((data) => setSculptureList(data));
+  function buscarEscultura(id: number) {
+    setIsLoading(true); 
+    setSculpture(null);
+    const url = `https://api.npoint.io/ea21dc9c530d2018335f`;
+    
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setSculpture(data);
+        setIsLoading(false); 
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar escultura:", error);
+        setIsLoading(false); 
+      });
   }
   
+  function carregarDados() {
+    buscarEscultura(1);
+  }
+
   function handleNextClick() {
-    setIndex(index + 1);
+    const proximoId = currentId + 1;
+    setCurrentId(proximoId);
+    buscarEscultura(proximoId);
   }
 
   function handleMoreClick() {
     setShowMore(!showMore);
   }
 
-  const sculpture = sculptureList[index];
-  if(sculptureList.length ===0){
-    return(
+  if (!sculpture && !isLoading) {
+    return (
       <div>
-        <h1>Minha Galerias</h1>
-        <p>Os dados estão no servidor</p>
-        <button onClick={carregarDados}>Carregar dados</button>
+        <h1>Minha Galeria</h1>
+        <p>Clique no botão para carregar a primeira escultura</p>
+        <button onClick={carregarDados}>Carregar Galeria</button>
       </div>
-    )
+    );
   }
+
+
+  if (isLoading) {
+    return (
+      <div>
+        <h1>Minha Galeria</h1>
+        <p>Carregando escultura #{currentId}...</p>
+      </div>
+    );
+  }
+
+
   return (
     <>
       <button onClick={handleNextClick}>Next</button>{" "}
@@ -37,9 +65,7 @@ export default function Gallery() {
         <i>{sculpture.name} </i>
         by {sculpture.artist}
       </h2>
-      <h3>
-        ({index + 1} of {sculptureList.length})
-      </h3>
+      <h3>(ID: {currentId})</h3>
       <button onClick={handleMoreClick}>
         {showMore ? "Hide" : "Show"} details
       </button>
