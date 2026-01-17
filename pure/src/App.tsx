@@ -1,16 +1,17 @@
-let convidado = 0
-
-function Xicara(){
-  convidado = convidado +1
-  return <h2>Xícara de chá para o convidado #{convidado}</h2>
+interface XicaraProps{
+  convidado: number
+}
+function Xicara({ convidado }: XicaraProps) {
+  return <h2>Xicara de chá para o convidado #{convidado}</h2>;
 }
 
-export default function ConjuntoDeCha(){
-  return(
+export default function ConjuntoDeCha() {
+  return (
     <>
-      <Xicara />
-      <Xicara />
-      <Xicara />
+      
+      <Xicara convidado={1} />
+      <Xicara convidado={2} />
+      <Xicara convidado={3} />
     </>
-  )
+  );
 }
